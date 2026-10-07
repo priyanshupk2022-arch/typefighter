@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="c-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+    <filter id="c-cyan-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="c-soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#00d2d3" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="c-bg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#005b82" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#061a29" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#02080d" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="chrome-steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#a4b0be"/>
+      <stop offset="48%" stop-color="#57606f"/>
+      <stop offset="52%" stop-color="#2f3542"/>
+      <stop offset="75%" stop-color="#747d8c"/>
+      <stop offset="100%" stop-color="#ced6e0"/>
+    </linearGradient>
+
+    <linearGradient id="cobalt-shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3799"/>
+      <stop offset="35%" stop-color="#0c2461"/>
+      <stop offset="75%" stop-color="#0a1936"/>
+      <stop offset="100%" stop-color="#050d1e"/>
+    </linearGradient>
+
+    <linearGradient id="c-letter-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#dff9fb"/>
+      <stop offset="60%" stop-color="#00a8ff"/>
+      <stop offset="100%" stop-color="#005b96"/>
+    </linearGradient>
+
+    <linearGradient id="cyan-energy-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2d3" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00d2d3" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#00d2d3" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00d2d3" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Blue Glow -->
+  <circle cx="256" cy="256" r="230" fill="url(#c-bg-glow)"/>
+
+  <!-- Winged Cold Steel Crest Shield -->
+  <g filter="url(#c-shadow)">
+    <!-- Flaring Winglets / Side Blades -->
+    <path d="M 256,40 L 330,70 L 440,110 L 470,170 L 430,230 L 460,290 L 390,360 L 256,472
+             L 122,360 L 52,290 L 82,230 L 42,170 L 72,110 L 182,70 Z"
+          fill="#0a1524" stroke="url(#chrome-steel)" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Outer Chrome Wing Chamfers -->
+    <path d="M 256,56 L 320,82 L 418,120 L 442,172 L 406,224 L 430,280 L 372,344 L 256,450
+             L 140,344 L 82,280 L 106,224 L 70,172 L 94,120 L 192,82 Z"
+          fill="url(#chrome-steel)" stroke="#091422" stroke-width="2"/>
+
+    <!-- Inner Cobalt Blue Shield Plate -->
+    <path d="M 256,80 L 350,126 L 390,210 L 350,326 L 256,424 L 162,326 L 122,210 L 162,126 Z"
+          fill="url(#cobalt-shield)" stroke="#00d2d3" stroke-width="2.5"/>
+
+    <!-- Sharp Bevel Ridges -->
+    <line x1="256" y1="80" x2="256" y2="424" stroke="#48dbfb" stroke-width="2" stroke-opacity="0.7"/>
+    <line x1="162" y1="126" x2="350" y2="326" stroke="#0abde3" stroke-width="1.5" stroke-opacity="0.3"/>
+    <line x1="350" y1="126" x2="162" y2="326" stroke="#0abde3" stroke-width="1.5" stroke-opacity="0.3"/>
+
+    <!-- Cyan Circuit / Energy Chevron Insets -->
+    <path d="M 190,140 L 256,180 L 322,140" fill="none" stroke="#00d2d3" stroke-width="3" opacity="0.6"/>
+    <path d="M 190,380 L 256,410 L 322,380" fill="none" stroke="#00d2d3" stroke-width="3" opacity="0.6"/>
+  </g>
+
+  <!-- Horizontal Neon Cyan Energy Laser Slicing Across -->
+  <g filter="url(#c-cyan-glow)">
+    <path d="M 30,256 L 482,256" stroke="url(#cyan-energy-line)" stroke-width="4"/>
+    <circle cx="256" cy="256" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Center Letter 'C' - Aerodynamic Chromium Razor -->
+  <g filter="url(#c-soft-glow)">
+    <!-- 3D Shadow -->
+    <path d="M 346,182 C 328,144 294,134 256,134 C 182,134 154,192 154,256 C 154,320 182,378 256,378 C 294,378 328,368 346,330 L 298,312 C 288,326 274,332 256,332 C 206,332 202,290 202,256 C 202,222 206,180 256,180 C 274,180 288,186 298,200 Z"
+          fill="#020912" transform="translate(6, 10)"/>
+
+    <!-- Letter Face -->
+    <path d="M 346,182 C 328,144 294,134 256,134 C 182,134 154,192 154,256 C 154,320 182,378 256,378 C 294,378 328,368 346,330 L 298,312 C 288,326 274,332 256,332 C 206,332 202,290 202,256 C 202,222 206,180 256,180 C 274,180 288,186 298,200 Z"
+          fill="url(#c-letter-grad)" stroke="#002f52" stroke-width="3"/>
+
+    <!-- Sharp Specular Cuts on Outer Curve -->
+    <path d="M 346,182 C 328,144 294,134 256,134 C 182,134 154,192 154,256"
+          fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <!-- Bottom Inner Rim Shadow -->
+    <path d="M 154,256 C 154,320 182,378 256,378 C 294,378 328,368 346,330"
+          fill="none" stroke="#003e6b" stroke-width="3"/>
+
+    <!-- Inner Spine Cyan Energy Glint -->
+    <path d="M 206,240 C 210,210 230,192 256,192 C 270,192 282,198 290,208"
+          fill="none" stroke="#c7f8ff" stroke-width="2.5" opacity="0.9"/>
+  </g>
+
+  <!-- Rank Label Banner at Bottom -->
+  <g transform="translate(0, 424)">
+    <polygon points="166,0 346,0 366,32 334,32 256,40 178,32 146,32"
+             fill="#081422" stroke="#00a8ff" stroke-width="2"/>
+    <text x="256" y="22" font-family="'Impact', 'Arial Black', sans-serif" font-size="18" font-weight="900"
+          letter-spacing="5" fill="#70a1ff" text-anchor="middle">RANK C</text>
+  </g>
+</svg>

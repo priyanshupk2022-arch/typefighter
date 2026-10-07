@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" width="100%" height="100%">
+  <defs>
+    <!-- Dark Mode Filters -->
+    <filter id="chassis-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+    <filter id="zone-glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bump-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#ffffff" flood-opacity="0.8"/>
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="chassis-bevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748"/>
+      <stop offset="30%" stop-color="#1a202c"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <linearGradient id="chassis-plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#060910"/>
+      <stop offset="100%" stop-color="#04060b"/>
+    </linearGradient>
+
+    <linearGradient id="key-face-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#283244"/>
+      <stop offset="45%" stop-color="#1e2636"/>
+      <stop offset="100%" stop-color="#151b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Underglow Glow -->
+  <rect x="58" y="38" width="1164" height="404" rx="26" fill="#0284c7" opacity="0.08" filter="url(#chassis-shadow)"/>
+
+  <!-- MECHANICAL KEYBOARD CHASSIS -->
+  <g filter="url(#chassis-shadow)">
+    <!-- Outer Heavy Aluminum Housing -->
+    <rect x="64" y="44" width="1152" height="394" rx="20"
+          fill="url(#chassis-bevel)" stroke="#334155" stroke-width="3"/>
+
+    <!-- Inner Keyplate Recess -->
+    <rect x="76" y="56" width="1128" height="370" rx="14"
+          fill="url(#chassis-plate)" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- Subtle Plate Screw Accents at 4 Corners -->
+    <g fill="#475569" stroke="#1e293b" stroke-width="1">
+      <circle cx="86" cy="66" r="3.5"/>
+      <circle cx="1194" cy="66" r="3.5"/>
+      <circle cx="86" cy="416" r="3.5"/>
+      <circle cx="1194" cy="416" r="3.5"/>
+    </g>
+    <!-- Screws Cross Slot -->
+    <g stroke="#0f172a" stroke-width="0.8">
+      <line x1="84" y1="66" x2="88" y2="66"/><line x1="86" y1="64" x2="86" y2="68"/>
+      <line x1="1192" y1="66" x2="1196" y2="66"/><line x1="1194" y1="64" x2="1194" y2="68"/>
+      <line x1="84" y1="416" x2="88" y2="416"/><line x1="86" y1="414" x2="86" y2="418"/>
+      <line x1="1192" y1="416" x2="1196" y2="416"/><line x1="1194" y1="414" x2="1194" y2="418"/>
+    </g>
+  </g>
+
+  <!-- ALL 5 ROWS OF QWERTY KEYS -->
+  <g id="keyboard-keys">
+
+      <!-- Key: ` (pinky_l) -->
+      <g id="key-tilde-0" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="88.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="90.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="94.0" y1="71.5" x2="150.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="96.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="122.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">~</text>
+        <text x="122.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">`</text>
+      </g>
+
+      <!-- Key: 1 (pinky_l) -->
+      <g id="key-1-0" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="162.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="164.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="168.0" y1="71.5" x2="224.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="170.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="196.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">!</text>
+        <text x="196.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">1</text>
+      </g>
+
+      <!-- Key: 2 (ring_l) -->
+      <g id="key-2-0" class="keycap zone-ring_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="236.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="238.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="242.0" y1="71.5" x2="298.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="244.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#8b5cf6" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="270.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">@</text>
+        <text x="270.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">2</text>
+      </g>
+
+      <!-- Key: 3 (mid_l) -->
+      <g id="key-3-0" class="keycap zone-mid_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="310.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="312.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="316.0" y1="71.5" x2="372.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="318.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#06b6d4" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="344.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">#</text>
+        <text x="344.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">3</text>
+      </g>
+
+      <!-- Key: 4 (idx_l) -->
+      <g id="key-4-0" class="keycap zone-idx_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="384.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="386.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="390.0" y1="71.5" x2="446.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="392.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#10b981" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="418.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">$</text>
+        <text x="418.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">4</text>
+      </g>
+
+      <!-- Key: 5 (idx_l) -->
+      <g id="key-5-0" class="keycap zone-idx_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="458.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="460.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="464.0" y1="71.5" x2="520.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="466.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#10b981" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="492.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">%</text>
+        <text x="492.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">5</text>
+      </g>
+
+      <!-- Key: 6 (idx_r) -->
+      <g id="key-6-0" class="keycap zone-idx_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="532.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="534.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="538.0" y1="71.5" x2="594.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="540.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#84cc16" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="566.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">^</text>
+        <text x="566.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">6</text>
+      </g>
+
+      <!-- Key: 7 (idx_r) -->
+      <g id="key-7-0" class="keycap zone-idx_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="606.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="608.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="612.0" y1="71.5" x2="668.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="614.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#84cc16" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="640.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">&amp;</text>
+        <text x="640.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">7</text>
+      </g>
+
+      <!-- Key: 8 (mid_r) -->
+      <g id="key-8-0" class="keycap zone-mid_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="680.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="682.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="686.0" y1="71.5" x2="742.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="688.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#f97316" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="714.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">*</text>
+        <text x="714.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">8</text>
+      </g>
+
+      <!-- Key: 9 (ring_r) -->
+      <g id="key-9-0" class="keycap zone-ring_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="754.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="756.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="760.0" y1="71.5" x2="816.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="762.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#ef4444" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="788.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">(</text>
+        <text x="788.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">9</text>
+      </g>
+
+      <!-- Key: 0 (pinky_r) -->
+      <g id="key-0-0" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="828.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="830.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="834.0" y1="71.5" x2="890.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="836.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="862.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">)</text>
+        <text x="862.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">0</text>
+      </g>
+
+      <!-- Key: - (pinky_r) -->
+      <g id="key-minus-0" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="902.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="904.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="908.0" y1="71.5" x2="964.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="910.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="936.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">_</text>
+        <text x="936.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">-</text>
+      </g>
+
+      <!-- Key: = (pinky_r) -->
+      <g id="key-equals-0" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="976.0" y="68.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="978.0" y="70.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="982.0" y1="71.5" x2="1038.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="984.0" y="124.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="1010.0" y="92.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">+</text>
+        <text x="1010.0" y="114.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">=</text>
+      </g>
+
+      <!-- Key: BACKSPACE (pinky_r) -->
+      <g id="key-backspace-0" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="1050.0" y="68.0" width="142.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="1052.0" y="70.0" width="138.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="1056.0" y1="71.5" x2="1186.0" y2="71.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="1058.0" y="124.0" width="126.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="1121.0" y="107.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="12" font-weight="800" fill="#f8fafc" text-anchor="middle">BACKSPACE</text>
+      </g>
+
+      <!-- Key: TAB (pinky_l) -->
+      <g id="key-tab-1" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="88.0" y="142.0" width="105.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="90.0" y="144.0" width="101.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="94.0" y1="145.5" x2="187.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="96.0" y="198.0" width="89.0" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="140.5" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">TAB</text>
+      </g>
+
+      <!-- Key: Q (pinky_l) -->
+      <g id="key-q-1" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="199.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="201.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="205.0" y1="145.5" x2="261.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="207.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="233.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">Q</text>
+      </g>
+
+      <!-- Key: W (ring_l) -->
+      <g id="key-w-1" class="keycap zone-ring_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="273.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="275.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="279.0" y1="145.5" x2="335.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="281.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#8b5cf6" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="307.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">W</text>
+      </g>
+
+      <!-- Key: E (mid_l) -->
+      <g id="key-e-1" class="keycap zone-mid_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="347.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="349.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="353.0" y1="145.5" x2="409.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="355.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#06b6d4" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="381.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">E</text>
+      </g>
+
+      <!-- Key: R (idx_l) -->
+      <g id="key-r-1" class="keycap zone-idx_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="421.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="423.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="427.0" y1="145.5" x2="483.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="429.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#10b981" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="455.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">R</text>
+      </g>
+
+      <!-- Key: T (idx_l) -->
+      <g id="key-t-1" class="keycap zone-idx_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="495.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="497.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="501.0" y1="145.5" x2="557.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="503.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#10b981" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="529.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">T</text>
+      </g>
+
+      <!-- Key: Y (idx_r) -->
+      <g id="key-y-1" class="keycap zone-idx_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="569.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="571.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="575.0" y1="145.5" x2="631.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="577.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#84cc16" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="603.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">Y</text>
+      </g>
+
+      <!-- Key: U (idx_r) -->
+      <g id="key-u-1" class="keycap zone-idx_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="643.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="645.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="649.0" y1="145.5" x2="705.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="651.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#84cc16" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="677.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">U</text>
+      </g>
+
+      <!-- Key: I (mid_r) -->
+      <g id="key-i-1" class="keycap zone-mid_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="717.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="719.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="723.0" y1="145.5" x2="779.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="725.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#f97316" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="751.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">I</text>
+      </g>
+
+      <!-- Key: O (ring_r) -->
+      <g id="key-o-1" class="keycap zone-ring_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="791.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="793.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="797.0" y1="145.5" x2="853.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="799.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#ef4444" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="825.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">O</text>
+      </g>
+
+      <!-- Key: P (pinky_r) -->
+      <g id="key-p-1" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="865.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="867.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="871.0" y1="145.5" x2="927.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="873.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="899.0" y="181.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">P</text>
+      </g>
+
+      <!-- Key: [ (pinky_r) -->
+      <g id="key-lbracket-1" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="939.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="941.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="945.0" y1="145.5" x2="1001.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="947.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="973.0" y="166.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">{</text>
+        <text x="973.0" y="188.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">[</text>
+      </g>
+
+      <!-- Key: ] (pinky_r) -->
+      <g id="key-rbracket-1" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="1013.0" y="142.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="1015.0" y="144.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="1019.0" y1="145.5" x2="1075.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="1021.0" y="198.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="1047.0" y="166.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">}</text>
+        <text x="1047.0" y="188.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">]</text>
+      </g>
+
+      <!-- Key: \ (pinky_r) -->
+      <g id="key-backslash-1" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="1087.0" y="142.0" width="105.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="1089.0" y="144.0" width="101.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="1093.0" y1="145.5" x2="1186.0" y2="145.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="1095.0" y="198.0" width="89.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="1139.5" y="166.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">|</text>
+        <text x="1139.5" y="188.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">\</text>
+      </g>
+
+      <!-- Key: CAPS (pinky_l) -->
+      <g id="key-caps-2" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="88.0" y="216.0" width="123.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="90.0" y="218.0" width="119.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="94.0" y1="219.5" x2="205.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="96.0" y="272.0" width="107.5" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="149.8" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">CAPS</text>
+      </g>
+
+      <!-- Key: A (pinky_l) -->
+      <g id="key-a-2" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="217.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="219.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="223.5" y1="219.5" x2="279.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="225.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        <!-- Home Row Marker Circle -->
+        <circle cx="273.5" cy="230.0" r="3" fill="#ff2a85" opacity="0.8"/>
+        
+
+        
+        <text x="251.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">A</text>
+      </g>
+
+      <!-- Key: S (ring_l) -->
+      <g id="key-s-2" class="keycap zone-ring_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="291.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="293.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="297.5" y1="219.5" x2="353.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="299.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#8b5cf6" filter="url(#zone-glow)"/>
+
+        
+        <!-- Home Row Marker Circle -->
+        <circle cx="347.5" cy="230.0" r="3" fill="#8b5cf6" opacity="0.8"/>
+        
+
+        
+        <text x="325.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">S</text>
+      </g>
+
+      <!-- Key: D (mid_l) -->
+      <g id="key-d-2" class="keycap zone-mid_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="365.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="367.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="371.5" y1="219.5" x2="427.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="373.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#06b6d4" filter="url(#zone-glow)"/>
+
+        
+        <!-- Home Row Marker Circle -->
+        <circle cx="421.5" cy="230.0" r="3" fill="#06b6d4" opacity="0.8"/>
+        
+
+        
+        <text x="399.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">D</text>
+      </g>
+
+      <!-- Key: F (idx_l) -->
+      <g id="key-f-2" class="keycap zone-idx_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="439.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="441.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="445.5" y1="219.5" x2="501.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="447.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#10b981" filter="url(#zone-glow)"/>
+
+        
+        <!-- Home Row Marker Circle -->
+        <circle cx="495.5" cy="230.0" r="3" fill="#10b981" opacity="0.8"/>
+        
+        <!-- Home Row Tactile Ridge Bump -->
+        <rect x="463.5" y="266.0" width="20" height="3.5" rx="1.75"
+              fill="#ffffff" stroke="#10b981" stroke-width="1" filter="url(#bump-glow)"/>
+
+        
+        <text x="473.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">F</text>
+      </g>
+
+      <!-- Key: G (idx_l) -->
+      <g id="key-g-2" class="keycap zone-idx_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="513.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="515.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="519.5" y1="219.5" x2="575.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="521.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#10b981" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="547.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">G</text>
+      </g>
+
+      <!-- Key: H (idx_r) -->
+      <g id="key-h-2" class="keycap zone-idx_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="587.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="589.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="593.5" y1="219.5" x2="649.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="595.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#84cc16" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="621.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">H</text>
+      </g>
+
+      <!-- Key: J (idx_r) -->
+      <g id="key-j-2" class="keycap zone-idx_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="661.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="663.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="667.5" y1="219.5" x2="723.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="669.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#84cc16" filter="url(#zone-glow)"/>
+
+        
+        <!-- Home Row Marker Circle -->
+        <circle cx="717.5" cy="230.0" r="3" fill="#84cc16" opacity="0.8"/>
+        
+        <!-- Home Row Tactile Ridge Bump -->
+        <rect x="685.5" y="266.0" width="20" height="3.5" rx="1.75"
+              fill="#ffffff" stroke="#84cc16" stroke-width="1" filter="url(#bump-glow)"/>
+
+        
+        <text x="695.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">J</text>
+      </g>
+
+      <!-- Key: K (mid_r) -->
+      <g id="key-k-2" class="keycap zone-mid_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="735.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="737.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="741.5" y1="219.5" x2="797.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="743.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#f97316" filter="url(#zone-glow)"/>
+
+        
+        <!-- Home Row Marker Circle -->
+        <circle cx="791.5" cy="230.0" r="3" fill="#f97316" opacity="0.8"/>
+        
+
+        
+        <text x="769.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">K</text>
+      </g>
+
+      <!-- Key: L (ring_r) -->
+      <g id="key-l-2" class="keycap zone-ring_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="809.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="811.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="815.5" y1="219.5" x2="871.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="817.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#ef4444" filter="url(#zone-glow)"/>
+
+        
+        <!-- Home Row Marker Circle -->
+        <circle cx="865.5" cy="230.0" r="3" fill="#ef4444" opacity="0.8"/>
+        
+
+        
+        <text x="843.5" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">L</text>
+      </g>
+
+      <!-- Key: ; (pinky_r) -->
+      <g id="key-semicolon-2" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="883.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="885.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="889.5" y1="219.5" x2="945.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="891.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        <!-- Home Row Marker Circle -->
+        <circle cx="939.5" cy="230.0" r="3" fill="#ec4899" opacity="0.8"/>
+        
+
+        
+        <text x="917.5" y="240.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">:</text>
+        <text x="917.5" y="262.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">;</text>
+      </g>
+
+      <!-- Key: ' (pinky_r) -->
+      <g id="key-quote-2" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="957.5" y="216.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="959.5" y="218.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="963.5" y1="219.5" x2="1019.5" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="965.5" y="272.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="991.5" y="240.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">&quot;</text>
+        <text x="991.5" y="262.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">'</text>
+      </g>
+
+      <!-- Key: ENTER (pinky_r) -->
+      <g id="key-enter-2" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="1031.5" y="216.0" width="160.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="1033.5" y="218.0" width="156.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="1037.5" y1="219.5" x2="1186.0" y2="219.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="1039.5" y="272.0" width="144.5" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="1111.8" y="255.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="12" font-weight="800" fill="#f8fafc" text-anchor="middle">ENTER</text>
+      </g>
+
+      <!-- Key: SHIFT (pinky_l) -->
+      <g id="key-shift-3" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="88.0" y="290.0" width="160.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="90.0" y="292.0" width="156.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="94.0" y1="293.5" x2="242.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="96.0" y="346.0" width="144.5" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="168.2" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="12" font-weight="800" fill="#f8fafc" text-anchor="middle">SHIFT</text>
+      </g>
+
+      <!-- Key: Z (pinky_l) -->
+      <g id="key-z-3" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="254.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="256.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="260.5" y1="293.5" x2="316.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="262.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="288.5" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">Z</text>
+      </g>
+
+      <!-- Key: X (ring_l) -->
+      <g id="key-x-3" class="keycap zone-ring_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="328.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="330.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="334.5" y1="293.5" x2="390.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="336.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#8b5cf6" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="362.5" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">X</text>
+      </g>
+
+      <!-- Key: C (mid_l) -->
+      <g id="key-c-3" class="keycap zone-mid_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="402.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="404.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="408.5" y1="293.5" x2="464.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="410.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#06b6d4" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="436.5" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">C</text>
+      </g>
+
+      <!-- Key: V (idx_l) -->
+      <g id="key-v-3" class="keycap zone-idx_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="476.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="478.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="482.5" y1="293.5" x2="538.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="484.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#10b981" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="510.5" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">V</text>
+      </g>
+
+      <!-- Key: B (idx_l) -->
+      <g id="key-b-3" class="keycap zone-idx_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="550.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="552.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="556.5" y1="293.5" x2="612.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="558.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#10b981" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="584.5" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">B</text>
+      </g>
+
+      <!-- Key: N (idx_r) -->
+      <g id="key-n-3" class="keycap zone-idx_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="624.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="626.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="630.5" y1="293.5" x2="686.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="632.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#84cc16" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="658.5" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">N</text>
+      </g>
+
+      <!-- Key: M (idx_r) -->
+      <g id="key-m-3" class="keycap zone-idx_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="698.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="700.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="704.5" y1="293.5" x2="760.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="706.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#84cc16" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="732.5" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="800" fill="#f8fafc" text-anchor="middle">M</text>
+      </g>
+
+      <!-- Key: , (mid_r) -->
+      <g id="key-comma-3" class="keycap zone-mid_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="772.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="774.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="778.5" y1="293.5" x2="834.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="780.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#f97316" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="806.5" y="314.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">&lt;</text>
+        <text x="806.5" y="336.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">,</text>
+      </g>
+
+      <!-- Key: . (ring_r) -->
+      <g id="key-dot-3" class="keycap zone-ring_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="846.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="848.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="852.5" y1="293.5" x2="908.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="854.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#ef4444" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="880.5" y="314.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">&gt;</text>
+        <text x="880.5" y="336.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">.</text>
+      </g>
+
+      <!-- Key: / (pinky_r) -->
+      <g id="key-slash-3" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="920.5" y="290.0" width="68.0" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="922.5" y="292.0" width="64.0" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="926.5" y1="293.5" x2="982.5" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="928.5" y="346.0" width="52.0" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="954.5" y="314.0" font-family="'JetBrains Mono', monospace"
+              font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">?</text>
+        <text x="954.5" y="336.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle">/</text>
+      </g>
+
+      <!-- Key: SHIFT (pinky_r) -->
+      <g id="key-shift-3" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="994.5" y="290.0" width="197.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="996.5" y="292.0" width="193.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="1000.5" y1="293.5" x2="1186.0" y2="293.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="1002.5" y="346.0" width="181.5" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="1093.2" y="329.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="12" font-weight="800" fill="#f8fafc" text-anchor="middle">SHIFT</text>
+      </g>
+
+      <!-- Key: CTRL (pinky_l) -->
+      <g id="key-ctrl-4" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="88.0" y="364.0" width="86.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="90.0" y="366.0" width="82.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="94.0" y1="367.5" x2="168.5" y2="367.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="96.0" y="420.0" width="70.5" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="131.2" y="403.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">CTRL</text>
+      </g>
+
+      <!-- Key: WIN (pinky_l) -->
+      <g id="key-win-4" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="180.5" y="364.0" width="86.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="182.5" y="366.0" width="82.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="186.5" y1="367.5" x2="261.0" y2="367.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="188.5" y="420.0" width="70.5" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="223.8" y="403.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">WIN</text>
+      </g>
+
+      <!-- Key: ALT (pinky_l) -->
+      <g id="key-alt-4" class="keycap zone-pinky_l">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="273.0" y="364.0" width="86.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="275.0" y="366.0" width="82.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="279.0" y1="367.5" x2="353.5" y2="367.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="281.0" y="420.0" width="70.5" height="4" rx="2"
+              fill="#ff2a85" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="316.2" y="403.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">ALT</text>
+      </g>
+
+      <!-- Key: SPACE (thumb) -->
+      <g id="key-space-4" class="keycap zone-thumb">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="365.5" y="364.0" width="456.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="367.5" y="366.0" width="452.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="371.5" y1="367.5" x2="816.0" y2="367.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="373.5" y="420.0" width="440.5" height="4" rx="2"
+              fill="#f59e0b" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="593.8" y="403.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="12" font-weight="800" fill="#f8fafc" text-anchor="middle">SPACE</text>
+      </g>
+
+      <!-- Key: ALT (thumb) -->
+      <g id="key-alt-4" class="keycap zone-thumb">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="828.0" y="364.0" width="86.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="830.0" y="366.0" width="82.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="834.0" y1="367.5" x2="908.5" y2="367.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="836.0" y="420.0" width="70.5" height="4" rx="2"
+              fill="#f59e0b" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="871.2" y="403.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">ALT</text>
+      </g>
+
+      <!-- Key: WIN (pinky_r) -->
+      <g id="key-win-4" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="920.5" y="364.0" width="86.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="922.5" y="366.0" width="82.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="926.5" y1="367.5" x2="1001.0" y2="367.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="928.5" y="420.0" width="70.5" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="963.8" y="403.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">WIN</text>
+      </g>
+
+      <!-- Key: MENU (pinky_r) -->
+      <g id="key-menu-4" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="1013.0" y="364.0" width="86.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="1015.0" y="366.0" width="82.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="1019.0" y1="367.5" x2="1093.5" y2="367.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="1021.0" y="420.0" width="70.5" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="1056.2" y="403.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">MENU</text>
+      </g>
+
+      <!-- Key: CTRL (pinky_r) -->
+      <g id="key-ctrl-4" class="keycap zone-pinky_r">
+        <!-- Base Chamfer / Drop Shadow -->
+        <rect x="1105.5" y="364.0" width="86.5" height="68.0" rx="8"
+              fill="#0d111a" stroke="#1f293d" stroke-width="1.5"/>
+
+        <!-- Keycap Top Slanted Face -->
+        <rect x="1107.5" y="366.0" width="82.5" height="60.0" rx="6"
+              fill="url(#key-face-grad)" stroke="#2d3748" stroke-width="1"/>
+
+        <!-- Top Edge Specular Glint -->
+        <line x1="1111.5" y1="367.5" x2="1186.0" y2="367.5"
+              stroke="#4a5568" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Glowing Finger Zone Neon Underglow / Accent Bar -->
+        <rect x="1113.5" y="420.0" width="70.5" height="4" rx="2"
+              fill="#ec4899" filter="url(#zone-glow)"/>
+
+        
+        
+
+        
+        <text x="1148.8" y="403.0" font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="14" font-weight="800" fill="#f8fafc" text-anchor="middle">CTRL</text>
+      </g>
+  </g>
+
+  <!-- FINGER ZONE COLOR LEGEND BAR -->
+  <g id="finger-zone-legend">
+
+      <!-- Legend Pill: L-Pinky -->
+      <g transform="translate(88.0, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#ff2a85" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#ff2a85"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#ff70a6" text-anchor="middle">L-Pinky</text>
+      </g>
+
+      <!-- Legend Pill: L-Ring -->
+      <g transform="translate(210.7, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#8b5cf6" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#8b5cf6"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#c4b5fd" text-anchor="middle">L-Ring</text>
+      </g>
+
+      <!-- Legend Pill: L-Middle -->
+      <g transform="translate(333.3, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#06b6d4" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#06b6d4"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#67e8f9" text-anchor="middle">L-Middle</text>
+      </g>
+
+      <!-- Legend Pill: L-Index -->
+      <g transform="translate(456.0, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#10b981" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#10b981"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#6ee7b7" text-anchor="middle">L-Index</text>
+      </g>
+
+      <!-- Legend Pill: Thumbs -->
+      <g transform="translate(578.7, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#f59e0b" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#f59e0b"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#fde047" text-anchor="middle">Thumbs</text>
+      </g>
+
+      <!-- Legend Pill: R-Index -->
+      <g transform="translate(701.3, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#84cc16" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#84cc16"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#bef264" text-anchor="middle">R-Index</text>
+      </g>
+
+      <!-- Legend Pill: R-Middle -->
+      <g transform="translate(824.0, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#f97316" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#f97316"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#fdba74" text-anchor="middle">R-Middle</text>
+      </g>
+
+      <!-- Legend Pill: R-Ring -->
+      <g transform="translate(946.7, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#ef4444" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#ef4444"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#fca5a5" text-anchor="middle">R-Ring</text>
+      </g>
+
+      <!-- Legend Pill: R-Pinky -->
+      <g transform="translate(1069.3, 462)">
+        <rect x="0" y="0" width="112.7" height="28" rx="14" fill="#0d111a" stroke="#ec4899" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="5" fill="#ec4899"/>
+        <text x="60.3" y="18" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="700"
+              fill="#f472b6" text-anchor="middle">R-Pinky</text>
+      </g>
+  </g>
+
+  <!-- Header Title / Brand Logo in Chassis Header -->
+  <g transform="translate(640, 32)">
+    <text x="0" y="0" font-family="'Impact', 'Arial Black', sans-serif" font-size="16" font-weight="900"
+          letter-spacing="6" fill="#64748b" text-anchor="middle">TYPEFIGHTER TOUCH-TYPING COMBAT ENGINE</text>
+  </g>
+</svg>

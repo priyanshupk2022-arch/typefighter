@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="hand-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="node-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="badge-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="palm-skin-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#0f172a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="finger-skin-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a3850" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#162032" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#0d1422" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Central Home Row Guidance Indicator Header -->
+  <g transform="translate(600, 24)">
+    <rect x="-140" y="-14" width="280" height="28" rx="14" fill="#090d16" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="-120" cy="0" r="3.5" fill="#38bdf8"/>
+    <circle cx="120" cy="0" r="3.5" fill="#38bdf8"/>
+    <text x="0" y="4" font-family="'Impact', 'Arial Black', sans-serif" font-size="12" font-weight="900"
+          letter-spacing="4" fill="#f8fafc" text-anchor="middle">HOME ROW REST POSTURE</text>
+  </g>
+
+  <!-- Ambient Home Row Guideline Track -->
+  <g opacity="0.35" stroke="#38bdf8" stroke-dasharray="6,6">
+    <!-- Connecting Arc along home-row keypads -->
+    <path d="M 210,132 Q 338,75 402,97" fill="none" stroke-width="1.5"/>
+    <path d="M 798,97 Q 862,75 990,132" fill="none" stroke-width="1.5"/>
+    <!-- Spacebar connecting bracket -->
+    <path d="M 505,275 C 550,305 650,305 695,275" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+
+  <!-- LEFT HAND (id="hand-left") -->
+  <g id="hand-left" class="hand-container">
+    
+    <!-- Left Hand Palm Contour -->
+    <path d="M 230,570 C 220,500 220,440 240,400 C 255,370 290,365 335,365 C 380,365 415,380 430,420
+             C 445,460 450,500 400,570 Z"
+          fill="url(#palm-skin-grad)" stroke="#38bdf8" stroke-width="2" opacity="0.85"/>
+    <!-- Wrist Band & Grid -->
+    <path d="M 220,560 L 410,560 L 400,590 L 230,590 Z"
+          fill="#0c1322" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="315" y="580" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+          fill="#64748b" text-anchor="middle" letter-spacing="3">LEFT HAND</text>
+    <!-- Palm Lifeline Creases -->
+    <path d="M 270,420 C 300,450 330,470 350,510" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+    <path d="M 300,410 C 330,430 360,445 380,480" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+    
+    
+    <!-- FINGER: Pinky [A] -->
+    <g id="finger-left-pinky" class="finger-group" data-finger="Pinky" data-key="A">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 257.8,395.6 Q 231.4,291.9 221.5,240.2 L 219.9,188.5 Q 210.0,182.0 200.1,191.5 L 197.7,243.8 Q 203.8,296.1 226.2,400.4 Z"
+            fill="url(#finger-skin-grad)" stroke="#ff2a85" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 242,398 Q 217.6,294.0 210,190"
+            fill="none" stroke="#ff2a85" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="229.5" y1="292.2"
+            x2="205.7" y2="295.8"
+            stroke="#ff2a85" stroke-width="1.8" opacity="0.7"/>
+      <line x1="219.5" y1="240.5"
+            x2="199.7" y2="243.5"
+            stroke="#ff2a85" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(210.0, 190.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#ff2a85" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#ff2a85" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#ff2a85"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="210.0" y1="176.0" x2="210.0" y2="151.0"
+            stroke="#ff2a85" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(189.0, 113.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="42" height="38" rx="8"
+              fill="#090d16" stroke="#ff2a85" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="38" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="37" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="30" height="2.5" rx="1.2" fill="#ff2a85"/>
+
+        
+
+        <!-- Primary Key Character -->
+        <text x="21.0" y="21"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="900"
+              fill="#ffffff" text-anchor="middle">A</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="210.0" y="107.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#ff70a6" text-anchor="middle" letter-spacing="1">Pinky</text>
+    </g>
+    
+    <!-- FINGER: Ring [S] -->
+    <g id="finger-left-ring" class="finger-group" data-finger="Ring" data-key="S">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 304.0,373.8 Q 290.4,264.0 284.4,209.1 L 282.0,154.3 Q 272.0,147.0 262.0,155.7 L 260.4,210.9 Q 262.4,266.0 272.0,376.2 Z"
+            fill="url(#finger-skin-grad)" stroke="#8b5cf6" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 288,375 Q 276.4,265.0 272,155"
+            fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="288.4" y1="264.1"
+            x2="264.4" y2="265.9"
+            stroke="#8b5cf6" stroke-width="1.8" opacity="0.7"/>
+      <line x1="282.4" y1="209.3"
+            x2="262.4" y2="210.7"
+            stroke="#8b5cf6" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(272.0, 155.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#8b5cf6" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#8b5cf6"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="272.0" y1="141.0" x2="272.0" y2="116.0"
+            stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(251.0, 78.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="42" height="38" rx="8"
+              fill="#090d16" stroke="#8b5cf6" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="38" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="37" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="30" height="2.5" rx="1.2" fill="#8b5cf6"/>
+
+        
+
+        <!-- Primary Key Character -->
+        <text x="21.0" y="21"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="900"
+              fill="#ffffff" text-anchor="middle">S</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="272.0" y="72.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#c4b5fd" text-anchor="middle" letter-spacing="1">Ring</text>
+    </g>
+    
+    <!-- FINGER: Middle [D] -->
+    <g id="finger-left-middle" class="finger-group" data-finger="Middle" data-key="D">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 354.0,365.0 Q 352.0,250.0 350.0,192.5 L 348.0,135.0 Q 338.0,127.0 328.0,135.0 L 326.0,192.5 Q 324.0,250.0 322.0,365.0 Z"
+            fill="url(#finger-skin-grad)" stroke="#06b6d4" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 338,365 Q 338.0,250.0 338,135"
+            fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="350.0" y1="250.0"
+            x2="326.0" y2="250.0"
+            stroke="#06b6d4" stroke-width="1.8" opacity="0.7"/>
+      <line x1="348.0" y1="192.5"
+            x2="328.0" y2="192.5"
+            stroke="#06b6d4" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(338.0, 135.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#06b6d4" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#06b6d4"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="338.0" y1="121.0" x2="338.0" y2="96.0"
+            stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(317.0, 58.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="42" height="38" rx="8"
+              fill="#090d16" stroke="#06b6d4" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="38" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="37" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="30" height="2.5" rx="1.2" fill="#06b6d4"/>
+
+        
+
+        <!-- Primary Key Character -->
+        <text x="21.0" y="21"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="900"
+              fill="#ffffff" text-anchor="middle">D</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="338.0" y="52.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#67e8f9" text-anchor="middle" letter-spacing="1">Middle</text>
+    </g>
+    
+    <!-- FINGER: Index [F] -->
+    <g id="finger-left-index" class="finger-group" data-finger="Index" data-key="F">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 404.0,376.0 Q 413.8,265.9 415.3,210.8 L 412.0,155.6 Q 402.0,147.0 392.0,154.4 L 391.3,209.2 Q 385.8,264.1 372.0,374.0 Z"
+            fill="url(#finger-skin-grad)" stroke="#10b981" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 388,375 Q 399.8,265.0 402,155"
+            fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="411.8" y1="265.8"
+            x2="387.8" y2="264.2"
+            stroke="#10b981" stroke-width="1.8" opacity="0.7"/>
+      <line x1="413.3" y1="210.6"
+            x2="393.3" y2="209.4"
+            stroke="#10b981" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(402.0, 155.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#10b981" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#10b981"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="402.0" y1="141.0" x2="402.0" y2="116.0"
+            stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(381.0, 78.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="42" height="38" rx="8"
+              fill="#090d16" stroke="#10b981" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="38" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="37" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="30" height="2.5" rx="1.2" fill="#10b981"/>
+
+        
+        <!-- Tactile Bump on Home Key -->
+        <rect x="392.0" y="111.0" width="20" height="3" rx="1.5"
+              fill="#ffffff" stroke="#10b981" stroke-width="0.8" filter="url(#node-glow)"/>
+
+        <!-- Primary Key Character -->
+        <text x="21.0" y="21"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="900"
+              fill="#ffffff" text-anchor="middle">F</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="402.0" y="72.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#6ee7b7" text-anchor="middle" letter-spacing="1">Index</text>
+    </g>
+    
+    <!-- FINGER: Thumb [SPACE] -->
+    <g id="finger-left-thumb" class="finger-group" data-finger="Thumb" data-key="SPACE">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 433.7,453.3 Q 481.4,394.8 497.2,365.0 L 498.5,335.2 Q 490.0,322.0 481.5,324.8 L 476.6,352.5 Q 457.4,380.2 406.3,436.7 Z"
+            fill="url(#finger-skin-grad)" stroke="#f59e0b" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 420,445 Q 469.4,387.5 490,330"
+            fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="479.7" y1="393.7"
+            x2="459.1" y2="381.3"
+            stroke="#f59e0b" stroke-width="1.8" opacity="0.7"/>
+      <line x1="495.4" y1="363.9"
+            x2="478.4" y2="353.6"
+            stroke="#f59e0b" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(490.0, 330.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#f59e0b" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#f59e0b"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="490.0" y1="316.0" x2="506.0" y2="299.0"
+            stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(474.0, 261.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="64" height="38" rx="8"
+              fill="#090d16" stroke="#f59e0b" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="60" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="59" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="52" height="2.5" rx="1.2" fill="#f59e0b"/>
+
+        
+
+        <!-- Primary Key Character -->
+        <text x="32.0" y="20"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="12" font-weight="900"
+              fill="#ffffff" text-anchor="middle">SPACE</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="506.0" y="255.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#fde047" text-anchor="middle" letter-spacing="1">Thumb</text>
+    </g>
+  </g>
+
+  <!-- RIGHT HAND (id="hand-right") -->
+  <g id="hand-right" class="hand-container">
+    
+    <!-- Right Hand Palm Contour -->
+    <path d="M 970,570 C 980,500 980,440 960,400 C 945,370 910,365 865,365 C 820,365 785,380 770,420
+             C 755,460 750,500 800,570 Z"
+          fill="url(#palm-skin-grad)" stroke="#38bdf8" stroke-width="2" opacity="0.85"/>
+    <!-- Wrist Band & Grid -->
+    <path d="M 790,560 L 980,560 L 970,590 L 800,590 Z"
+          fill="#0c1322" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="885" y="580" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+          fill="#64748b" text-anchor="middle" letter-spacing="3">RIGHT HAND</text>
+    <!-- Palm Lifeline Creases -->
+    <path d="M 930,420 C 900,450 870,470 850,510" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+    <path d="M 900,410 C 870,430 840,445 820,480" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+    
+    
+    <!-- FINGER: Thumb [SPACE] -->
+    <g id="finger-right-thumb" class="finger-group" data-finger="Thumb" data-key="SPACE">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 793.7,436.7 Q 742.6,380.2 723.4,352.5 L 718.5,324.8 Q 710.0,322.0 701.5,335.2 L 702.8,365.0 Q 718.6,394.8 766.3,453.3 Z"
+            fill="url(#finger-skin-grad)" stroke="#f59e0b" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 780,445 Q 730.6,387.5 710,330"
+            fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="740.9" y1="381.3"
+            x2="720.3" y2="393.7"
+            stroke="#f59e0b" stroke-width="1.8" opacity="0.7"/>
+      <line x1="721.6" y1="353.6"
+            x2="704.6" y2="363.9"
+            stroke="#f59e0b" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(710.0, 330.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#f59e0b" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#f59e0b"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="710.0" y1="316.0" x2="694.0" y2="299.0"
+            stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(662.0, 261.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="64" height="38" rx="8"
+              fill="#090d16" stroke="#f59e0b" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="60" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="59" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="52" height="2.5" rx="1.2" fill="#f59e0b"/>
+
+        
+
+        <!-- Primary Key Character -->
+        <text x="32.0" y="20"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="12" font-weight="900"
+              fill="#ffffff" text-anchor="middle">SPACE</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="694.0" y="255.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#fde047" text-anchor="middle" letter-spacing="1">Thumb</text>
+    </g>
+    
+    <!-- FINGER: Index [J] -->
+    <g id="finger-right-index" class="finger-group" data-finger="Index" data-key="J">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 828.0,374.0 Q 814.2,264.1 808.7,209.2 L 808.0,154.4 Q 798.0,147.0 788.0,155.6 L 784.7,210.8 Q 786.2,265.9 796.0,376.0 Z"
+            fill="url(#finger-skin-grad)" stroke="#84cc16" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 812,375 Q 800.2,265.0 798,155"
+            fill="none" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="812.2" y1="264.2"
+            x2="788.2" y2="265.8"
+            stroke="#84cc16" stroke-width="1.8" opacity="0.7"/>
+      <line x1="806.7" y1="209.4"
+            x2="786.7" y2="210.6"
+            stroke="#84cc16" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(798.0, 155.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#84cc16" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#84cc16"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="798.0" y1="141.0" x2="798.0" y2="116.0"
+            stroke="#84cc16" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(777.0, 78.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="42" height="38" rx="8"
+              fill="#090d16" stroke="#84cc16" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="38" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="37" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="30" height="2.5" rx="1.2" fill="#84cc16"/>
+
+        
+        <!-- Tactile Bump on Home Key -->
+        <rect x="788.0" y="111.0" width="20" height="3" rx="1.5"
+              fill="#ffffff" stroke="#84cc16" stroke-width="0.8" filter="url(#node-glow)"/>
+
+        <!-- Primary Key Character -->
+        <text x="21.0" y="21"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="900"
+              fill="#ffffff" text-anchor="middle">J</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="798.0" y="72.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#bef264" text-anchor="middle" letter-spacing="1">Index</text>
+    </g>
+    
+    <!-- FINGER: Middle [K] -->
+    <g id="finger-right-middle" class="finger-group" data-finger="Middle" data-key="K">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 878.0,365.0 Q 876.0,250.0 874.0,192.5 L 872.0,135.0 Q 862.0,127.0 852.0,135.0 L 850.0,192.5 Q 848.0,250.0 846.0,365.0 Z"
+            fill="url(#finger-skin-grad)" stroke="#f97316" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 862,365 Q 862.0,250.0 862,135"
+            fill="none" stroke="#f97316" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="874.0" y1="250.0"
+            x2="850.0" y2="250.0"
+            stroke="#f97316" stroke-width="1.8" opacity="0.7"/>
+      <line x1="872.0" y1="192.5"
+            x2="852.0" y2="192.5"
+            stroke="#f97316" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(862.0, 135.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#f97316" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#f97316"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="862.0" y1="121.0" x2="862.0" y2="96.0"
+            stroke="#f97316" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(841.0, 58.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="42" height="38" rx="8"
+              fill="#090d16" stroke="#f97316" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="38" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="37" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="30" height="2.5" rx="1.2" fill="#f97316"/>
+
+        
+
+        <!-- Primary Key Character -->
+        <text x="21.0" y="21"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="900"
+              fill="#ffffff" text-anchor="middle">K</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="862.0" y="52.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#fdba74" text-anchor="middle" letter-spacing="1">Middle</text>
+    </g>
+    
+    <!-- FINGER: Ring [L] -->
+    <g id="finger-right-ring" class="finger-group" data-finger="Ring" data-key="L">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 928.0,376.2 Q 937.6,266.0 939.6,210.9 L 938.0,155.7 Q 928.0,147.0 918.0,154.3 L 915.6,209.1 Q 909.6,264.0 896.0,373.8 Z"
+            fill="url(#finger-skin-grad)" stroke="#ef4444" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 912,375 Q 923.6,265.0 928,155"
+            fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="935.6" y1="265.9"
+            x2="911.6" y2="264.1"
+            stroke="#ef4444" stroke-width="1.8" opacity="0.7"/>
+      <line x1="937.6" y1="210.7"
+            x2="917.6" y2="209.3"
+            stroke="#ef4444" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(928.0, 155.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#ef4444" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#ef4444"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="928.0" y1="141.0" x2="928.0" y2="116.0"
+            stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(907.0, 78.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="42" height="38" rx="8"
+              fill="#090d16" stroke="#ef4444" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="38" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="37" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="30" height="2.5" rx="1.2" fill="#ef4444"/>
+
+        
+
+        <!-- Primary Key Character -->
+        <text x="21.0" y="21"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="900"
+              fill="#ffffff" text-anchor="middle">L</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="928.0" y="72.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#fca5a5" text-anchor="middle" letter-spacing="1">Ring</text>
+    </g>
+    
+    <!-- FINGER: Pinky [;] -->
+    <g id="finger-right-pinky" class="finger-group" data-finger="Pinky" data-key=";">
+      <!-- Finger Cyber Contour & Shading -->
+      <path d="M 973.8,400.4 Q 996.2,296.1 1002.3,243.8 L 999.9,191.5 Q 990.0,182.0 980.1,188.5 L 978.5,240.2 Q 968.6,291.9 942.2,395.6 Z"
+            fill="url(#finger-skin-grad)" stroke="#ec4899" stroke-width="2.5" opacity="0.92"/>
+
+      <!-- Inner Holographic Energy Track -->
+      <path d="M 958,398 Q 982.4,294.0 990,190"
+            fill="none" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+      <!-- Knuckle Creases -->
+      <line x1="994.3" y1="295.8"
+            x2="970.5" y2="292.2"
+            stroke="#ec4899" stroke-width="1.8" opacity="0.7"/>
+      <line x1="1000.3" y1="243.5"
+            x2="980.5" y2="240.5"
+            stroke="#ec4899" stroke-width="1.8" opacity="0.7"/>
+
+      <!-- Fingertip Target Pulse Circles -->
+      <g transform="translate(990.0, 190.0)" filter="url(#node-glow)">
+        <circle cx="0" cy="0" r="14" fill="#ec4899" opacity="0.15"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="0" cy="0" r="5" fill="#ec4899"/>
+        <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      </g>
+
+      <!-- Laser Guide Line to Hovering Keycap -->
+      <line x1="990.0" y1="176.0" x2="990.0" y2="151.0"
+            stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+      <!-- Floating 3D Home Keycap Badge -->
+      <g transform="translate(969.0, 113.0)" filter="url(#badge-shadow)">
+        <!-- Keycap Shell -->
+        <rect x="0" y="0" width="42" height="38" rx="8"
+              fill="#090d16" stroke="#ec4899" stroke-width="2"/>
+        <!-- Keycap Top Inset Face -->
+        <rect x="2" y="2" width="38" height="30" rx="6"
+              fill="#161f30" stroke="#283548" stroke-width="1"/>
+        <!-- Top Highlight -->
+        <line x1="5" y1="4" x2="37" y2="4" stroke="#4a5568" stroke-width="1" stroke-linecap="round"/>
+        <!-- Bottom Zone Underglow -->
+        <rect x="6" y="33" width="30" height="2.5" rx="1.2" fill="#ec4899"/>
+
+        
+
+        <!-- Primary Key Character -->
+        <text x="21.0" y="21"
+              font-family="'JetBrains Mono', 'Chakra Petch', monospace, sans-serif"
+              font-size="18" font-weight="900"
+              fill="#ffffff" text-anchor="middle">;</text>
+      </g>
+
+      <!-- Finger Name Label -->
+      <text x="990.0" y="107.0"
+            font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700"
+            fill="#f472b6" text-anchor="middle" letter-spacing="1">Pinky</text>
+    </g>
+  </g>
+</svg>

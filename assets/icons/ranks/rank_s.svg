@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="s-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+    <filter id="s-gold-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#f59e0b" flood-opacity="0.8"/>
+    </filter>
+    <filter id="lightning-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="14" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="flame-aura-filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="s-bg-vortex" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.7"/>
+      <stop offset="35%" stop-color="#ef4444" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#7f1d1d" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0b0303" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="s-gold-armor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#b45309"/>
+      <stop offset="90%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+
+    <linearGradient id="s-flame-plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b91c1c"/>
+      <stop offset="35%" stop-color="#7f1d1d"/>
+      <stop offset="70%" stop-color="#450a0a"/>
+      <stop offset="100%" stop-color="#1c0303"/>
+    </linearGradient>
+
+    <linearGradient id="s-letter-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#f59e0b"/>
+      <stop offset="75%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+
+    <linearGradient id="lightning-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0ffff"/>
+      <stop offset="50%" stop-color="#00ffff"/>
+      <stop offset="100%" stop-color="#0099ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Blazing Vortex Ambient Core -->
+  <circle cx="256" cy="256" r="240" fill="url(#s-bg-vortex)"/>
+
+  <!-- Flaming Outer Silhouette Tongues -->
+  <g filter="url(#flame-aura-filter)" opacity="0.85">
+    <path d="M 256,12 C 280,45 310,35 330,70 C 350,60 380,85 395,115 C 430,110 460,150 465,190 C 490,230 480,280 460,320
+             C 475,360 440,400 410,425 C 380,460 320,475 256,500 C 192,475 132,460 102,425 C 72,400 37,360 52,320
+             C 32,280 22,230 47,190 C 52,150 82,110 117,115 C 132,85 162,60 182,70 C 202,35 232,45 256,12 Z"
+          fill="#f97316" opacity="0.35"/>
+    <path d="M 256,26 C 275,55 300,48 318,80 C 340,75 365,96 380,125 C 410,122 435,158 440,195 C 460,230 450,270 435,305
+             C 448,340 420,375 395,398 C 365,430 310,448 256,470 C 202,448 147,430 117,398 C 92,375 64,340 77,305
+             C 62,270 52,230 72,195 C 77,158 102,122 132,125 C 147,96 172,75 194,80 C 212,48 237,55 256,26 Z"
+          fill="#ef4444" opacity="0.5"/>
+  </g>
+
+  <!-- Royal Golden Crest Shield -->
+  <g filter="url(#s-shadow)">
+    <!-- Flared Phoenix Razor Wings -->
+    <path d="M 256,38 L 334,60 L 416,74 L 486,134 L 452,204 L 498,272 L 440,344 L 382,388 L 256,482
+             L 130,388 L 72,344 L 14,272 L 60,204 L 26,134 L 96,74 L 178,60 Z"
+          fill="#1c0702" stroke="url(#s-gold-armor)" stroke-width="6" stroke-linejoin="round"/>
+
+    <!-- Layered Beveled Gold Plate -->
+    <path d="M 256,54 L 324,74 L 398,88 L 456,142 L 426,202 L 466,262 L 416,328 L 366,368 L 256,454
+             L 146,368 L 96,328 L 46,262 L 86,202 L 56,142 L 114,88 L 188,74 Z"
+          fill="url(#s-gold-armor)" stroke="#3f1303" stroke-width="2"/>
+
+    <!-- Inner Molten Scarlet Battle Plate -->
+    <path d="M 256,78 L 352,116 L 398,190 L 366,316 L 256,420 L 146,316 L 114,190 L 160,116 Z"
+          fill="url(#s-flame-plate)" stroke="#f59e0b" stroke-width="3.5"/>
+
+    <!-- Crowned Tri-Spike at Crest Apex -->
+    <polygon points="256,38 274,74 256,92 238,74" fill="#fde047" stroke="#78350f" stroke-width="1.5"/>
+    <polygon points="194,56 216,84 200,94" fill="#fde047" stroke="#78350f" stroke-width="1.5"/>
+    <polygon points="318,56 296,84 312,94" fill="#fde047" stroke="#78350f" stroke-width="1.5"/>
+
+    <!-- Intricate Filigree Engravings -->
+    <path d="M 170,130 C 210,140 230,160 256,160 C 282,160 302,140 342,130"
+          fill="none" stroke="#fde047" stroke-width="2" opacity="0.6"/>
+    <path d="M 170,370 C 210,360 230,340 256,340 C 282,340 302,360 342,370"
+          fill="none" stroke="#fde047" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Crackling Neon Cyan Lightning Arcs -->
+  <g filter="url(#lightning-glow)">
+    <!-- Primary Bolt (Diagonal Across Crest) -->
+    <path d="M 80,100 L 170,160 L 150,185 L 230,225 L 205,250 L 320,295 L 300,325 L 430,410"
+          fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="miter"/>
+    <path d="M 80,100 L 170,160 L 150,185 L 230,225 L 205,250 L 320,295 L 300,325 L 430,410"
+          fill="none" stroke="#00ffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="miter" opacity="0.6"/>
+
+    <!-- Secondary Branch Bolt -->
+    <path d="M 420,80 L 350,140 L 365,160 L 290,210 L 310,230 L 220,330 L 235,350 L 140,430"
+          fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 420,80 L 350,140 L 365,160 L 290,210 L 310,230 L 220,330 L 235,350 L 140,430"
+          fill="none" stroke="#00ffff" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Sparks & Discharge Nodes -->
+    <circle cx="170" cy="160" r="4" fill="#ffffff"/>
+    <circle cx="320" cy="295" r="4" fill="#ffffff"/>
+    <circle cx="350" cy="140" r="3.5" fill="#ffffff"/>
+    <circle cx="220" cy="330" r="3.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Center Letter 'S' - Iconic DMC Fighting Serif Letter -->
+  <g filter="url(#s-gold-glow)">
+    <!-- 3D Heavy Drop Shadow -->
+    <path d="M 338,154 L 338,198 C 314,180 286,170 256,170 C 220,170 206,186 206,204 C 206,224 224,236 264,248
+             C 324,266 350,290 350,330 C 350,378 308,400 254,400 C 212,400 174,386 148,362 L 148,316
+             C 176,342 212,356 252,356 C 290,356 304,340 304,322 C 304,302 284,290 246,278
+             C 188,260 162,236 162,198 C 162,152 204,126 256,126 C 292,126 322,136 338,154 Z"
+          fill="#100301" transform="translate(6, 12)"/>
+
+    <!-- Main Sculpted Body -->
+    <path d="M 338,154 L 338,198 C 314,180 286,170 256,170 C 220,170 206,186 206,204 C 206,224 224,236 264,248
+             C 324,266 350,290 350,330 C 350,378 308,400 254,400 C 212,400 174,386 148,362 L 148,316
+             C 176,342 212,356 252,356 C 290,356 304,340 304,322 C 304,302 284,290 246,278
+             C 188,260 162,236 162,198 C 162,152 204,126 256,126 C 292,126 322,136 338,154 Z"
+          fill="url(#s-letter-grad)" stroke="#450a0a" stroke-width="4"/>
+
+    <!-- Specular Blade Bevel Highlights -->
+    <path d="M 338,154 C 322,136 292,126 256,126 C 204,126 162,152 162,198 C 162,236 188,260 246,278"
+          fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 264,248 C 324,266 350,290 350,330 C 350,378 308,400 254,400"
+          fill="none" stroke="#fde047" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Upper & Lower Terminal Flairs -->
+    <polygon points="338,154 354,166 338,198" fill="#fde047"/>
+    <polygon points="148,362 132,350 148,316" fill="#fde047"/>
+  </g>
+
+  <!-- Rank Label Banner at Bottom -->
+  <g transform="translate(0, 428)">
+    <polygon points="160,0 352,0 376,32 338,32 256,42 174,32 136,32"
+             fill="#2a0802" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="256" y="22" font-family="'Impact', 'Arial Black', sans-serif" font-size="20" font-weight="900"
+          letter-spacing="6" fill="#fef08a" text-anchor="middle">RANK S</text>
+  </g>
+</svg>

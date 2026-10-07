@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="od-heavy-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="26" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+    <filter id="solar-corona-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16" result="blur1"/>
+      <feGaussianBlur stdDeviation="30" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="diamond-gem-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="od-solar-mandala" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="20%" stop-color="#fef08a" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#f59e0b" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#d97706" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#050201" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="celestial-gold-wing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="15%" stop-color="#fffbeb"/>
+      <stop offset="35%" stop-color="#fef08a"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="85%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <linearGradient id="od-crimson-velvet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#881337"/>
+      <stop offset="35%" stop-color="#4c0519"/>
+      <stop offset="75%" stop-color="#1e0208"/>
+      <stop offset="100%" stop-color="#080002"/>
+    </linearGradient>
+
+    <linearGradient id="od-num-50" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fffbeb"/>
+      <stop offset="50%" stop-color="#fde047"/>
+      <stop offset="75%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <radialGradient id="od-core-jewel" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#67e8f9"/>
+      <stop offset="70%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Radiant Solar Mandala Core -->
+  <circle cx="256" cy="256" r="242" fill="url(#od-solar-mandala)"/>
+
+  <!-- SACRED SOLAR MANDALA RAYS (16 Radiant Rays) -->
+  <g stroke="#fde047" stroke-width="2" opacity="0.4">
+    <line x1="256" y1="256" x2="256" y2="12"/>
+    <line x1="256" y1="256" x2="256" y2="500"/>
+    <line x1="256" y1="256" x2="12" y2="256"/>
+    <line x1="256" y1="256" x2="500" y2="256"/>
+    <line x1="256" y1="256" x2="84" y2="84"/>
+    <line x1="256" y1="256" x2="428" y2="428"/>
+    <line x1="256" y1="256" x2="428" y2="84"/>
+    <line x1="256" y1="256" x2="84" y2="428"/>
+    <circle cx="256" cy="256" r="218" fill="none" stroke-dasharray="14,8"/>
+    <circle cx="256" cy="256" r="190" fill="none" stroke-dasharray="8,6"/>
+  </g>
+
+  <!-- CELESTIAL WARRIOR GOLDEN WINGS (SWEEPING OUTWARD) -->
+  <g filter="url(#od-heavy-shadow)">
+    <!-- LEFT WING FEATHER BLADES -->
+    <g class="celestial-left-wing">
+      <!-- Feather Tier 1 (Outermost Top Blade) -->
+      <path d="M 230,190 C 180,140 110,110 24,96 C 60,140 110,190 200,225 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+      <!-- Feather Tier 2 -->
+      <path d="M 220,215 C 160,175 90,165 14,160 C 60,195 120,235 195,255 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+      <!-- Feather Tier 3 -->
+      <path d="M 215,245 C 150,215 80,220 20,230 C 70,255 130,280 195,290 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+      <!-- Feather Tier 4 -->
+      <path d="M 210,275 C 150,260 90,280 40,305 C 90,320 145,325 200,320 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+      <!-- Feather Tier 5 (Lowest Inner Blade) -->
+      <path d="M 215,310 C 165,315 115,340 76,375 C 120,365 170,355 220,345 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+    </g>
+
+    <!-- RIGHT WING FEATHER BLADES -->
+    <g class="celestial-right-wing">
+      <!-- Feather Tier 1 (Outermost Top Blade) -->
+      <path d="M 282,190 C 332,140 402,110 488,96 C 452,140 402,190 312,225 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+      <!-- Feather Tier 2 -->
+      <path d="M 292,215 C 352,175 422,165 498,160 C 452,195 392,235 317,255 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+      <!-- Feather Tier 3 -->
+      <path d="M 297,245 C 362,215 432,220 492,230 C 442,255 382,280 317,290 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+      <!-- Feather Tier 4 -->
+      <path d="M 302,275 C 362,260 422,280 472,305 C 422,320 367,325 312,320 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+      <!-- Feather Tier 5 (Lowest Inner Blade) -->
+      <path d="M 297,310 C 347,315 397,340 436,375 C 392,365 342,355 292,345 Z"
+            fill="url(#celestial-gold-wing)" stroke="#78350f" stroke-width="2"/>
+    </g>
+
+    <!-- CROSSED CELESTIAL BATTLE SWORDS BEHIND CREST -->
+    <!-- Sword 1: Top-Left to Bottom-Right -->
+    <path d="M 100,50 L 115,40 L 412,462 L 397,472 Z" fill="#ffffff" stroke="#b45309" stroke-width="2"/>
+    <polygon points="100,50 90,30 115,40" fill="#fde047"/>
+    <!-- Sword 2: Top-Right to Bottom-Left -->
+    <path d="M 412,50 L 397,40 L 100,462 L 115,472 Z" fill="#ffffff" stroke="#b45309" stroke-width="2"/>
+    <polygon points="412,50 422,30 397,40" fill="#fde047"/>
+  </g>
+
+  <!-- GILDED WARRIOR HEART CREST & CELESTIAL CROWN -->
+  <g filter="url(#od-heavy-shadow)">
+    <!-- Main Imperial Armor Shield -->
+    <path d="M 256,66 L 360,116 L 392,204 L 358,340 L 256,444 L 154,340 L 120,204 L 152,116 Z"
+          fill="#170402" stroke="url(#celestial-gold-wing)" stroke-width="6" stroke-linejoin="round"/>
+
+    <!-- Inner Velvet Armor Plate -->
+    <path d="M 256,86 L 344,128 L 372,206 L 342,326 L 256,420 L 170,326 L 140,206 L 168,128 Z"
+          fill="url(#od-crimson-velvet)" stroke="#f59e0b" stroke-width="3"/>
+
+    <!-- Celestial Crown Apex Spikes -->
+    <polygon points="256,46 272,86 256,104 240,86" fill="#ffffff" stroke="#b45309" stroke-width="2"/>
+    <polygon points="196,70 218,98 202,110" fill="#fde047" stroke="#b45309" stroke-width="1.5"/>
+    <polygon points="316,70 294,98 310,110" fill="#fde047" stroke="#b45309" stroke-width="1.5"/>
+
+    <!-- Radiant Diamond Core Overdrive Gem -->
+    <g transform="translate(256, 175)" filter="url(#diamond-gem-glow)">
+      <!-- Gilded Setting Ring -->
+      <polygon points="0,-24 18,-18 24,0 18,18 0,24 -18,18 -24,0 -18,-18"
+               fill="#fde047" stroke="#b45309" stroke-width="2"/>
+      <!-- Cyan Core Gem Facet -->
+      <polygon points="0,-18 13,-13 18,0 13,13 0,18 -13,13 -18,0 -13,-13"
+               fill="url(#od-core-jewel)" stroke="#ffffff" stroke-width="1.5"/>
+      <circle cx="-4" cy="-5" r="3.5" fill="#ffffff" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- NUMBER "50" IN SCULPTED 3D CELESTIAL GOLD -->
+  <g filter="url(#solar-corona-glow)" transform="translate(256, 308)">
+    <!-- 3D Shadow -->
+    <text x="5" y="10" font-family="'Impact', 'Arial Black', sans-serif" font-size="88" font-weight="900"
+          fill="#100301" text-anchor="middle" letter-spacing="2">50</text>
+    <!-- Face -->
+    <text x="0" y="0" font-family="'Impact', 'Arial Black', sans-serif" font-size="88" font-weight="900"
+          fill="url(#od-num-50)" stroke="#451a03" stroke-width="3.5" text-anchor="middle" letter-spacing="2">50</text>
+    <!-- Specular Star Cut -->
+    <text x="0" y="0" font-family="'Impact', 'Arial Black', sans-serif" font-size="88" font-weight="900"
+          fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="10,16" text-anchor="middle" letter-spacing="2">50</text>
+  </g>
+
+  <!-- IMPERIAL OVERDRIVE BANNER RIBBON -->
+  <g transform="translate(0, 426)" filter="url(#od-heavy-shadow)">
+    <polygon points="144,0 368,0 398,34 354,34 256,46 158,34 114,34"
+             fill="#2b0704" stroke="url(#celestial-gold-wing)" stroke-width="3"/>
+    <text x="256" y="23" font-family="'Impact', 'Arial Black', sans-serif" font-size="18" font-weight="900"
+          letter-spacing="6" fill="#fef08a" text-anchor="middle">OVERDRIVE</text>
+  </g>
+</svg>

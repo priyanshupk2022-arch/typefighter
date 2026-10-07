@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="sss-god-shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="28" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+    <filter id="sss-corona" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="blur1"/>
+      <feGaussianBlur stdDeviation="35" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="sss-lightning-arc" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="sss-solar-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#fef08a" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.75"/>
+      <stop offset="75%" stop-color="#dc2626" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#050101" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="sss-crown-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="15%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="65%" stop-color="#d97706"/>
+      <stop offset="85%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <linearGradient id="sss-abyss-plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#831843"/>
+      <stop offset="30%" stop-color="#4c0519"/>
+      <stop offset="70%" stop-color="#1e0208"/>
+      <stop offset="100%" stop-color="#080002"/>
+    </linearGradient>
+
+    <linearGradient id="sss-letter-front" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#fde047"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="90%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+
+    <linearGradient id="sss-letter-side" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fef08a"/>
+      <stop offset="65%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- God-Tier Radiant Solar Corona -->
+  <circle cx="256" cy="256" r="248" fill="url(#sss-solar-core)"/>
+
+  <!-- Rotating Starburst Spikes / Sun Rays -->
+  <g stroke="#fde047" stroke-width="2" opacity="0.45">
+    <line x1="256" y1="256" x2="256" y2="4"/>
+    <line x1="256" y1="256" x2="256" y2="508"/>
+    <line x1="256" y1="256" x2="4" y2="256"/>
+    <line x1="256" y1="256" x2="508" y2="256"/>
+    <line x1="256" y1="256" x2="78" y2="78"/>
+    <line x1="256" y1="256" x2="434" y2="434"/>
+    <line x1="256" y1="256" x2="434" y2="78"/>
+    <line x1="256" y1="256" x2="78" y2="434"/>
+    <line x1="256" y1="256" x2="160" y2="30"/>
+    <line x1="256" y1="256" x2="352" y2="482"/>
+    <line x1="256" y1="256" x2="352" y2="30"/>
+    <line x1="256" y1="256" x2="160" y2="482"/>
+  </g>
+
+  <!-- Raging Inferno Flame Silhouette Ring -->
+  <g fill="#ea580c" opacity="0.45">
+    <path d="M 256,6 C 290,40 330,30 354,72 C 380,60 416,92 432,130 C 470,120 500,165 504,210 C 530,255 515,310 490,355
+             C 505,400 465,445 428,472 C 390,510 325,520 256,540 C 187,520 122,510 84,472 C 47,445 7,400 22,355
+             C -3,310 -18,255 8,210 C 12,165 42,120 80,130 C 96,92 132,60 158,72 C 182,30 222,40 256,6 Z"/>
+  </g>
+  <g fill="#facc15" opacity="0.3">
+    <path d="M 256,20 C 285,50 320,42 340,80 C 364,70 396,98 410,132 C 445,124 472,162 475,204 C 500,244 485,294 465,335
+             C 478,375 442,415 410,438 C 375,472 315,482 256,500 C 197,482 137,472 102,438 C 70,415 34,375 47,335
+             C 27,294 12,244 37,204 C 40,162 67,124 102,132 C 116,98 148,70 172,80 C 192,42 227,50 256,20 Z"/>
+  </g>
+
+  <!-- Imperial Golden Crown & Battle Crest -->
+  <g filter="url(#sss-god-shadow)">
+    <!-- Sweeping Celestial Phoenix Wings -->
+    <path d="M 256,22 L 340,46 L 436,58 L 510,122 L 470,192 L 518,256 L 470,320 L 510,390 L 436,454 L 340,466 L 256,500
+             L 172,466 L 76,454 L 2,390 L 42,320 L -6,256 L 42,192 L 2,122 L 76,58 L 172,46 Z"
+          fill="#1c0307" stroke="url(#sss-crown-gold)" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- Layered Beveled Wings -->
+    <path d="M 256,38 L 330,60 L 416,72 L 480,130 L 446,192 L 486,256 L 446,320 L 480,382 L 416,438 L 330,450 L 256,478
+             L 182,450 L 96,438 L 32,382 L 66,320 L 26,256 L 66,192 L 32,130 L 96,72 L 182,60 Z"
+          fill="url(#sss-crown-gold)" stroke="#500724" stroke-width="2.5"/>
+
+    <!-- Inner Imperial Crimson Shield Plate -->
+    <path d="M 256,64 L 366,104 L 420,186 L 388,332 L 256,448 L 124,332 L 92,186 L 146,104 Z"
+          fill="url(#sss-abyss-plate)" stroke="#f59e0b" stroke-width="4"/>
+
+    <!-- Imperial Crown Atop Badge -->
+    <g transform="translate(0, -6)">
+      <!-- Crown Base -->
+      <path d="M 194,56 L 318,56 L 334,80 L 178,80 Z" fill="#b45309" stroke="#fde047" stroke-width="2"/>
+      <!-- Crown 5-Spikes -->
+      <polygon points="256,12 268,56 244,56" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+      <polygon points="214,24 230,56 202,56" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+      <polygon points="298,24 310,56 282,56" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+      <polygon points="178,40 196,56 172,56" fill="#f59e0b" stroke="#78350f" stroke-width="1.5"/>
+      <polygon points="334,40 340,56 316,56" fill="#f59e0b" stroke="#78350f" stroke-width="1.5"/>
+      <!-- Jewels on Crown -->
+      <circle cx="256" cy="68" r="5" fill="#ef4444" stroke="#ffffff" stroke-width="1.5"/>
+      <circle cx="216" cy="68" r="4" fill="#00f0ff" stroke="#ffffff" stroke-width="1"/>
+      <circle cx="296" cy="68" r="4" fill="#00f0ff" stroke="#ffffff" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Triple High-Voltage Lightning Bolts (Blinding Electric Storm) -->
+  <g filter="url(#sss-lightning-arc)">
+    <!-- Lightning Bolt 1 (Left Arc) -->
+    <path d="M 20,80 L 110,150 L 90,175 L 180,220 L 155,248 L 260,295 L 240,325 L 360,420"
+          fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 20,80 L 110,150 L 90,175 L 180,220 L 155,248 L 260,295 L 240,325 L 360,420"
+          fill="none" stroke="#00ffff" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Lightning Bolt 2 (Right Arc) -->
+    <path d="M 490,80 L 400,150 L 420,175 L 330,220 L 355,248 L 250,295 L 270,325 L 150,420"
+          fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 490,80 L 400,150 L 420,175 L 330,220 L 355,248 L 250,295 L 270,325 L 150,420"
+          fill="none" stroke="#ff00ff" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Lightning Bolt 3 (Vertical Ground Strike) -->
+    <path d="M 256,80 L 240,150 L 270,185 L 245,260 L 275,320 L 256,440"
+          fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 256,80 L 240,150 L 270,185 L 245,260 L 275,320 L 256,440"
+          fill="none" stroke="#fde047" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- TRIPLE "SSS" LETTERS IN DYNAMIC STAGGERED FORMATION -->
+  <!-- Letter 1 (Left S - Slightly Behind) -->
+  <g transform="translate(-82, -4) scale(0.92) transform-origin(200 260)" filter="url(#sss-corona)">
+    <!-- Shadow -->
+    <path d="M 264,170 L 264,204 C 246,190 224,182 202,182 C 172,182 160,194 160,208 C 160,222 174,232 206,244
+             C 256,260 276,280 276,312 C 276,350 242,370 198,370 C 164,370 134,358 114,338 L 114,302
+             C 136,322 164,334 196,334 C 226,334 238,322 238,308 C 238,292 222,282 192,270
+             C 144,256 124,236 124,204 C 124,168 158,146 202,146 C 232,146 252,154 264,170 Z"
+          fill="#1c0205" transform="translate(6, 10)"/>
+    <!-- Body -->
+    <path d="M 264,170 L 264,204 C 246,190 224,182 202,182 C 172,182 160,194 160,208 C 160,222 174,232 206,244
+             C 256,260 276,280 276,312 C 276,350 242,370 198,370 C 164,370 134,358 114,338 L 114,302
+             C 136,322 164,334 196,334 C 226,334 238,322 238,308 C 238,292 222,282 192,270
+             C 144,256 124,236 124,204 C 124,168 158,146 202,146 C 232,146 252,154 264,170 Z"
+          fill="url(#sss-letter-side)" stroke="#7f1d1d" stroke-width="3"/>
+    <path d="M 264,170 C 252,154 232,146 202,146 C 158,146 124,168 124,204"
+          fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Letter 3 (Right S - Slightly Behind) -->
+  <g transform="translate(82, 16) scale(0.92) transform-origin(312 260)" filter="url(#sss-corona)">
+    <!-- Shadow -->
+    <path d="M 264,170 L 264,204 C 246,190 224,182 202,182 C 172,182 160,194 160,208 C 160,222 174,232 206,244
+             C 256,260 276,280 276,312 C 276,350 242,370 198,370 C 164,370 134,358 114,338 L 114,302
+             C 136,322 164,334 196,334 C 226,334 238,322 238,308 C 238,292 222,282 192,270
+             C 144,256 124,236 124,204 C 124,168 158,146 202,146 C 232,146 252,154 264,170 Z"
+          fill="#1c0205" transform="translate(6, 10)"/>
+    <!-- Body -->
+    <path d="M 264,170 L 264,204 C 246,190 224,182 202,182 C 172,182 160,194 160,208 C 160,222 174,232 206,244
+             C 256,260 276,280 276,312 C 276,350 242,370 198,370 C 164,370 134,358 114,338 L 114,302
+             C 136,322 164,334 196,334 C 226,334 238,322 238,308 C 238,292 222,282 192,270
+             C 144,256 124,236 124,204 C 124,168 158,146 202,146 C 232,146 252,154 264,170 Z"
+          fill="url(#sss-letter-side)" stroke="#7f1d1d" stroke-width="3"/>
+    <path d="M 264,170 C 252,154 232,146 202,146 C 158,146 124,168 124,204"
+          fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Letter 2 (Center S - Forefront, Majestic, Radiant) -->
+  <g transform="translate(0, 6) scale(1.08) transform-origin(256 260)" filter="url(#sss-corona)">
+    <!-- Shadow -->
+    <path d="M 326,156 L 326,196 C 304,180 278,170 252,170 C 218,170 206,184 206,202 C 206,220 222,232 258,244
+             C 314,262 338,284 338,320 C 338,362 300,382 250,382 C 212,382 178,368 154,346 L 154,304
+             C 180,328 212,342 248,342 C 284,342 298,328 298,312 C 298,292 278,282 244,270
+             C 190,254 166,232 166,196 C 166,154 204,130 252,130 C 286,130 312,140 326,156 Z"
+          fill="#100103" transform="translate(6, 12)"/>
+    <!-- Body -->
+    <path d="M 326,156 L 326,196 C 304,180 278,170 252,170 C 218,170 206,184 206,202 C 206,220 222,232 258,244
+             C 314,262 338,284 338,320 C 338,362 300,382 250,382 C 212,382 178,368 154,346 L 154,304
+             C 180,328 212,342 248,342 C 284,342 298,328 298,312 C 298,292 278,282 244,270
+             C 190,254 166,232 166,196 C 166,154 204,130 252,130 C 286,130 312,140 326,156 Z"
+          fill="url(#sss-letter-front)" stroke="#450a0a" stroke-width="4"/>
+    <!-- Specular Blade Bevel Highlights -->
+    <path d="M 326,156 C 312,140 286,130 252,130 C 204,130 166,154 166,196 C 166,232 190,254 244,270"
+          fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 258,244 C 314,262 338,284 338,320 C 338,362 300,382 250,382"
+          fill="none" stroke="#fef08a" stroke-width="3" stroke-linecap="round"/>
+    <!-- Specular Star Flare at S Apex -->
+    <g transform="translate(326, 156)">
+      <circle cx="0" cy="0" r="4" fill="#ffffff"/>
+      <line x1="-12" y1="0" x2="12" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="-12" x2="0" y2="12" stroke="#ffffff" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Rank Label Banner at Bottom -->
+  <g transform="translate(0, 436)">
+    <polygon points="144,0 368,0 396,34 354,34 256,46 158,34 116,34"
+             fill="#240307" stroke="#f59e0b" stroke-width="3"/>
+    <text x="256" y="24" font-family="'Impact', 'Arial Black', sans-serif" font-size="20" font-weight="900"
+          letter-spacing="6" fill="#fef08a" text-anchor="middle">RANK SSS</text>
+  </g>
+</svg>

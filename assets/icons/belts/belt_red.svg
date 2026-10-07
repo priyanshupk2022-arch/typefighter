@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Master Filters -->
+    <filter id="belt_red-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+    <filter id="belt_red-soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#d50000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Belt Gradients -->
+    
+    <radialGradient id="belt_red-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d50000" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#b71c1c" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    
+
+    <linearGradient id="belt_red-loop-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a80"/>
+      <stop offset="35%" stop-color="#d50000"/>
+      <stop offset="75%" stop-color="#b71c1c"/>
+      <stop offset="100%" stop-color="#7f0000"/>
+    </linearGradient>
+
+    <linearGradient id="belt_red-knot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a80"/>
+      <stop offset="40%" stop-color="#d50000"/>
+      <stop offset="85%" stop-color="#b71c1c"/>
+      <stop offset="100%" stop-color="#7f0000"/>
+    </linearGradient>
+
+    <linearGradient id="belt_red-ltail-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a80"/>
+      <stop offset="30%" stop-color="#d50000"/>
+      <stop offset="75%" stop-color="#b71c1c"/>
+      <stop offset="100%" stop-color="#7f0000"/>
+    </linearGradient>
+
+    <linearGradient id="belt_red-rtail-grad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a80"/>
+      <stop offset="30%" stop-color="#d50000"/>
+      <stop offset="75%" stop-color="#b71c1c"/>
+      <stop offset="100%" stop-color="#7f0000"/>
+    </linearGradient>
+
+    
+  </defs>
+
+  <!-- Ambient Radial Glow -->
+  <circle cx="256" cy="256" r="230" fill="url(#belt_red-bg)"/>
+
+  
+
+  <!-- Master Belt Assembly -->
+  <g filter="url(#belt_red-shadow)">
+
+    <!-- 1. BACK LOOP (Inside of the Belt Wrap) -->
+    <path d="M 100,210 C 100,165 160,140 256,140 C 352,140 412,165 412,210 C 412,225 390,238 360,244
+             L 354,215 C 380,205 388,190 388,185 C 388,165 330,152 256,152 C 182,152 124,165 124,185
+             C 124,190 132,205 158,215 L 152,244 C 122,238 100,225 100,210 Z"
+          fill="#7f0000" stroke="#8e0000" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- 2. FRONT BELT LOOP (Waist Band Wrap) -->
+    <path d="M 88,206 C 88,172 150,158 256,158 C 362,158 424,172 424,206 C 424,244 362,258 256,258 C 150,258 88,244 88,206 Z"
+          fill="url(#belt_red-loop-grad)" stroke="#8e0000" stroke-width="2.5"/>
+
+    <!-- Front Loop Highlight & Stitch Tracks -->
+    <!-- Top Highlight -->
+    <path d="M 104,198 C 120,172 174,162 256,162 C 338,162 392,172 408,198"
+          fill="none" stroke="#ff8a80" stroke-width="2" opacity="0.8"/>
+    <!-- 4 Longitudinal Stitch Lines across the Belt Band -->
+    <path d="M 96,192 C 126,170 180,164 256,164 C 332,164 386,170 416,192"
+          fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.7"/>
+    <path d="M 92,202 C 124,180 180,174 256,174 C 332,174 388,180 420,202"
+          fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.7"/>
+    <path d="M 92,212 C 124,232 180,240 256,240 C 332,240 388,232 420,212"
+          fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.7"/>
+    <path d="M 96,222 C 126,242 180,248 256,248 C 332,248 386,242 416,222"
+          fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.7"/>
+
+    <!-- 3. HANGING BELT TAILS (Descending Ends) -->
+    <!-- LEFT TAIL -->
+    <g class="belt-left-tail">
+      <!-- Main Left Tail Fabric -->
+      <path d="M 234,230 C 220,285 192,355 164,430 L 206,446 C 232,374 258,300 268,242 Z"
+            fill="url(#belt_red-ltail-grad)" stroke="#8e0000" stroke-width="2"/>
+      <!-- Angled Cut Tip Bottom Hem -->
+      <line x1="164" y1="430" x2="206" y2="446" stroke="#ff8a80" stroke-width="2.5"/>
+      <!-- 4 Longitudinal Stitch Tracks down Left Tail -->
+      <path d="M 240,233 C 227,288 200,358 172,433" fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.75"/>
+      <path d="M 248,236 C 235,291 208,361 182,437" fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.75"/>
+      <path d="M 256,239 C 243,294 216,364 192,441" fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.75"/>
+      <path d="M 264,242 C 251,297 224,367 200,444" fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.75"/>
+
+      <!-- Dragon Embroidery on Left Tail if enabled -->
+      
+    </g>
+
+    <!-- RIGHT TAIL -->
+    <g class="belt-right-tail">
+      <!-- Main Right Tail Fabric -->
+      <path d="M 248,242 C 258,300 284,374 310,446 L 352,430 C 324,355 296,285 282,230 Z"
+            fill="url(#belt_red-rtail-grad)" stroke="#8e0000" stroke-width="2"/>
+      <!-- Angled Cut Tip Bottom Hem -->
+      <line x1="310" y1="446" x2="352" y2="430" stroke="#ff8a80" stroke-width="2.5"/>
+      <!-- 4 Longitudinal Stitch Tracks down Right Tail -->
+      <path d="M 254,242 C 264,297 291,367 316,444" fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.75"/>
+      <path d="M 262,239 C 272,294 299,364 324,441" fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.75"/>
+      <path d="M 270,236 C 280,291 307,361 334,437" fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.75"/>
+      <path d="M 278,233 C 288,288 315,358 344,433" fill="none" stroke="#630000" stroke-width="1.2" stroke-dasharray="7,4" opacity="0.75"/>
+
+      <!-- Dan Rank Sleeve Bar on Right Tail -->
+      
+
+      <!-- Dragon Embroidery on Right Tail if Grandmaster -->
+      
+    </g>
+
+    <!-- 4. TRADITIONAL MARTIAL ARTS SQUARE KNOT (Musubi) -->
+    <!-- Knot Left Fold -->
+    <path d="M 204,196 C 220,186 238,190 240,214 C 238,236 218,246 200,234 Z"
+          fill="#b71c1c" stroke="#8e0000" stroke-width="2"/>
+    <!-- Knot Right Fold -->
+    <path d="M 308,196 C 292,186 274,190 272,214 C 274,236 294,246 312,234 Z"
+          fill="#b71c1c" stroke="#8e0000" stroke-width="2"/>
+
+    <!-- Center Cinch Wrap (Vertical Knot Core) -->
+    <path d="M 234,178 C 248,172 264,172 278,178 L 284,244 C 268,248 244,248 228,244 Z"
+          fill="url(#belt_red-knot-grad)" stroke="#8e0000" stroke-width="2.5"/>
+
+    <!-- Knot Tension Creases -->
+    <path d="M 240,184 C 252,192 260,192 272,184" fill="none" stroke="#7f0000" stroke-width="2" opacity="0.6"/>
+    <path d="M 238,236 C 252,230 262,230 274,236" fill="none" stroke="#7f0000" stroke-width="2" opacity="0.6"/>
+    <line x1="236" y1="180" x2="280" y2="180" stroke="#ff8a80" stroke-width="2" opacity="0.8"/>
+
+    <!-- Grandmaster Knot Medallion -->
+    
+  </g>
+
+  <!-- Title & Rank Badge Label at Bottom -->
+  <g transform="translate(0, 460)">
+    <rect x="136" y="-6" width="240" height="34" rx="17" fill="#111317" stroke="#d50000" stroke-width="2"/>
+    <text x="256" y="16" font-family="'Impact', 'Arial Black', sans-serif" font-size="16" font-weight="900"
+          letter-spacing="3" fill="#ff8a80" text-anchor="middle">RED BELT</text>
+  </g>
+</svg>

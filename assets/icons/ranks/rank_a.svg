@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="a-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+    <filter id="a-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#ef4444" flood-opacity="0.75"/>
+    </filter>
+    <filter id="a-fire-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="a-bg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#dc2626" stop-opacity="0.6"/>
+      <stop offset="45%" stop-color="#991b1b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0e0202" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="ruby-gold-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="25%" stop-color="#e11d48"/>
+      <stop offset="50%" stop-color="#9f1239"/>
+      <stop offset="75%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ffe4e6"/>
+    </linearGradient>
+
+    <linearGradient id="crimson-core" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#881337"/>
+      <stop offset="40%" stop-color="#4c0519"/>
+      <stop offset="80%" stop-color="#2a020d"/>
+      <stop offset="100%" stop-color="#140106"/>
+    </linearGradient>
+
+    <linearGradient id="a-letter-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#fecdd3"/>
+      <stop offset="45%" stop-color="#f43f5e"/>
+      <stop offset="75%" stop-color="#be123c"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+
+    <linearGradient id="a-gold-trim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Crimson Inferno Glow -->
+  <circle cx="256" cy="256" r="235" fill="url(#a-bg-glow)"/>
+
+  <!-- Aggressive Demon Blade Spiked Crest -->
+  <g filter="url(#a-shadow)">
+    <!-- Razor Spikes Silhouette -->
+    <path d="M 256,22 L 286,60 L 350,50 L 410,92 L 486,138 L 444,204 L 492,274 L 434,346 L 376,392 L 256,488
+             L 136,392 L 78,346 L 20,274 L 68,204 L 26,138 L 102,92 L 162,50 L 226,60 Z"
+          fill="#1c0409" stroke="url(#ruby-gold-rim)" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Outer Crimson Plate -->
+    <path d="M 256,42 L 280,74 L 336,66 L 390,104 L 458,146 L 424,202 L 464,264 L 412,330 L 362,372 L 256,462
+             L 150,372 L 100,330 L 48,264 L 88,202 L 54,146 L 122,104 L 176,66 L 232,74 Z"
+          fill="url(#ruby-gold-rim)" stroke="#4c0519" stroke-width="2"/>
+
+    <!-- Inner Ruby Heart Shield -->
+    <path d="M 256,76 L 350,116 L 398,194 L 366,322 L 256,428 L 146,322 L 114,194 L 162,116 Z"
+          fill="url(#crimson-core)" stroke="#f43f5e" stroke-width="3"/>
+
+    <!-- Golden Spiked Battle Horns on Crest Top -->
+    <polygon points="256,44 268,76 256,92 244,76" fill="#fde047" stroke="#881337" stroke-width="1.5"/>
+    <polygon points="200,64 220,86 206,96" fill="#fde047" stroke="#881337" stroke-width="1.5"/>
+    <polygon points="312,64 292,86 306,96" fill="#fde047" stroke="#881337" stroke-width="1.5"/>
+
+    <!-- Glowing Ruby Facet Lines -->
+    <line x1="256" y1="76" x2="256" y2="428" stroke="#ff4d4d" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="162" y1="116" x2="366" y2="322" stroke="#ff4d4d" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="350" y1="116" x2="146" y2="322" stroke="#ff4d4d" stroke-width="1.5" stroke-opacity="0.4"/>
+
+    <!-- Floating Fiery Ember Particles -->
+    <g fill="#fde047" opacity="0.8">
+      <circle cx="106" cy="160" r="3"/>
+      <circle cx="140" cy="98" r="2.5"/>
+      <circle cx="380" cy="110" r="3"/>
+      <circle cx="410" cy="180" r="2"/>
+      <circle cx="370" cy="350" r="2.5"/>
+      <circle cx="130" cy="360" r="3"/>
+    </g>
+  </g>
+
+  <!-- Center Letter 'A' - Aggressive Dagger-Apex Blade -->
+  <g filter="url(#a-glow)">
+    <!-- 3D Cast Shadow -->
+    <path d="M 256,118 L 364,374 L 306,374 L 282,316 L 230,316 L 206,374 L 148,374 Z
+             M 256,184 L 274,272 L 238,272 Z"
+          fill="#0c0103" transform="translate(6, 12)"/>
+
+    <!-- Main Letter Face -->
+    <path d="M 256,118 L 364,374 L 306,374 L 282,316 L 230,316 L 206,374 L 148,374 Z
+             M 256,184 L 274,272 L 238,272 Z"
+          fill="url(#a-letter-grad)" fill-rule="evenodd" stroke="#4c0519" stroke-width="3.5"/>
+
+    <!-- Razor Blade Left Ridge -->
+    <polygon points="256,118 256,184 238,272 230,316 206,374 148,374"
+             fill="#ffffff" opacity="0.35"/>
+
+    <!-- Razor Blade Right Ridge -->
+    <polygon points="256,118 364,374 306,374 282,316 274,272 256,184"
+             fill="#7f1d1d" opacity="0.6"/>
+
+    <!-- Glowing Apex Specular Cut -->
+    <polygon points="256,118 266,150 256,160 246,150" fill="#ffffff"/>
+    <line x1="256" y1="118" x2="148" y2="374" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="230" y1="316" x2="282" y2="316" stroke="#fecdd3" stroke-width="2.5"/>
+
+    <!-- Inner Triangle Ruby Core -->
+    <polygon points="256,184 274,272 238,272" fill="#2a020a" stroke="#fb7185" stroke-width="1.5"/>
+  </g>
+
+  <!-- Rank Label Banner at Bottom -->
+  <g transform="translate(0, 428)">
+    <polygon points="166,0 346,0 370,32 334,32 256,42 178,32 142,32"
+             fill="#3b0713" stroke="#f43f5e" stroke-width="2.5"/>
+    <text x="256" y="22" font-family="'Impact', 'Arial Black', sans-serif" font-size="18" font-weight="900"
+          letter-spacing="5" fill="#fecdd3" text-anchor="middle">RANK A</text>
+  </g>
+</svg>

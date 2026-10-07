@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="fire-heavy-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+    <filter id="flame-blur-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="18" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="ember-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="fire-thermal-core" cx="50%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="20%" stop-color="#fde047" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#f97316" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#dc2626" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#140202" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="outer-flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7f1d1d"/>
+      <stop offset="35%" stop-color="#b91c1c"/>
+      <stop offset="70%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+
+    <linearGradient id="mid-flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="40%" stop-color="#f97316"/>
+      <stop offset="75%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+
+    <linearGradient id="core-flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="90%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <linearGradient id="obsidian-badge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f1303"/>
+      <stop offset="30%" stop-color="#1c0702"/>
+      <stop offset="70%" stop-color="#0a0201"/>
+      <stop offset="100%" stop-color="#2a0802"/>
+    </linearGradient>
+
+    <linearGradient id="fire-gold-bevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fde047"/>
+      <stop offset="60%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Thermal Glow Base -->
+  <circle cx="256" cy="270" r="236" fill="url(#fire-thermal-core)"/>
+
+  <!-- LAYER 1: OUTER ROARING INFERNO TONGUES -->
+  <g filter="url(#flame-blur-glow)">
+    <path d="M 256,22 C 290,70 334,95 350,140 C 370,120 405,150 420,195 C 445,170 465,220 460,270
+             C 480,310 460,370 425,410 C 385,455 325,480 256,488 C 187,480 127,455 87,410
+             C 52,370 32,310 52,270 C 47,220 67,170 92,195 C 107,150 142,120 162,140
+             C 178,95 222,70 256,22 Z"
+          fill="url(#outer-flame)" opacity="0.95"/>
+  </g>
+
+  <!-- LAYER 2: MID INTENSE FLAME TONGUES -->
+  <g filter="url(#ember-glow)">
+    <path d="M 256,54 C 282,98 322,125 334,168 C 354,152 384,178 396,218 C 418,198 436,240 430,285
+             C 446,322 428,370 398,405 C 362,442 312,464 256,470 C 200,464 150,442 114,405
+             C 84,370 66,322 82,285 C 76,240 94,198 116,218 C 128,178 158,152 178,168
+             C 190,125 230,98 256,54 Z"
+          fill="url(#mid-flame)"/>
+  </g>
+
+  <!-- LAYER 3: CORE SUN-GOLD FLAME TONGUES -->
+  <g>
+    <path d="M 256,95 C 275,134 305,160 314,196 C 330,182 355,205 364,240 C 380,222 396,260 388,300
+             C 400,332 382,372 356,400 C 326,430 292,444 256,448 C 220,444 186,430 156,400
+             C 130,372 112,332 124,300 C 116,260 132,222 148,240 C 157,205 182,182 198,196
+             C 207,160 237,134 256,95 Z"
+          fill="url(#core-flame)"/>
+  </g>
+
+  <!-- LAYER 4: WHITE-HOT PLASMA HEART -->
+  <g>
+    <path d="M 256,150 C 270,182 292,204 298,232 C 310,220 328,240 334,268 C 346,255 356,285 348,318
+             C 356,344 338,374 316,394 C 292,416 274,424 256,426 C 238,424 220,416 196,394
+             C 174,374 156,344 164,318 C 156,285 166,255 178,268 C 184,240 202,220 214,232
+             C 220,204 242,182 256,150 Z"
+          fill="#ffffff" opacity="0.95"/>
+  </g>
+
+  <!-- FLOATING FIERY EMBERS & SPARKS -->
+  <g fill="#fde047" filter="url(#ember-glow)">
+    <circle cx="210" cy="80" r="4.5"/>
+    <circle cx="310" cy="90" r="3.5"/>
+    <circle cx="370" cy="130" r="5"/>
+    <circle cx="140" cy="140" r="4"/>
+    <circle cx="440" cy="220" r="3.5"/>
+    <circle cx="70" cy="230" r="4"/>
+    <circle cx="450" cy="330" r="3"/>
+    <circle cx="60" cy="340" r="4.5"/>
+    <circle cx="256" cy="35" r="5"/>
+    <circle cx="280" cy="60" r="3"/>
+    <circle cx="170" cy="110" r="3"/>
+    <circle cx="340" cy="110" r="4"/>
+  </g>
+
+  <!-- COMBAT BADGE PLAQUE: OBSIDIAN & GOLDEN FLAME -->
+  <g filter="url(#fire-heavy-shadow)" transform="translate(0, 40)">
+    <!-- Shield Backing Plaque -->
+    <polygon points="256,220 376,244 394,324 256,378 118,324 136,244"
+             fill="url(#obsidian-badge)" stroke="url(#fire-gold-bevel)" stroke-width="4"/>
+
+    <!-- Inner Rim Inset -->
+    <polygon points="256,236 360,256 376,316 256,362 136,316 152,256"
+             fill="#140301" stroke="#ea580c" stroke-width="2"/>
+
+    <!-- Fiery Chevron Brackets -->
+    <path d="M 164,264 L 256,290 L 348,264" fill="none" stroke="#fde047" stroke-width="2" opacity="0.5"/>
+    <path d="M 152,310 L 256,346 L 360,310" fill="none" stroke="#fde047" stroke-width="2" opacity="0.5"/>
+
+    <!-- NUMBER "15" IN CHISELED FIGHTING 3D TYPOGRAPHY -->
+    <g transform="translate(256, 304)">
+      <!-- 3D Shadow -->
+      <text x="4" y="16" font-family="'Impact', 'Arial Black', sans-serif" font-size="74" font-weight="900"
+            fill="#050100" text-anchor="middle" letter-spacing="2">15</text>
+      <!-- Face -->
+      <text x="0" y="12" font-family="'Impact', 'Arial Black', sans-serif" font-size="74" font-weight="900"
+            fill="url(#fire-gold-bevel)" stroke="#450a0a" stroke-width="3" text-anchor="middle" letter-spacing="2">15</text>
+      <!-- Specular Highlight Cut -->
+      <text x="0" y="12" font-family="'Impact', 'Arial Black', sans-serif" font-size="74" font-weight="900"
+            fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="8,12" text-anchor="middle" letter-spacing="2">15</text>
+    </g>
+
+    <!-- Subtitle Banner -->
+    <g transform="translate(0, 372)">
+      <polygon points="174,0 338,0 354,26 322,26 256,34 190,26 158,26"
+               fill="#1a0401" stroke="#f97316" stroke-width="2"/>
+      <text x="256" y="18" font-family="'Impact', 'Arial Black', sans-serif" font-size="14" font-weight="900"
+            letter-spacing="4" fill="#fde047" text-anchor="middle">FIRE STREAK</text>
+    </g>
+  </g>
+</svg>

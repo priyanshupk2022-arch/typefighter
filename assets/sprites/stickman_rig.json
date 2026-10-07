@@ -1,0 +1,2398 @@
+{
+  "metadata": {
+    "name": "TypeFighter Procedural Stickman Skeletal Rig",
+    "version": "1.0.0",
+    "author": "Stickman Animation Engineer",
+    "targetFPS": 60,
+    "description": "Procedural 16-joint skeletal animation rig with keyframe martial arts animations, hitboxes, motion trails, and color themes."
+  },
+  "dimensions": {
+    "canvasHeight": 140,
+    "headRadius": 14,
+    "torsoLength": 40,
+    "neckLength": 10,
+    "shoulderWidth": 16,
+    "upperArmLength": 26,
+    "forearmLength": 24,
+    "handLength": 7,
+    "hipWidth": 16,
+    "thighLength": 32,
+    "shinLength": 30,
+    "footLength": 12,
+    "defaultLineWidth": 5
+  },
+  "hierarchy": {
+    "root": "hips",
+    "joints": [
+      {
+        "id": "hips",
+        "name": "Hips",
+        "parent": null,
+        "description": "Pelvic root joint. Master translation and tilt anchor."
+      },
+      {
+        "id": "torso",
+        "name": "Torso",
+        "parent": "hips",
+        "length": 40,
+        "description": "Main spine / torso column extending upward from hips."
+      },
+      {
+        "id": "neck",
+        "name": "Neck",
+        "parent": "torso",
+        "length": 10,
+        "description": "Neck joint linking upper torso to head."
+      },
+      {
+        "id": "head",
+        "name": "Head",
+        "parent": "neck",
+        "length": 16,
+        "radius": 14,
+        "description": "Head skull with directional eye visor and combat headband."
+      },
+      {
+        "id": "leftShoulder",
+        "name": "Left Shoulder",
+        "parent": "torso",
+        "offset": [
+          -8,
+          -36
+        ],
+        "length": 26,
+        "description": "Left shoulder / upper arm joint (front lead arm)."
+      },
+      {
+        "id": "leftElbow",
+        "name": "Left Elbow",
+        "parent": "leftShoulder",
+        "length": 24,
+        "description": "Left forearm hinge."
+      },
+      {
+        "id": "leftHand",
+        "name": "Left Hand",
+        "parent": "leftElbow",
+        "length": 7,
+        "description": "Left fist / striking end-effector."
+      },
+      {
+        "id": "rightShoulder",
+        "name": "Right Shoulder",
+        "parent": "torso",
+        "offset": [
+          8,
+          -36
+        ],
+        "length": 26,
+        "description": "Right shoulder / upper arm joint (rear power arm)."
+      },
+      {
+        "id": "rightElbow",
+        "name": "Right Elbow",
+        "parent": "rightShoulder",
+        "length": 24,
+        "description": "Right forearm hinge."
+      },
+      {
+        "id": "rightHand",
+        "name": "Right Hand",
+        "parent": "rightElbow",
+        "length": 7,
+        "description": "Right fist / striking end-effector."
+      },
+      {
+        "id": "leftHip",
+        "name": "Left Hip",
+        "parent": "hips",
+        "offset": [
+          -8,
+          0
+        ],
+        "length": 32,
+        "description": "Left hip / thigh joint (lead leg)."
+      },
+      {
+        "id": "leftKnee",
+        "name": "Left Knee",
+        "parent": "leftHip",
+        "length": 30,
+        "description": "Left knee hinge / lower leg."
+      },
+      {
+        "id": "leftFoot",
+        "name": "Left Foot",
+        "parent": "leftKnee",
+        "length": 12,
+        "description": "Left foot / ankle ground contact."
+      },
+      {
+        "id": "rightHip",
+        "name": "Right Hip",
+        "parent": "hips",
+        "offset": [
+          8,
+          0
+        ],
+        "length": 32,
+        "description": "Right hip / thigh joint (rear power leg)."
+      },
+      {
+        "id": "rightKnee",
+        "name": "Right Knee",
+        "parent": "rightHip",
+        "length": 30,
+        "description": "Right knee hinge / lower leg."
+      },
+      {
+        "id": "rightFoot",
+        "name": "Right Foot",
+        "parent": "rightKnee",
+        "length": 12,
+        "description": "Right foot / ankle ground contact."
+      }
+    ]
+  },
+  "themes": {
+    "hero": {
+      "id": "hero",
+      "name": "Hero Cyan Glow",
+      "primary": "#00f0ff",
+      "secondary": "#0088ff",
+      "glow": "rgba(0, 240, 255, 0.8)",
+      "glowSize": 18,
+      "jointFill": "#ffffff",
+      "headFill": "#001a2c",
+      "eyeColor": "#00ffff",
+      "lineWidth": 5.0,
+      "trailColor": "rgba(0, 240, 255, 0.35)",
+      "sparkColors": [
+        "#00f0ff",
+        "#ffffff",
+        "#7df9ff",
+        "#00aaff"
+      ],
+      "auraColor": "rgba(0, 240, 255, 0.25)",
+      "impactRingColor": "#00f0ff"
+    },
+    "enemy_red": {
+      "id": "enemy_red",
+      "name": "Enemy Red",
+      "primary": "#ff2244",
+      "secondary": "#ff5500",
+      "glow": "rgba(255, 34, 68, 0.85)",
+      "glowSize": 18,
+      "jointFill": "#ffffff",
+      "headFill": "#2c0008",
+      "eyeColor": "#ffea00",
+      "lineWidth": 5.0,
+      "trailColor": "rgba(255, 34, 68, 0.35)",
+      "sparkColors": [
+        "#ff2244",
+        "#ff8800",
+        "#ffff44",
+        "#ffffff"
+      ],
+      "auraColor": "rgba(255, 34, 68, 0.25)",
+      "impactRingColor": "#ff2244"
+    },
+    "enemy_tank": {
+      "id": "enemy_tank",
+      "name": "Enemy Green Tank",
+      "primary": "#00ff66",
+      "secondary": "#059669",
+      "glow": "rgba(0, 255, 102, 0.8)",
+      "glowSize": 24,
+      "jointFill": "#ffffff",
+      "headFill": "#002611",
+      "eyeColor": "#dcfce7",
+      "lineWidth": 7.5,
+      "trailColor": "rgba(0, 255, 102, 0.35)",
+      "sparkColors": [
+        "#00ff66",
+        "#86efac",
+        "#ffffff",
+        "#047857"
+      ],
+      "auraColor": "rgba(0, 255, 102, 0.25)",
+      "impactRingColor": "#00ff66"
+    },
+    "boss": {
+      "id": "boss",
+      "name": "Boss Dark Red",
+      "primary": "#990022",
+      "secondary": "#ff0055",
+      "glow": "rgba(255, 0, 85, 0.95)",
+      "glowSize": 26,
+      "jointFill": "#ff3366",
+      "headFill": "#180005",
+      "eyeColor": "#ff0033",
+      "lineWidth": 6.5,
+      "trailColor": "rgba(153, 0, 34, 0.45)",
+      "sparkColors": [
+        "#ff0055",
+        "#990022",
+        "#ff3366",
+        "#ffffff"
+      ],
+      "auraColor": "rgba(255, 0, 85, 0.35)",
+      "impactRingColor": "#ff0055"
+    }
+  },
+  "animations": {
+    "idle": {
+      "name": "idle",
+      "displayName": "Combat Idle",
+      "category": "Stance",
+      "durationFrames": 60,
+      "durationSeconds": 1.0,
+      "fps": 60,
+      "loop": true,
+      "description": "Breathing cycle with rhythmic torso bobbing and relaxed martial arts guard.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0.0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5.0,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 38.5,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 19.5,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 15,
+          "time": 0.25,
+          "rootOffset": {
+            "x": 0,
+            "y": -3.5,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 3.5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 37.75,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 19.05,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 30,
+          "time": 0.5,
+          "rootOffset": {
+            "x": 0,
+            "y": 0.0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5.0,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 38.5,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 19.5,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 45,
+          "time": 0.75,
+          "rootOffset": {
+            "x": 0,
+            "y": 3.0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 6.5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 39.25,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 19.95,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 60,
+          "time": 1.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0.0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5.0,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 38.5,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 19.5,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "punch_jab": {
+      "name": "punch_jab",
+      "displayName": "Lightning Left Jab",
+      "category": "Attack",
+      "durationFrames": 6,
+      "durationSeconds": 0.1,
+      "fps": 60,
+      "loop": false,
+      "hitFrames": [
+        3
+      ],
+      "description": "Lightning-fast left jab with 2 startup frames, 1 active impact frame, and 3 recovery frames.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 2,
+          "time": 0.0333,
+          "rootOffset": {
+            "x": -3,
+            "y": 1,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 2,
+            "neck": -1,
+            "head": 0,
+            "leftShoulder": 18,
+            "leftElbow": 98,
+            "leftHand": 15,
+            "rightShoulder": 20,
+            "rightElbow": 88,
+            "rightHand": 14,
+            "leftHip": 14,
+            "leftKnee": 26,
+            "leftFoot": -3,
+            "rightHip": -14,
+            "rightKnee": 22,
+            "rightFoot": -1
+          },
+          "fx": {}
+        },
+        {
+          "frame": 3,
+          "time": 0.05,
+          "rootOffset": {
+            "x": 16,
+            "y": -1,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 12,
+            "neck": -4,
+            "head": -3,
+            "leftShoulder": 90,
+            "leftElbow": 0,
+            "leftHand": -4,
+            "rightShoulder": 24,
+            "rightElbow": 94,
+            "rightHand": 15,
+            "leftHip": 22,
+            "leftKnee": 18,
+            "leftFoot": -6,
+            "rightHip": -24,
+            "rightKnee": 16,
+            "rightFoot": -4
+          },
+          "fx": {
+            "impact": true,
+            "joint": "leftHand",
+            "sparkSize": 1.0,
+            "trail": true,
+            "swoosh": "jab"
+          }
+        },
+        {
+          "frame": 4,
+          "time": 0.0667,
+          "rootOffset": {
+            "x": 10,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 9,
+            "neck": -3,
+            "head": -2,
+            "leftShoulder": 65,
+            "leftElbow": 40,
+            "leftHand": 5,
+            "rightShoulder": 22,
+            "rightElbow": 90,
+            "rightHand": 14,
+            "leftHip": 19,
+            "leftKnee": 21,
+            "leftFoot": -5,
+            "rightHip": -20,
+            "rightKnee": 18,
+            "rightFoot": -3
+          },
+          "fx": {}
+        },
+        {
+          "frame": 5,
+          "time": 0.0833,
+          "rootOffset": {
+            "x": 4,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 6,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 46,
+            "leftElbow": 68,
+            "leftHand": 8,
+            "rightShoulder": 19,
+            "rightElbow": 87,
+            "rightHand": 13,
+            "leftHip": 17,
+            "leftKnee": 23,
+            "leftFoot": -4,
+            "rightHip": -17,
+            "rightKnee": 19,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 6,
+          "time": 0.1,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "punch_straight": {
+      "name": "punch_straight",
+      "displayName": "Heavy Right Cross",
+      "category": "Attack",
+      "durationFrames": 14,
+      "durationSeconds": 0.233,
+      "fps": 60,
+      "loop": false,
+      "hitFrames": [
+        7
+      ],
+      "description": "Powerful right cross driving kinetic force through hip rotation and lead foot plant.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 2,
+          "time": 0.0333,
+          "rootOffset": {
+            "x": -4,
+            "y": 1,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -2,
+            "neck": 0,
+            "head": 1,
+            "leftShoulder": 40,
+            "leftElbow": 80,
+            "leftHand": 12,
+            "rightShoulder": 5,
+            "rightElbow": 95,
+            "rightHand": 14,
+            "leftHip": 14,
+            "leftKnee": 26,
+            "leftFoot": -3,
+            "rightHip": -18,
+            "rightKnee": 24,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 4,
+          "time": 0.0667,
+          "rootOffset": {
+            "x": -8,
+            "y": 2,
+            "rotation": -8
+          },
+          "angles": {
+            "torso": -10,
+            "neck": 2,
+            "head": 3,
+            "leftShoulder": 44,
+            "leftElbow": 86,
+            "leftHand": 14,
+            "rightShoulder": -20,
+            "rightElbow": 112,
+            "rightHand": 16,
+            "leftHip": 12,
+            "leftKnee": 28,
+            "leftFoot": -2,
+            "rightHip": -22,
+            "rightKnee": 28,
+            "rightFoot": 5
+          },
+          "fx": {}
+        },
+        {
+          "frame": 6,
+          "time": 0.1,
+          "rootOffset": {
+            "x": 14,
+            "y": -1,
+            "rotation": 12
+          },
+          "angles": {
+            "torso": 12,
+            "neck": -4,
+            "head": -2,
+            "leftShoulder": 32,
+            "leftElbow": 92,
+            "leftHand": 10,
+            "rightShoulder": 65,
+            "rightElbow": 36,
+            "rightHand": 4,
+            "leftHip": 20,
+            "leftKnee": 20,
+            "leftFoot": -6,
+            "rightHip": -26,
+            "rightKnee": 14,
+            "rightFoot": -6
+          },
+          "fx": {}
+        },
+        {
+          "frame": 7,
+          "time": 0.1167,
+          "rootOffset": {
+            "x": 28,
+            "y": 0,
+            "rotation": 22
+          },
+          "angles": {
+            "torso": 22,
+            "neck": -6,
+            "head": -4,
+            "leftShoulder": 24,
+            "leftElbow": 98,
+            "leftHand": 10,
+            "rightShoulder": 94,
+            "rightElbow": 2,
+            "rightHand": -3,
+            "leftHip": 26,
+            "leftKnee": 16,
+            "leftFoot": -8,
+            "rightHip": -32,
+            "rightKnee": 10,
+            "rightFoot": -8
+          },
+          "fx": {
+            "impact": true,
+            "joint": "rightHand",
+            "sparkSize": 1.4,
+            "trail": true,
+            "swoosh": "cross",
+            "screenShake": 4
+          }
+        },
+        {
+          "frame": 9,
+          "time": 0.15,
+          "rootOffset": {
+            "x": 24,
+            "y": 0,
+            "rotation": 18
+          },
+          "angles": {
+            "torso": 19,
+            "neck": -5,
+            "head": -3,
+            "leftShoulder": 26,
+            "leftElbow": 96,
+            "leftHand": 10,
+            "rightShoulder": 90,
+            "rightElbow": 8,
+            "rightHand": 0,
+            "leftHip": 24,
+            "leftKnee": 18,
+            "leftFoot": -7,
+            "rightHip": -30,
+            "rightKnee": 12,
+            "rightFoot": -7
+          },
+          "fx": {}
+        },
+        {
+          "frame": 11,
+          "time": 0.1833,
+          "rootOffset": {
+            "x": 14,
+            "y": 1,
+            "rotation": 8
+          },
+          "angles": {
+            "torso": 12,
+            "neck": -3,
+            "head": -2,
+            "leftShoulder": 30,
+            "leftElbow": 88,
+            "leftHand": 10,
+            "rightShoulder": 54,
+            "rightElbow": 52,
+            "rightHand": 6,
+            "leftHip": 20,
+            "leftKnee": 21,
+            "leftFoot": -6,
+            "rightHip": -22,
+            "rightKnee": 16,
+            "rightFoot": -5
+          },
+          "fx": {}
+        },
+        {
+          "frame": 14,
+          "time": 0.2333,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "roundhouse_kick": {
+      "name": "roundhouse_kick",
+      "displayName": "Spinning Roundhouse Kick",
+      "category": "Attack",
+      "durationFrames": 24,
+      "durationSeconds": 0.4,
+      "fps": 60,
+      "loop": false,
+      "hitFrames": [
+        9
+      ],
+      "description": "Explosive spinning roundhouse kick with high-speed swoosh arc and counterbalance lean.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 4,
+          "time": 0.0667,
+          "rootOffset": {
+            "x": 4,
+            "y": -4,
+            "rotation": -15
+          },
+          "angles": {
+            "torso": -8,
+            "neck": 2,
+            "head": 2,
+            "leftShoulder": 45,
+            "leftElbow": 60,
+            "leftHand": 0,
+            "rightShoulder": -10,
+            "rightElbow": 95,
+            "rightHand": 10,
+            "leftHip": -6,
+            "leftKnee": 20,
+            "leftFoot": -2,
+            "rightHip": 78,
+            "rightKnee": 120,
+            "rightFoot": 20
+          },
+          "fx": {}
+        },
+        {
+          "frame": 7,
+          "time": 0.1167,
+          "rootOffset": {
+            "x": 8,
+            "y": -6,
+            "rotation": 25
+          },
+          "angles": {
+            "torso": -20,
+            "neck": 5,
+            "head": 4,
+            "leftShoulder": 55,
+            "leftElbow": 45,
+            "leftHand": -5,
+            "rightShoulder": -30,
+            "rightElbow": 80,
+            "rightHand": 5,
+            "leftHip": -12,
+            "leftKnee": 16,
+            "leftFoot": 0,
+            "rightHip": 96,
+            "rightKnee": 70,
+            "rightFoot": 15
+          },
+          "fx": {}
+        },
+        {
+          "frame": 9,
+          "time": 0.15,
+          "rootOffset": {
+            "x": 16,
+            "y": -6,
+            "rotation": 55
+          },
+          "angles": {
+            "torso": -28,
+            "neck": 8,
+            "head": 6,
+            "leftShoulder": 65,
+            "leftElbow": 30,
+            "leftHand": -10,
+            "rightShoulder": -45,
+            "rightElbow": 65,
+            "rightHand": 0,
+            "leftHip": -16,
+            "leftKnee": 14,
+            "leftFoot": 0,
+            "rightHip": 112,
+            "rightKnee": 2,
+            "rightFoot": 18
+          },
+          "fx": {
+            "impact": true,
+            "joint": "rightFoot",
+            "sparkSize": 1.6,
+            "trail": true,
+            "swoosh": "roundhouse_arc",
+            "screenShake": 5
+          }
+        },
+        {
+          "frame": 12,
+          "time": 0.2,
+          "rootOffset": {
+            "x": 14,
+            "y": -4,
+            "rotation": 45
+          },
+          "angles": {
+            "torso": -22,
+            "neck": 6,
+            "head": 4,
+            "leftShoulder": 58,
+            "leftElbow": 40,
+            "leftHand": -5,
+            "rightShoulder": -35,
+            "rightElbow": 75,
+            "rightHand": 5,
+            "leftHip": -14,
+            "leftKnee": 16,
+            "leftFoot": 0,
+            "rightHip": 98,
+            "rightKnee": 22,
+            "rightFoot": 14
+          },
+          "fx": {}
+        },
+        {
+          "frame": 16,
+          "time": 0.2667,
+          "rootOffset": {
+            "x": 10,
+            "y": -2,
+            "rotation": 20
+          },
+          "angles": {
+            "torso": -10,
+            "neck": 3,
+            "head": 2,
+            "leftShoulder": 48,
+            "leftElbow": 55,
+            "leftHand": 5,
+            "rightShoulder": -15,
+            "rightElbow": 85,
+            "rightHand": 8,
+            "leftHip": -8,
+            "leftKnee": 20,
+            "leftFoot": -2,
+            "rightHip": 55,
+            "rightKnee": 80,
+            "rightFoot": 10
+          },
+          "fx": {}
+        },
+        {
+          "frame": 20,
+          "time": 0.3333,
+          "rootOffset": {
+            "x": 4,
+            "y": 1,
+            "rotation": 6
+          },
+          "angles": {
+            "torso": -2,
+            "neck": 0,
+            "head": 0,
+            "leftShoulder": 40,
+            "leftElbow": 70,
+            "leftHand": 8,
+            "rightShoulder": 5,
+            "rightElbow": 88,
+            "rightHand": 10,
+            "leftHip": 4,
+            "leftKnee": 24,
+            "leftFoot": -3,
+            "rightHip": 10,
+            "rightKnee": 45,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 24,
+          "time": 0.4,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "uppercut": {
+      "name": "uppercut",
+      "displayName": "Rising Dragon Uppercut",
+      "category": "Attack",
+      "durationFrames": 20,
+      "durationSeconds": 0.333,
+      "fps": 60,
+      "loop": false,
+      "hitFrames": [
+        8
+      ],
+      "description": "Rising vertical uppercut exploding skyward from a deep crouch, launching targets upward.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 3,
+          "time": 0.05,
+          "rootOffset": {
+            "x": 4,
+            "y": 18,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 16,
+            "neck": -4,
+            "head": -3,
+            "leftShoulder": 40,
+            "leftElbow": 82,
+            "leftHand": 10,
+            "rightShoulder": -35,
+            "rightElbow": 115,
+            "rightHand": 15,
+            "leftHip": 24,
+            "leftKnee": 52,
+            "leftFoot": 6,
+            "rightHip": -10,
+            "rightKnee": 48,
+            "rightFoot": 4
+          },
+          "fx": {}
+        },
+        {
+          "frame": 6,
+          "time": 0.1,
+          "rootOffset": {
+            "x": 10,
+            "y": -12,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 2,
+            "neck": -2,
+            "head": 5,
+            "leftShoulder": 30,
+            "leftElbow": 86,
+            "leftHand": 10,
+            "rightShoulder": 45,
+            "rightElbow": 75,
+            "rightHand": 10,
+            "leftHip": 12,
+            "leftKnee": 28,
+            "leftFoot": -2,
+            "rightHip": -8,
+            "rightKnee": 26,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 8,
+          "time": 0.1333,
+          "rootOffset": {
+            "x": 14,
+            "y": -36,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -14,
+            "neck": 12,
+            "head": 18,
+            "leftShoulder": 18,
+            "leftElbow": 92,
+            "leftHand": 10,
+            "rightShoulder": 142,
+            "rightElbow": 18,
+            "rightHand": 8,
+            "leftHip": 4,
+            "leftKnee": 12,
+            "leftFoot": 0,
+            "rightHip": -4,
+            "rightKnee": 14,
+            "rightFoot": 0
+          },
+          "fx": {
+            "impact": true,
+            "joint": "rightHand",
+            "sparkSize": 1.5,
+            "trail": true,
+            "swoosh": "uppercut_vertical",
+            "screenShake": 6,
+            "launchVertical": true
+          }
+        },
+        {
+          "frame": 11,
+          "time": 0.1833,
+          "rootOffset": {
+            "x": 12,
+            "y": -42,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -10,
+            "neck": 10,
+            "head": 15,
+            "leftShoulder": 22,
+            "leftElbow": 88,
+            "leftHand": 10,
+            "rightShoulder": 138,
+            "rightElbow": 22,
+            "rightHand": 10,
+            "leftHip": 6,
+            "leftKnee": 15,
+            "leftFoot": 0,
+            "rightHip": -6,
+            "rightKnee": 16,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 15,
+          "time": 0.25,
+          "rootOffset": {
+            "x": 6,
+            "y": -14,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -2,
+            "neck": 2,
+            "head": 4,
+            "leftShoulder": 32,
+            "leftElbow": 78,
+            "leftHand": 10,
+            "rightShoulder": 75,
+            "rightElbow": 60,
+            "rightHand": 10,
+            "leftHip": 12,
+            "leftKnee": 22,
+            "leftFoot": -2,
+            "rightHip": -12,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 18,
+          "time": 0.3,
+          "rootOffset": {
+            "x": 2,
+            "y": 8,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 8,
+            "neck": -3,
+            "head": -2,
+            "leftShoulder": 38,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 28,
+            "rightElbow": 82,
+            "rightHand": 12,
+            "leftHip": 20,
+            "leftKnee": 36,
+            "leftFoot": 2,
+            "rightHip": -18,
+            "rightKnee": 30,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 20,
+          "time": 0.3333,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "air_juggle": {
+      "name": "air_juggle",
+      "displayName": "Aerial Flurry Juggle",
+      "category": "Aerial",
+      "durationFrames": 32,
+      "durationSeconds": 0.533,
+      "fps": 60,
+      "loop": false,
+      "hitFrames": [
+        4,
+        12,
+        22,
+        27
+      ],
+      "description": "Rapid aerial kick combo executed in mid-air keeping airborne opponents juggled.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": -42,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -5,
+            "neck": 2,
+            "head": 3,
+            "leftShoulder": 30,
+            "leftElbow": 80,
+            "leftHand": 10,
+            "rightShoulder": 20,
+            "rightElbow": 85,
+            "rightHand": 12,
+            "leftHip": 20,
+            "leftKnee": 45,
+            "leftFoot": 5,
+            "rightHip": -15,
+            "rightKnee": 40,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 4,
+          "time": 0.0667,
+          "rootOffset": {
+            "x": 6,
+            "y": -45,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -18,
+            "neck": 6,
+            "head": 6,
+            "leftShoulder": 45,
+            "leftElbow": 65,
+            "leftHand": 0,
+            "rightShoulder": 10,
+            "rightElbow": 95,
+            "rightHand": 10,
+            "leftHip": 108,
+            "leftKnee": 4,
+            "leftFoot": 12,
+            "rightHip": -22,
+            "rightKnee": 50,
+            "rightFoot": 0
+          },
+          "fx": {
+            "impact": true,
+            "joint": "leftFoot",
+            "sparkSize": 1.1,
+            "trail": true,
+            "swoosh": "juggle_1"
+          }
+        },
+        {
+          "frame": 8,
+          "time": 0.1333,
+          "rootOffset": {
+            "x": 4,
+            "y": -44,
+            "rotation": 15
+          },
+          "angles": {
+            "torso": 8,
+            "neck": -2,
+            "head": 2,
+            "leftShoulder": 25,
+            "leftElbow": 85,
+            "leftHand": 10,
+            "rightShoulder": -10,
+            "rightElbow": 90,
+            "rightHand": 10,
+            "leftHip": 35,
+            "leftKnee": 75,
+            "leftFoot": 10,
+            "rightHip": 45,
+            "rightKnee": 80,
+            "rightFoot": 15
+          },
+          "fx": {}
+        },
+        {
+          "frame": 12,
+          "time": 0.2,
+          "rootOffset": {
+            "x": 10,
+            "y": -46,
+            "rotation": 45
+          },
+          "angles": {
+            "torso": -14,
+            "neck": 8,
+            "head": 8,
+            "leftShoulder": 40,
+            "leftElbow": 70,
+            "leftHand": 0,
+            "rightShoulder": -35,
+            "rightElbow": 75,
+            "rightHand": 5,
+            "leftHip": -20,
+            "leftKnee": 55,
+            "leftFoot": 0,
+            "rightHip": 118,
+            "rightKnee": 2,
+            "rightFoot": 16
+          },
+          "fx": {
+            "impact": true,
+            "joint": "rightFoot",
+            "sparkSize": 1.2,
+            "trail": true,
+            "swoosh": "juggle_2"
+          }
+        },
+        {
+          "frame": 17,
+          "time": 0.2833,
+          "rootOffset": {
+            "x": 6,
+            "y": -43,
+            "rotation": -10
+          },
+          "angles": {
+            "torso": 14,
+            "neck": -4,
+            "head": 2,
+            "leftShoulder": 20,
+            "leftElbow": 88,
+            "leftHand": 10,
+            "rightShoulder": 20,
+            "rightElbow": 85,
+            "rightHand": 10,
+            "leftHip": 65,
+            "leftKnee": 70,
+            "leftFoot": 10,
+            "rightHip": -10,
+            "rightKnee": 60,
+            "rightFoot": 5
+          },
+          "fx": {}
+        },
+        {
+          "frame": 22,
+          "time": 0.3667,
+          "rootOffset": {
+            "x": 8,
+            "y": -44,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -20,
+            "neck": 8,
+            "head": 6,
+            "leftShoulder": 50,
+            "leftElbow": 50,
+            "leftHand": -5,
+            "rightShoulder": 15,
+            "rightElbow": 88,
+            "rightHand": 10,
+            "leftHip": 85,
+            "leftKnee": 6,
+            "leftFoot": -8,
+            "rightHip": -25,
+            "rightKnee": 48,
+            "rightFoot": 0
+          },
+          "fx": {
+            "impact": true,
+            "joint": "leftFoot",
+            "sparkSize": 1.2,
+            "trail": true,
+            "swoosh": "juggle_3"
+          }
+        },
+        {
+          "frame": 27,
+          "time": 0.45,
+          "rootOffset": {
+            "x": 14,
+            "y": -45,
+            "rotation": 30
+          },
+          "angles": {
+            "torso": -25,
+            "neck": 10,
+            "head": 8,
+            "leftShoulder": 60,
+            "leftElbow": 40,
+            "leftHand": -10,
+            "rightShoulder": -40,
+            "rightElbow": 65,
+            "rightHand": 0,
+            "leftHip": 95,
+            "leftKnee": 2,
+            "leftFoot": 10,
+            "rightHip": 105,
+            "rightKnee": 5,
+            "rightFoot": 12
+          },
+          "fx": {
+            "impact": true,
+            "joint": "rightFoot",
+            "sparkSize": 1.5,
+            "trail": true,
+            "swoosh": "juggle_finisher",
+            "screenShake": 5
+          }
+        },
+        {
+          "frame": 32,
+          "time": 0.5333,
+          "rootOffset": {
+            "x": 0,
+            "y": -42,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -5,
+            "neck": 2,
+            "head": 3,
+            "leftShoulder": 30,
+            "leftElbow": 80,
+            "leftHand": 10,
+            "rightShoulder": 20,
+            "rightElbow": 85,
+            "rightHand": 12,
+            "leftHip": 20,
+            "leftKnee": 45,
+            "leftFoot": 5,
+            "rightHip": -15,
+            "rightKnee": 40,
+            "rightFoot": 0
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "ground_slam": {
+      "name": "ground_slam",
+      "displayName": "Meteor Axe Slam",
+      "category": "Heavy Attack",
+      "durationFrames": 28,
+      "durationSeconds": 0.466,
+      "fps": 60,
+      "loop": false,
+      "hitFrames": [
+        15
+      ],
+      "description": "Devastating downward axe kick slamming from maximum altitude into the canvas with expanding shockwave.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 5,
+          "time": 0.0833,
+          "rootOffset": {
+            "x": 6,
+            "y": -50,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -12,
+            "neck": 4,
+            "head": 6,
+            "leftShoulder": 45,
+            "leftElbow": 65,
+            "leftHand": 0,
+            "rightShoulder": -20,
+            "rightElbow": 85,
+            "rightHand": 10,
+            "leftHip": -10,
+            "leftKnee": 30,
+            "leftFoot": 0,
+            "rightHip": 60,
+            "rightKnee": 90,
+            "rightFoot": 15
+          },
+          "fx": {}
+        },
+        {
+          "frame": 9,
+          "time": 0.15,
+          "rootOffset": {
+            "x": 10,
+            "y": -56,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -26,
+            "neck": 10,
+            "head": 12,
+            "leftShoulder": 60,
+            "leftElbow": 45,
+            "leftHand": -5,
+            "rightShoulder": -35,
+            "rightElbow": 75,
+            "rightHand": 5,
+            "leftHip": -20,
+            "leftKnee": 25,
+            "leftFoot": 0,
+            "rightHip": 155,
+            "rightKnee": 0,
+            "rightFoot": 20
+          },
+          "fx": {
+            "trail": true,
+            "swoosh": "slam_charge"
+          }
+        },
+        {
+          "frame": 13,
+          "time": 0.2167,
+          "rootOffset": {
+            "x": 12,
+            "y": -12,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 10,
+            "neck": -4,
+            "head": 0,
+            "leftShoulder": 35,
+            "leftElbow": 75,
+            "leftHand": 10,
+            "rightShoulder": 10,
+            "rightElbow": 90,
+            "rightHand": 10,
+            "leftHip": 15,
+            "leftKnee": 35,
+            "leftFoot": 2,
+            "rightHip": 85,
+            "rightKnee": 5,
+            "rightFoot": 10
+          },
+          "fx": {
+            "trail": true
+          }
+        },
+        {
+          "frame": 15,
+          "time": 0.25,
+          "rootOffset": {
+            "x": 14,
+            "y": 12,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 32,
+            "neck": -8,
+            "head": -6,
+            "leftShoulder": 25,
+            "leftElbow": 95,
+            "leftHand": 10,
+            "rightShoulder": -10,
+            "rightElbow": 100,
+            "rightHand": 10,
+            "leftHip": 35,
+            "leftKnee": 75,
+            "leftFoot": 15,
+            "rightHip": 25,
+            "rightKnee": 8,
+            "rightFoot": 4
+          },
+          "fx": {
+            "impact": true,
+            "joint": "rightFoot",
+            "sparkSize": 2.0,
+            "trail": true,
+            "swoosh": "axe_slam",
+            "screenShake": 10,
+            "groundShockwave": true
+          }
+        },
+        {
+          "frame": 19,
+          "time": 0.3167,
+          "rootOffset": {
+            "x": 12,
+            "y": 10,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 28,
+            "neck": -6,
+            "head": -5,
+            "leftShoulder": 28,
+            "leftElbow": 90,
+            "leftHand": 10,
+            "rightShoulder": -5,
+            "rightElbow": 95,
+            "rightHand": 10,
+            "leftHip": 32,
+            "leftKnee": 68,
+            "leftFoot": 12,
+            "rightHip": 22,
+            "rightKnee": 12,
+            "rightFoot": 2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 24,
+          "time": 0.4,
+          "rootOffset": {
+            "x": 5,
+            "y": 4,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 12,
+            "neck": -3,
+            "head": -2,
+            "leftShoulder": 34,
+            "leftElbow": 80,
+            "leftHand": 10,
+            "rightShoulder": 12,
+            "rightElbow": 88,
+            "rightHand": 12,
+            "leftHip": 22,
+            "leftKnee": 38,
+            "leftFoot": 0,
+            "rightHip": -6,
+            "rightKnee": 30,
+            "rightFoot": -1
+          },
+          "fx": {}
+        },
+        {
+          "frame": 28,
+          "time": 0.4667,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "hit_reaction": {
+      "name": "hit_reaction",
+      "displayName": "Impact Recoil",
+      "category": "Damage Reaction",
+      "durationFrames": 16,
+      "durationSeconds": 0.266,
+      "fps": 60,
+      "loop": false,
+      "hitFrames": [
+        2
+      ],
+      "description": "Head snapback and body recoil with backward stumble upon taking damage.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 2,
+          "time": 0.0333,
+          "rootOffset": {
+            "x": -20,
+            "y": -4,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -25,
+            "neck": -28,
+            "head": -36,
+            "leftShoulder": -20,
+            "leftElbow": 60,
+            "leftHand": 20,
+            "rightShoulder": -32,
+            "rightElbow": 65,
+            "rightHand": 22,
+            "leftHip": 8,
+            "leftKnee": 38,
+            "leftFoot": 8,
+            "rightHip": -28,
+            "rightKnee": 35,
+            "rightFoot": 6
+          },
+          "fx": {
+            "hitFlinch": true,
+            "flashRed": true,
+            "screenShake": 4
+          }
+        },
+        {
+          "frame": 5,
+          "time": 0.0833,
+          "rootOffset": {
+            "x": -32,
+            "y": 2,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -18,
+            "neck": -16,
+            "head": -20,
+            "leftShoulder": -10,
+            "leftElbow": 72,
+            "leftHand": 15,
+            "rightShoulder": -22,
+            "rightElbow": 75,
+            "rightHand": 18,
+            "leftHip": 2,
+            "leftKnee": 44,
+            "leftFoot": 12,
+            "rightHip": -22,
+            "rightKnee": 42,
+            "rightFoot": 8
+          },
+          "fx": {}
+        },
+        {
+          "frame": 9,
+          "time": 0.15,
+          "rootOffset": {
+            "x": -26,
+            "y": 1,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -6,
+            "neck": -4,
+            "head": -5,
+            "leftShoulder": 15,
+            "leftElbow": 82,
+            "leftHand": 12,
+            "rightShoulder": 0,
+            "rightElbow": 82,
+            "rightHand": 14,
+            "leftHip": 10,
+            "leftKnee": 32,
+            "leftFoot": 2,
+            "rightHip": -18,
+            "rightKnee": 28,
+            "rightFoot": 2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 13,
+          "time": 0.2167,
+          "rootOffset": {
+            "x": -12,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 2,
+            "neck": -2,
+            "head": -2,
+            "leftShoulder": 28,
+            "leftElbow": 78,
+            "leftHand": 10,
+            "rightShoulder": 12,
+            "rightElbow": 85,
+            "rightHand": 12,
+            "leftHip": 14,
+            "leftKnee": 26,
+            "leftFoot": -2,
+            "rightHip": -16,
+            "rightKnee": 22,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 16,
+          "time": 0.2667,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "knockdown": {
+      "name": "knockdown",
+      "displayName": "Canvas Knockdown",
+      "category": "Damage Reaction",
+      "durationFrames": 38,
+      "durationSeconds": 0.633,
+      "fps": 60,
+      "loop": false,
+      "hitFrames": [
+        12
+      ],
+      "description": "Devastating knockdown blowing fighter off feet, crashing back-first onto the canvas with head bounce.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 4,
+          "time": 0.0667,
+          "rootOffset": {
+            "x": -24,
+            "y": -14,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -36,
+            "neck": -30,
+            "head": -32,
+            "leftShoulder": -25,
+            "leftElbow": 50,
+            "leftHand": 15,
+            "rightShoulder": -35,
+            "rightElbow": 55,
+            "rightHand": 15,
+            "leftHip": 25,
+            "leftKnee": 30,
+            "leftFoot": 0,
+            "rightHip": 10,
+            "rightKnee": 25,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 8,
+          "time": 0.1333,
+          "rootOffset": {
+            "x": -52,
+            "y": -8,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -65,
+            "neck": -15,
+            "head": -15,
+            "leftShoulder": -45,
+            "leftElbow": 35,
+            "leftHand": 10,
+            "rightShoulder": -50,
+            "rightElbow": 40,
+            "rightHand": 10,
+            "leftHip": 45,
+            "leftKnee": 20,
+            "leftFoot": -5,
+            "rightHip": 30,
+            "rightKnee": 15,
+            "rightFoot": -5
+          },
+          "fx": {}
+        },
+        {
+          "frame": 12,
+          "time": 0.2,
+          "rootOffset": {
+            "x": -70,
+            "y": 42,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -88,
+            "neck": 10,
+            "head": 15,
+            "leftShoulder": -80,
+            "leftElbow": 20,
+            "leftHand": 0,
+            "rightShoulder": -75,
+            "rightElbow": 25,
+            "rightHand": 0,
+            "leftHip": 35,
+            "leftKnee": 10,
+            "leftFoot": 0,
+            "rightHip": 20,
+            "rightKnee": 10,
+            "rightFoot": 0
+          },
+          "fx": {
+            "impact": true,
+            "joint": "torso",
+            "groundShockwave": true,
+            "screenShake": 7,
+            "dustPuff": true
+          }
+        },
+        {
+          "frame": 16,
+          "time": 0.2667,
+          "rootOffset": {
+            "x": -75,
+            "y": 44,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -86,
+            "neck": 20,
+            "head": 25,
+            "leftShoulder": -75,
+            "leftElbow": 25,
+            "leftHand": 0,
+            "rightShoulder": -70,
+            "rightElbow": 30,
+            "rightHand": 0,
+            "leftHip": 20,
+            "leftKnee": 15,
+            "leftFoot": 0,
+            "rightHip": 10,
+            "rightKnee": 15,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 22,
+          "time": 0.3667,
+          "rootOffset": {
+            "x": -78,
+            "y": 46,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -90,
+            "neck": 0,
+            "head": 0,
+            "leftShoulder": -85,
+            "leftElbow": 10,
+            "leftHand": 0,
+            "rightShoulder": -80,
+            "rightElbow": 15,
+            "rightHand": 0,
+            "leftHip": 5,
+            "leftKnee": 5,
+            "leftFoot": 0,
+            "rightHip": 0,
+            "rightKnee": 5,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 30,
+          "time": 0.5,
+          "rootOffset": {
+            "x": -78,
+            "y": 45,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -89,
+            "neck": 0,
+            "head": 0,
+            "leftShoulder": -85,
+            "leftElbow": 10,
+            "leftHand": 0,
+            "rightShoulder": -80,
+            "rightElbow": 15,
+            "rightHand": 0,
+            "leftHip": 5,
+            "leftKnee": 5,
+            "leftFoot": 0,
+            "rightHip": 0,
+            "rightKnee": 5,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 38,
+          "time": 0.6333,
+          "rootOffset": {
+            "x": -78,
+            "y": 46,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": -90,
+            "neck": 0,
+            "head": 0,
+            "leftShoulder": -85,
+            "leftElbow": 10,
+            "leftHand": 0,
+            "rightShoulder": -80,
+            "rightElbow": 15,
+            "rightHand": 0,
+            "leftHip": 5,
+            "leftKnee": 5,
+            "leftFoot": 0,
+            "rightHip": 0,
+            "rightKnee": 5,
+            "rightFoot": 0
+          },
+          "fx": {}
+        }
+      ]
+    },
+    "victory_pose": {
+      "name": "victory_pose",
+      "displayName": "Champion Victory Pump",
+      "category": "Victory",
+      "durationFrames": 48,
+      "durationSeconds": 0.8,
+      "fps": 60,
+      "loop": true,
+      "description": "Triumphant victory pose with high skyward fist pump and pulsating radiant aura.",
+      "keyframes": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "rootOffset": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 5,
+            "neck": -2,
+            "head": -1,
+            "leftShoulder": 36,
+            "leftElbow": 76,
+            "leftHand": 10,
+            "rightShoulder": 18,
+            "rightElbow": 86,
+            "rightHand": 12,
+            "leftHip": 16,
+            "leftKnee": 24,
+            "leftFoot": -4,
+            "rightHip": -16,
+            "rightKnee": 20,
+            "rightFoot": -2
+          },
+          "fx": {}
+        },
+        {
+          "frame": 8,
+          "time": 0.1333,
+          "rootOffset": {
+            "x": 0,
+            "y": 2,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 2,
+            "neck": 0,
+            "head": 5,
+            "leftShoulder": 10,
+            "leftElbow": 90,
+            "leftHand": 15,
+            "rightShoulder": 5,
+            "rightElbow": 90,
+            "rightHand": 15,
+            "leftHip": 12,
+            "leftKnee": 16,
+            "leftFoot": 0,
+            "rightHip": -14,
+            "rightKnee": 16,
+            "rightFoot": 0
+          },
+          "fx": {}
+        },
+        {
+          "frame": 16,
+          "time": 0.2667,
+          "rootOffset": {
+            "x": 0,
+            "y": -2,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 8,
+            "neck": 8,
+            "head": 16,
+            "leftShoulder": -15,
+            "leftElbow": 105,
+            "leftHand": 18,
+            "rightShoulder": 165,
+            "rightElbow": 10,
+            "rightHand": 0,
+            "leftHip": 15,
+            "leftKnee": 12,
+            "leftFoot": 0,
+            "rightHip": -18,
+            "rightKnee": 14,
+            "rightFoot": 0
+          },
+          "fx": {
+            "auraActive": true,
+            "victoryShine": true,
+            "sparkBurst": true
+          }
+        },
+        {
+          "frame": 28,
+          "time": 0.4667,
+          "rootOffset": {
+            "x": 0,
+            "y": -4,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 10,
+            "neck": 10,
+            "head": 20,
+            "leftShoulder": -18,
+            "leftElbow": 110,
+            "leftHand": 20,
+            "rightShoulder": 168,
+            "rightElbow": 8,
+            "rightHand": 0,
+            "leftHip": 16,
+            "leftKnee": 10,
+            "leftFoot": 0,
+            "rightHip": -20,
+            "rightKnee": 12,
+            "rightFoot": 0
+          },
+          "fx": {
+            "auraActive": true,
+            "auraPulse": 1.2
+          }
+        },
+        {
+          "frame": 40,
+          "time": 0.6667,
+          "rootOffset": {
+            "x": 0,
+            "y": -2,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 8,
+            "neck": 8,
+            "head": 18,
+            "leftShoulder": -15,
+            "leftElbow": 105,
+            "leftHand": 18,
+            "rightShoulder": 164,
+            "rightElbow": 12,
+            "rightHand": 0,
+            "leftHip": 15,
+            "leftKnee": 12,
+            "leftFoot": 0,
+            "rightHip": -18,
+            "rightKnee": 14,
+            "rightFoot": 0
+          },
+          "fx": {
+            "auraActive": true,
+            "auraPulse": 1.0
+          }
+        },
+        {
+          "frame": 48,
+          "time": 0.8,
+          "rootOffset": {
+            "x": 0,
+            "y": -4,
+            "rotation": 0
+          },
+          "angles": {
+            "torso": 10,
+            "neck": 10,
+            "head": 20,
+            "leftShoulder": -18,
+            "leftElbow": 110,
+            "leftHand": 20,
+            "rightShoulder": 168,
+            "rightElbow": 8,
+            "rightHand": 0,
+            "leftHip": 16,
+            "leftKnee": 10,
+            "leftFoot": 0,
+            "rightHip": -20,
+            "rightKnee": 12,
+            "rightFoot": 0
+          },
+          "fx": {
+            "auraActive": true,
+            "auraPulse": 1.2
+          }
+        }
+      ]
+    }
+  }
+}
