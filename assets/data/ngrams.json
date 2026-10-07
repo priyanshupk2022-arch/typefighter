@@ -1,0 +1,2815 @@
+{
+  "metadata": {
+    "description": "Top 200 bigrams and top 200 trigrams extracted from TypeFighter Project Gutenberg prose passages",
+    "total_passages_analyzed": 370,
+    "total_words_analyzed": 18398,
+    "total_bigram_tokens": 56133,
+    "total_trigram_tokens": 38611,
+    "unique_bigrams_total": 408,
+    "unique_trigrams_total": 2474
+  },
+  "bigrams": [
+    {
+      "rank": 1,
+      "ngram": "he",
+      "count": 2437,
+      "frequency": 0.043415,
+      "percentage": 4.3415
+    },
+    {
+      "rank": 2,
+      "ngram": "th",
+      "count": 2246,
+      "frequency": 0.040012,
+      "percentage": 4.0012
+    },
+    {
+      "rank": 3,
+      "ngram": "in",
+      "count": 1334,
+      "frequency": 0.023765,
+      "percentage": 2.3765
+    },
+    {
+      "rank": 4,
+      "ngram": "an",
+      "count": 1290,
+      "frequency": 0.022981,
+      "percentage": 2.2981
+    },
+    {
+      "rank": 5,
+      "ngram": "er",
+      "count": 1086,
+      "frequency": 0.019347,
+      "percentage": 1.9347
+    },
+    {
+      "rank": 6,
+      "ngram": "nd",
+      "count": 1006,
+      "frequency": 0.017922,
+      "percentage": 1.7922
+    },
+    {
+      "rank": 7,
+      "ngram": "ou",
+      "count": 992,
+      "frequency": 0.017672,
+      "percentage": 1.7672
+    },
+    {
+      "rank": 8,
+      "ngram": "re",
+      "count": 924,
+      "frequency": 0.016461,
+      "percentage": 1.6461
+    },
+    {
+      "rank": 9,
+      "ngram": "to",
+      "count": 844,
+      "frequency": 0.015036,
+      "percentage": 1.5036
+    },
+    {
+      "rank": 10,
+      "ngram": "en",
+      "count": 790,
+      "frequency": 0.014074,
+      "percentage": 1.4074
+    },
+    {
+      "rank": 11,
+      "ngram": "ed",
+      "count": 754,
+      "frequency": 0.013432,
+      "percentage": 1.3432
+    },
+    {
+      "rank": 12,
+      "ngram": "at",
+      "count": 740,
+      "frequency": 0.013183,
+      "percentage": 1.3183
+    },
+    {
+      "rank": 13,
+      "ngram": "ha",
+      "count": 736,
+      "frequency": 0.013112,
+      "percentage": 1.3112
+    },
+    {
+      "rank": 14,
+      "ngram": "ng",
+      "count": 688,
+      "frequency": 0.012257,
+      "percentage": 1.2257
+    },
+    {
+      "rank": 15,
+      "ngram": "on",
+      "count": 680,
+      "frequency": 0.012114,
+      "percentage": 1.2114
+    },
+    {
+      "rank": 16,
+      "ngram": "hi",
+      "count": 666,
+      "frequency": 0.011865,
+      "percentage": 1.1865
+    },
+    {
+      "rank": 17,
+      "ngram": "it",
+      "count": 661,
+      "frequency": 0.011776,
+      "percentage": 1.1776
+    },
+    {
+      "rank": 18,
+      "ngram": "is",
+      "count": 647,
+      "frequency": 0.011526,
+      "percentage": 1.1526
+    },
+    {
+      "rank": 19,
+      "ngram": "or",
+      "count": 569,
+      "frequency": 0.010137,
+      "percentage": 1.0137
+    },
+    {
+      "rank": 20,
+      "ngram": "st",
+      "count": 558,
+      "frequency": 0.009941,
+      "percentage": 0.9941
+    },
+    {
+      "rank": 21,
+      "ngram": "ar",
+      "count": 547,
+      "frequency": 0.009745,
+      "percentage": 0.9745
+    },
+    {
+      "rank": 22,
+      "ngram": "ea",
+      "count": 518,
+      "frequency": 0.009228,
+      "percentage": 0.9228
+    },
+    {
+      "rank": 23,
+      "ngram": "as",
+      "count": 515,
+      "frequency": 0.009175,
+      "percentage": 0.9175
+    },
+    {
+      "rank": 24,
+      "ngram": "se",
+      "count": 512,
+      "frequency": 0.009121,
+      "percentage": 0.9121
+    },
+    {
+      "rank": 25,
+      "ngram": "es",
+      "count": 508,
+      "frequency": 0.00905,
+      "percentage": 0.905
+    },
+    {
+      "rank": 26,
+      "ngram": "le",
+      "count": 507,
+      "frequency": 0.009032,
+      "percentage": 0.9032
+    },
+    {
+      "rank": 27,
+      "ngram": "ll",
+      "count": 505,
+      "frequency": 0.008996,
+      "percentage": 0.8996
+    },
+    {
+      "rank": 28,
+      "ngram": "me",
+      "count": 504,
+      "frequency": 0.008979,
+      "percentage": 0.8979
+    },
+    {
+      "rank": 29,
+      "ngram": "ve",
+      "count": 499,
+      "frequency": 0.00889,
+      "percentage": 0.889
+    },
+    {
+      "rank": 30,
+      "ngram": "ne",
+      "count": 449,
+      "frequency": 0.007999,
+      "percentage": 0.7999
+    },
+    {
+      "rank": 31,
+      "ngram": "te",
+      "count": 436,
+      "frequency": 0.007767,
+      "percentage": 0.7767
+    },
+    {
+      "rank": 32,
+      "ngram": "of",
+      "count": 434,
+      "frequency": 0.007732,
+      "percentage": 0.7732
+    },
+    {
+      "rank": 33,
+      "ngram": "nt",
+      "count": 417,
+      "frequency": 0.007429,
+      "percentage": 0.7429
+    },
+    {
+      "rank": 34,
+      "ngram": "yo",
+      "count": 412,
+      "frequency": 0.00734,
+      "percentage": 0.734
+    },
+    {
+      "rank": 35,
+      "ngram": "be",
+      "count": 402,
+      "frequency": 0.007162,
+      "percentage": 0.7162
+    },
+    {
+      "rank": 36,
+      "ngram": "ho",
+      "count": 384,
+      "frequency": 0.006841,
+      "percentage": 0.6841
+    },
+    {
+      "rank": 37,
+      "ngram": "wh",
+      "count": 382,
+      "frequency": 0.006805,
+      "percentage": 0.6805
+    },
+    {
+      "rank": 38,
+      "ngram": "al",
+      "count": 363,
+      "frequency": 0.006467,
+      "percentage": 0.6467
+    },
+    {
+      "rank": 39,
+      "ngram": "wi",
+      "count": 363,
+      "frequency": 0.006467,
+      "percentage": 0.6467
+    },
+    {
+      "rank": 40,
+      "ngram": "no",
+      "count": 355,
+      "frequency": 0.006324,
+      "percentage": 0.6324
+    },
+    {
+      "rank": 41,
+      "ngram": "ro",
+      "count": 354,
+      "frequency": 0.006306,
+      "percentage": 0.6306
+    },
+    {
+      "rank": 42,
+      "ngram": "wa",
+      "count": 349,
+      "frequency": 0.006217,
+      "percentage": 0.6217
+    },
+    {
+      "rank": 43,
+      "ngram": "ti",
+      "count": 347,
+      "frequency": 0.006182,
+      "percentage": 0.6182
+    },
+    {
+      "rank": 44,
+      "ngram": "sh",
+      "count": 343,
+      "frequency": 0.00611,
+      "percentage": 0.611
+    },
+    {
+      "rank": 45,
+      "ngram": "fo",
+      "count": 340,
+      "frequency": 0.006057,
+      "percentage": 0.6057
+    },
+    {
+      "rank": 46,
+      "ngram": "el",
+      "count": 337,
+      "frequency": 0.006004,
+      "percentage": 0.6004
+    },
+    {
+      "rank": 47,
+      "ngram": "ut",
+      "count": 330,
+      "frequency": 0.005879,
+      "percentage": 0.5879
+    },
+    {
+      "rank": 48,
+      "ngram": "ai",
+      "count": 327,
+      "frequency": 0.005825,
+      "percentage": 0.5825
+    },
+    {
+      "rank": 49,
+      "ngram": "ur",
+      "count": 323,
+      "frequency": 0.005754,
+      "percentage": 0.5754
+    },
+    {
+      "rank": 50,
+      "ngram": "ow",
+      "count": 322,
+      "frequency": 0.005736,
+      "percentage": 0.5736
+    },
+    {
+      "rank": 51,
+      "ngram": "om",
+      "count": 319,
+      "frequency": 0.005683,
+      "percentage": 0.5683
+    },
+    {
+      "rank": 52,
+      "ngram": "ri",
+      "count": 314,
+      "frequency": 0.005594,
+      "percentage": 0.5594
+    },
+    {
+      "rank": 53,
+      "ngram": "de",
+      "count": 308,
+      "frequency": 0.005487,
+      "percentage": 0.5487
+    },
+    {
+      "rank": 54,
+      "ngram": "ma",
+      "count": 306,
+      "frequency": 0.005451,
+      "percentage": 0.5451
+    },
+    {
+      "rank": 55,
+      "ngram": "co",
+      "count": 303,
+      "frequency": 0.005398,
+      "percentage": 0.5398
+    },
+    {
+      "rank": 56,
+      "ngram": "il",
+      "count": 303,
+      "frequency": 0.005398,
+      "percentage": 0.5398
+    },
+    {
+      "rank": 57,
+      "ngram": "ot",
+      "count": 300,
+      "frequency": 0.005344,
+      "percentage": 0.5344
+    },
+    {
+      "rank": 58,
+      "ngram": "ch",
+      "count": 291,
+      "frequency": 0.005184,
+      "percentage": 0.5184
+    },
+    {
+      "rank": 59,
+      "ngram": "ad",
+      "count": 282,
+      "frequency": 0.005024,
+      "percentage": 0.5024
+    },
+    {
+      "rank": 60,
+      "ngram": "ce",
+      "count": 279,
+      "frequency": 0.00497,
+      "percentage": 0.497
+    },
+    {
+      "rank": 61,
+      "ngram": "ca",
+      "count": 272,
+      "frequency": 0.004846,
+      "percentage": 0.4846
+    },
+    {
+      "rank": 62,
+      "ngram": "un",
+      "count": 268,
+      "frequency": 0.004774,
+      "percentage": 0.4774
+    },
+    {
+      "rank": 63,
+      "ngram": "we",
+      "count": 266,
+      "frequency": 0.004739,
+      "percentage": 0.4739
+    },
+    {
+      "rank": 64,
+      "ngram": "li",
+      "count": 261,
+      "frequency": 0.00465,
+      "percentage": 0.465
+    },
+    {
+      "rank": 65,
+      "ngram": "ee",
+      "count": 258,
+      "frequency": 0.004596,
+      "percentage": 0.4596
+    },
+    {
+      "rank": 66,
+      "ngram": "us",
+      "count": 256,
+      "frequency": 0.004561,
+      "percentage": 0.4561
+    },
+    {
+      "rank": 67,
+      "ngram": "im",
+      "count": 251,
+      "frequency": 0.004472,
+      "percentage": 0.4472
+    },
+    {
+      "rank": 68,
+      "ngram": "sa",
+      "count": 250,
+      "frequency": 0.004454,
+      "percentage": 0.4454
+    },
+    {
+      "rank": 69,
+      "ngram": "ul",
+      "count": 246,
+      "frequency": 0.004382,
+      "percentage": 0.4382
+    },
+    {
+      "rank": 70,
+      "ngram": "so",
+      "count": 245,
+      "frequency": 0.004365,
+      "percentage": 0.4365
+    },
+    {
+      "rank": 71,
+      "ngram": "id",
+      "count": 240,
+      "frequency": 0.004276,
+      "percentage": 0.4276
+    },
+    {
+      "rank": 72,
+      "ngram": "ld",
+      "count": 238,
+      "frequency": 0.00424,
+      "percentage": 0.424
+    },
+    {
+      "rank": 73,
+      "ngram": "ra",
+      "count": 237,
+      "frequency": 0.004222,
+      "percentage": 0.4222
+    },
+    {
+      "rank": 74,
+      "ngram": "ta",
+      "count": 233,
+      "frequency": 0.004151,
+      "percentage": 0.4151
+    },
+    {
+      "rank": 75,
+      "ngram": "ay",
+      "count": 232,
+      "frequency": 0.004133,
+      "percentage": 0.4133
+    },
+    {
+      "rank": 76,
+      "ngram": "la",
+      "count": 232,
+      "frequency": 0.004133,
+      "percentage": 0.4133
+    },
+    {
+      "rank": 77,
+      "ngram": "oo",
+      "count": 229,
+      "frequency": 0.00408,
+      "percentage": 0.408
+    },
+    {
+      "rank": 78,
+      "ngram": "ic",
+      "count": 227,
+      "frequency": 0.004044,
+      "percentage": 0.4044
+    },
+    {
+      "rank": 79,
+      "ngram": "ke",
+      "count": 227,
+      "frequency": 0.004044,
+      "percentage": 0.4044
+    },
+    {
+      "rank": 80,
+      "ngram": "gh",
+      "count": 214,
+      "frequency": 0.003812,
+      "percentage": 0.3812
+    },
+    {
+      "rank": 81,
+      "ngram": "ly",
+      "count": 214,
+      "frequency": 0.003812,
+      "percentage": 0.3812
+    },
+    {
+      "rank": 82,
+      "ngram": "et",
+      "count": 213,
+      "frequency": 0.003795,
+      "percentage": 0.3795
+    },
+    {
+      "rank": 83,
+      "ngram": "ol",
+      "count": 212,
+      "frequency": 0.003777,
+      "percentage": 0.3777
+    },
+    {
+      "rank": 84,
+      "ngram": "lo",
+      "count": 207,
+      "frequency": 0.003688,
+      "percentage": 0.3688
+    },
+    {
+      "rank": 85,
+      "ngram": "ac",
+      "count": 205,
+      "frequency": 0.003652,
+      "percentage": 0.3652
+    },
+    {
+      "rank": 86,
+      "ngram": "ge",
+      "count": 202,
+      "frequency": 0.003599,
+      "percentage": 0.3599
+    },
+    {
+      "rank": 87,
+      "ngram": "em",
+      "count": 200,
+      "frequency": 0.003563,
+      "percentage": 0.3563
+    },
+    {
+      "rank": 88,
+      "ngram": "nc",
+      "count": 196,
+      "frequency": 0.003492,
+      "percentage": 0.3492
+    },
+    {
+      "rank": 89,
+      "ngram": "rs",
+      "count": 191,
+      "frequency": 0.003403,
+      "percentage": 0.3403
+    },
+    {
+      "rank": 90,
+      "ngram": "ir",
+      "count": 191,
+      "frequency": 0.003403,
+      "percentage": 0.3403
+    },
+    {
+      "rank": 91,
+      "ngram": "do",
+      "count": 187,
+      "frequency": 0.003331,
+      "percentage": 0.3331
+    },
+    {
+      "rank": 92,
+      "ngram": "si",
+      "count": 186,
+      "frequency": 0.003314,
+      "percentage": 0.3314
+    },
+    {
+      "rank": 93,
+      "ngram": "am",
+      "count": 186,
+      "frequency": 0.003314,
+      "percentage": 0.3314
+    },
+    {
+      "rank": 94,
+      "ngram": "pe",
+      "count": 179,
+      "frequency": 0.003189,
+      "percentage": 0.3189
+    },
+    {
+      "rank": 95,
+      "ngram": "av",
+      "count": 178,
+      "frequency": 0.003171,
+      "percentage": 0.3171
+    },
+    {
+      "rank": 96,
+      "ngram": "my",
+      "count": 176,
+      "frequency": 0.003135,
+      "percentage": 0.3135
+    },
+    {
+      "rank": 97,
+      "ngram": "wo",
+      "count": 174,
+      "frequency": 0.0031,
+      "percentage": 0.31
+    },
+    {
+      "rank": 98,
+      "ngram": "di",
+      "count": 172,
+      "frequency": 0.003064,
+      "percentage": 0.3064
+    },
+    {
+      "rank": 99,
+      "ngram": "mo",
+      "count": 172,
+      "frequency": 0.003064,
+      "percentage": 0.3064
+    },
+    {
+      "rank": 100,
+      "ngram": "ie",
+      "count": 172,
+      "frequency": 0.003064,
+      "percentage": 0.3064
+    },
+    {
+      "rank": 101,
+      "ngram": "tr",
+      "count": 172,
+      "frequency": 0.003064,
+      "percentage": 0.3064
+    },
+    {
+      "rank": 102,
+      "ngram": "bu",
+      "count": 170,
+      "frequency": 0.003029,
+      "percentage": 0.3029
+    },
+    {
+      "rank": 103,
+      "ngram": "ss",
+      "count": 168,
+      "frequency": 0.002993,
+      "percentage": 0.2993
+    },
+    {
+      "rank": 104,
+      "ngram": "fi",
+      "count": 165,
+      "frequency": 0.002939,
+      "percentage": 0.2939
+    },
+    {
+      "rank": 105,
+      "ngram": "ig",
+      "count": 164,
+      "frequency": 0.002922,
+      "percentage": 0.2922
+    },
+    {
+      "rank": 106,
+      "ngram": "if",
+      "count": 159,
+      "frequency": 0.002833,
+      "percentage": 0.2833
+    },
+    {
+      "rank": 107,
+      "ngram": "ry",
+      "count": 159,
+      "frequency": 0.002833,
+      "percentage": 0.2833
+    },
+    {
+      "rank": 108,
+      "ngram": "pr",
+      "count": 157,
+      "frequency": 0.002797,
+      "percentage": 0.2797
+    },
+    {
+      "rank": 109,
+      "ngram": "ns",
+      "count": 152,
+      "frequency": 0.002708,
+      "percentage": 0.2708
+    },
+    {
+      "rank": 110,
+      "ngram": "rt",
+      "count": 149,
+      "frequency": 0.002654,
+      "percentage": 0.2654
+    },
+    {
+      "rank": 111,
+      "ngram": "io",
+      "count": 146,
+      "frequency": 0.002601,
+      "percentage": 0.2601
+    },
+    {
+      "rank": 112,
+      "ngram": "po",
+      "count": 145,
+      "frequency": 0.002583,
+      "percentage": 0.2583
+    },
+    {
+      "rank": 113,
+      "ngram": "ht",
+      "count": 144,
+      "frequency": 0.002565,
+      "percentage": 0.2565
+    },
+    {
+      "rank": 114,
+      "ngram": "go",
+      "count": 144,
+      "frequency": 0.002565,
+      "percentage": 0.2565
+    },
+    {
+      "rank": 115,
+      "ngram": "tt",
+      "count": 144,
+      "frequency": 0.002565,
+      "percentage": 0.2565
+    },
+    {
+      "rank": 116,
+      "ngram": "fr",
+      "count": 142,
+      "frequency": 0.00253,
+      "percentage": 0.253
+    },
+    {
+      "rank": 117,
+      "ngram": "ev",
+      "count": 140,
+      "frequency": 0.002494,
+      "percentage": 0.2494
+    },
+    {
+      "rank": 118,
+      "ngram": "ts",
+      "count": 139,
+      "frequency": 0.002476,
+      "percentage": 0.2476
+    },
+    {
+      "rank": 119,
+      "ngram": "fe",
+      "count": 131,
+      "frequency": 0.002334,
+      "percentage": 0.2334
+    },
+    {
+      "rank": 120,
+      "ngram": "pl",
+      "count": 131,
+      "frequency": 0.002334,
+      "percentage": 0.2334
+    },
+    {
+      "rank": 121,
+      "ngram": "su",
+      "count": 129,
+      "frequency": 0.002298,
+      "percentage": 0.2298
+    },
+    {
+      "rank": 122,
+      "ngram": "ck",
+      "count": 129,
+      "frequency": 0.002298,
+      "percentage": 0.2298
+    },
+    {
+      "rank": 123,
+      "ngram": "ag",
+      "count": 129,
+      "frequency": 0.002298,
+      "percentage": 0.2298
+    },
+    {
+      "rank": 124,
+      "ngram": "mi",
+      "count": 127,
+      "frequency": 0.002262,
+      "percentage": 0.2262
+    },
+    {
+      "rank": 125,
+      "ngram": "rd",
+      "count": 125,
+      "frequency": 0.002227,
+      "percentage": 0.2227
+    },
+    {
+      "rank": 126,
+      "ngram": "gr",
+      "count": 123,
+      "frequency": 0.002191,
+      "percentage": 0.2191
+    },
+    {
+      "rank": 127,
+      "ngram": "ak",
+      "count": 122,
+      "frequency": 0.002173,
+      "percentage": 0.2173
+    },
+    {
+      "rank": 128,
+      "ngram": "ey",
+      "count": 121,
+      "frequency": 0.002156,
+      "percentage": 0.2156
+    },
+    {
+      "rank": 129,
+      "ngram": "up",
+      "count": 119,
+      "frequency": 0.00212,
+      "percentage": 0.212
+    },
+    {
+      "rank": 130,
+      "ngram": "pa",
+      "count": 117,
+      "frequency": 0.002084,
+      "percentage": 0.2084
+    },
+    {
+      "rank": 131,
+      "ngram": "os",
+      "count": 116,
+      "frequency": 0.002067,
+      "percentage": 0.2067
+    },
+    {
+      "rank": 132,
+      "ngram": "lf",
+      "count": 113,
+      "frequency": 0.002013,
+      "percentage": 0.2013
+    },
+    {
+      "rank": 133,
+      "ngram": "bl",
+      "count": 112,
+      "frequency": 0.001995,
+      "percentage": 0.1995
+    },
+    {
+      "rank": 134,
+      "ngram": "ct",
+      "count": 112,
+      "frequency": 0.001995,
+      "percentage": 0.1995
+    },
+    {
+      "rank": 135,
+      "ngram": "od",
+      "count": 108,
+      "frequency": 0.001924,
+      "percentage": 0.1924
+    },
+    {
+      "rank": 136,
+      "ngram": "fa",
+      "count": 107,
+      "frequency": 0.001906,
+      "percentage": 0.1906
+    },
+    {
+      "rank": 137,
+      "ngram": "bo",
+      "count": 107,
+      "frequency": 0.001906,
+      "percentage": 0.1906
+    },
+    {
+      "rank": 138,
+      "ngram": "ec",
+      "count": 106,
+      "frequency": 0.001888,
+      "percentage": 0.1888
+    },
+    {
+      "rank": 139,
+      "ngram": "ab",
+      "count": 105,
+      "frequency": 0.001871,
+      "percentage": 0.1871
+    },
+    {
+      "rank": 140,
+      "ngram": "tl",
+      "count": 105,
+      "frequency": 0.001871,
+      "percentage": 0.1871
+    },
+    {
+      "rank": 141,
+      "ngram": "ei",
+      "count": 104,
+      "frequency": 0.001853,
+      "percentage": 0.1853
+    },
+    {
+      "rank": 142,
+      "ngram": "ef",
+      "count": 103,
+      "frequency": 0.001835,
+      "percentage": 0.1835
+    },
+    {
+      "rank": 143,
+      "ngram": "vi",
+      "count": 103,
+      "frequency": 0.001835,
+      "percentage": 0.1835
+    },
+    {
+      "rank": 144,
+      "ngram": "ga",
+      "count": 102,
+      "frequency": 0.001817,
+      "percentage": 0.1817
+    },
+    {
+      "rank": 145,
+      "ngram": "ug",
+      "count": 101,
+      "frequency": 0.001799,
+      "percentage": 0.1799
+    },
+    {
+      "rank": 146,
+      "ngram": "ap",
+      "count": 98,
+      "frequency": 0.001746,
+      "percentage": 0.1746
+    },
+    {
+      "rank": 147,
+      "ngram": "ep",
+      "count": 97,
+      "frequency": 0.001728,
+      "percentage": 0.1728
+    },
+    {
+      "rank": 148,
+      "ngram": "ki",
+      "count": 97,
+      "frequency": 0.001728,
+      "percentage": 0.1728
+    },
+    {
+      "rank": 149,
+      "ngram": "iv",
+      "count": 96,
+      "frequency": 0.00171,
+      "percentage": 0.171
+    },
+    {
+      "rank": 150,
+      "ngram": "ni",
+      "count": 96,
+      "frequency": 0.00171,
+      "percentage": 0.171
+    },
+    {
+      "rank": 151,
+      "ngram": "da",
+      "count": 92,
+      "frequency": 0.001639,
+      "percentage": 0.1639
+    },
+    {
+      "rank": 152,
+      "ngram": "by",
+      "count": 91,
+      "frequency": 0.001621,
+      "percentage": 0.1621
+    },
+    {
+      "rank": 153,
+      "ngram": "mp",
+      "count": 90,
+      "frequency": 0.001603,
+      "percentage": 0.1603
+    },
+    {
+      "rank": 154,
+      "ngram": "tu",
+      "count": 88,
+      "frequency": 0.001568,
+      "percentage": 0.1568
+    },
+    {
+      "rank": 155,
+      "ngram": "uc",
+      "count": 86,
+      "frequency": 0.001532,
+      "percentage": 0.1532
+    },
+    {
+      "rank": 156,
+      "ngram": "aw",
+      "count": 86,
+      "frequency": 0.001532,
+      "percentage": 0.1532
+    },
+    {
+      "rank": 157,
+      "ngram": "wn",
+      "count": 85,
+      "frequency": 0.001514,
+      "percentage": 0.1514
+    },
+    {
+      "rank": 158,
+      "ngram": "au",
+      "count": 83,
+      "frequency": 0.001479,
+      "percentage": 0.1479
+    },
+    {
+      "rank": 159,
+      "ngram": "sp",
+      "count": 81,
+      "frequency": 0.001443,
+      "percentage": 0.1443
+    },
+    {
+      "rank": 160,
+      "ngram": "rn",
+      "count": 78,
+      "frequency": 0.00139,
+      "percentage": 0.139
+    },
+    {
+      "rank": 161,
+      "ngram": "op",
+      "count": 76,
+      "frequency": 0.001354,
+      "percentage": 0.1354
+    },
+    {
+      "rank": 162,
+      "ngram": "qu",
+      "count": 75,
+      "frequency": 0.001336,
+      "percentage": 0.1336
+    },
+    {
+      "rank": 163,
+      "ngram": "na",
+      "count": 75,
+      "frequency": 0.001336,
+      "percentage": 0.1336
+    },
+    {
+      "rank": 164,
+      "ngram": "br",
+      "count": 75,
+      "frequency": 0.001336,
+      "percentage": 0.1336
+    },
+    {
+      "rank": 165,
+      "ngram": "pi",
+      "count": 72,
+      "frequency": 0.001283,
+      "percentage": 0.1283
+    },
+    {
+      "rank": 166,
+      "ngram": "dr",
+      "count": 72,
+      "frequency": 0.001283,
+      "percentage": 0.1283
+    },
+    {
+      "rank": 167,
+      "ngram": "ov",
+      "count": 71,
+      "frequency": 0.001265,
+      "percentage": 0.1265
+    },
+    {
+      "rank": 168,
+      "ngram": "fu",
+      "count": 70,
+      "frequency": 0.001247,
+      "percentage": 0.1247
+    },
+    {
+      "rank": 169,
+      "ngram": "cr",
+      "count": 70,
+      "frequency": 0.001247,
+      "percentage": 0.1247
+    },
+    {
+      "rank": 170,
+      "ngram": "ba",
+      "count": 70,
+      "frequency": 0.001247,
+      "percentage": 0.1247
+    },
+    {
+      "rank": 171,
+      "ngram": "kn",
+      "count": 66,
+      "frequency": 0.001176,
+      "percentage": 0.1176
+    },
+    {
+      "rank": 172,
+      "ngram": "ds",
+      "count": 64,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 173,
+      "ngram": "mu",
+      "count": 64,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 174,
+      "ngram": "ok",
+      "count": 63,
+      "frequency": 0.001122,
+      "percentage": 0.1122
+    },
+    {
+      "rank": 175,
+      "ngram": "ew",
+      "count": 62,
+      "frequency": 0.001105,
+      "percentage": 0.1105
+    },
+    {
+      "rank": 176,
+      "ngram": "ye",
+      "count": 62,
+      "frequency": 0.001105,
+      "percentage": 0.1105
+    },
+    {
+      "rank": 177,
+      "ngram": "ft",
+      "count": 61,
+      "frequency": 0.001087,
+      "percentage": 0.1087
+    },
+    {
+      "rank": 178,
+      "ngram": "oa",
+      "count": 61,
+      "frequency": 0.001087,
+      "percentage": 0.1087
+    },
+    {
+      "rank": 179,
+      "ngram": "rr",
+      "count": 61,
+      "frequency": 0.001087,
+      "percentage": 0.1087
+    },
+    {
+      "rank": 180,
+      "ngram": "ru",
+      "count": 61,
+      "frequency": 0.001087,
+      "percentage": 0.1087
+    },
+    {
+      "rank": 181,
+      "ngram": "ue",
+      "count": 61,
+      "frequency": 0.001087,
+      "percentage": 0.1087
+    },
+    {
+      "rank": 182,
+      "ngram": "pp",
+      "count": 60,
+      "frequency": 0.001069,
+      "percentage": 0.1069
+    },
+    {
+      "rank": 183,
+      "ngram": "gi",
+      "count": 60,
+      "frequency": 0.001069,
+      "percentage": 0.1069
+    },
+    {
+      "rank": 184,
+      "ngram": "ff",
+      "count": 60,
+      "frequency": 0.001069,
+      "percentage": 0.1069
+    },
+    {
+      "rank": 185,
+      "ngram": "cl",
+      "count": 59,
+      "frequency": 0.001051,
+      "percentage": 0.1051
+    },
+    {
+      "rank": 186,
+      "ngram": "ty",
+      "count": 58,
+      "frequency": 0.001033,
+      "percentage": 0.1033
+    },
+    {
+      "rank": 187,
+      "ngram": "ex",
+      "count": 57,
+      "frequency": 0.001015,
+      "percentage": 0.1015
+    },
+    {
+      "rank": 188,
+      "ngram": "ui",
+      "count": 57,
+      "frequency": 0.001015,
+      "percentage": 0.1015
+    },
+    {
+      "rank": 189,
+      "ngram": "cu",
+      "count": 56,
+      "frequency": 0.000998,
+      "percentage": 0.0998
+    },
+    {
+      "rank": 190,
+      "ngram": "rm",
+      "count": 56,
+      "frequency": 0.000998,
+      "percentage": 0.0998
+    },
+    {
+      "rank": 191,
+      "ngram": "fl",
+      "count": 56,
+      "frequency": 0.000998,
+      "percentage": 0.0998
+    },
+    {
+      "rank": 192,
+      "ngram": "ny",
+      "count": 54,
+      "frequency": 0.000962,
+      "percentage": 0.0962
+    },
+    {
+      "rank": 193,
+      "ngram": "hu",
+      "count": 54,
+      "frequency": 0.000962,
+      "percentage": 0.0962
+    },
+    {
+      "rank": 194,
+      "ngram": "hr",
+      "count": 53,
+      "frequency": 0.000944,
+      "percentage": 0.0944
+    },
+    {
+      "rank": 195,
+      "ngram": "ls",
+      "count": 52,
+      "frequency": 0.000926,
+      "percentage": 0.0926
+    },
+    {
+      "rank": 196,
+      "ngram": "eg",
+      "count": 52,
+      "frequency": 0.000926,
+      "percentage": 0.0926
+    },
+    {
+      "rank": 197,
+      "ngram": "bi",
+      "count": 51,
+      "frequency": 0.000909,
+      "percentage": 0.0909
+    },
+    {
+      "rank": 198,
+      "ngram": "sk",
+      "count": 50,
+      "frequency": 0.000891,
+      "percentage": 0.0891
+    },
+    {
+      "rank": 199,
+      "ngram": "af",
+      "count": 49,
+      "frequency": 0.000873,
+      "percentage": 0.0873
+    },
+    {
+      "rank": 200,
+      "ngram": "ci",
+      "count": 48,
+      "frequency": 0.000855,
+      "percentage": 0.0855
+    }
+  ],
+  "trigrams": [
+    {
+      "rank": 1,
+      "ngram": "the",
+      "count": 1512,
+      "frequency": 0.03916,
+      "percentage": 3.916
+    },
+    {
+      "rank": 2,
+      "ngram": "and",
+      "count": 747,
+      "frequency": 0.019347,
+      "percentage": 1.9347
+    },
+    {
+      "rank": 3,
+      "ngram": "ing",
+      "count": 558,
+      "frequency": 0.014452,
+      "percentage": 1.4452
+    },
+    {
+      "rank": 4,
+      "ngram": "you",
+      "count": 400,
+      "frequency": 0.01036,
+      "percentage": 1.036
+    },
+    {
+      "rank": 5,
+      "ngram": "her",
+      "count": 350,
+      "frequency": 0.009065,
+      "percentage": 0.9065
+    },
+    {
+      "rank": 6,
+      "ngram": "hat",
+      "count": 274,
+      "frequency": 0.007096,
+      "percentage": 0.7096
+    },
+    {
+      "rank": 7,
+      "ngram": "his",
+      "count": 264,
+      "frequency": 0.006837,
+      "percentage": 0.6837
+    },
+    {
+      "rank": 8,
+      "ngram": "for",
+      "count": 246,
+      "frequency": 0.006371,
+      "percentage": 0.6371
+    },
+    {
+      "rank": 9,
+      "ngram": "tha",
+      "count": 235,
+      "frequency": 0.006086,
+      "percentage": 0.6086
+    },
+    {
+      "rank": 10,
+      "ngram": "hen",
+      "count": 199,
+      "frequency": 0.005154,
+      "percentage": 0.5154
+    },
+    {
+      "rank": 11,
+      "ngram": "ere",
+      "count": 192,
+      "frequency": 0.004973,
+      "percentage": 0.4973
+    },
+    {
+      "rank": 12,
+      "ngram": "all",
+      "count": 188,
+      "frequency": 0.004869,
+      "percentage": 0.4869
+    },
+    {
+      "rank": 13,
+      "ngram": "ver",
+      "count": 187,
+      "frequency": 0.004843,
+      "percentage": 0.4843
+    },
+    {
+      "rank": 14,
+      "ngram": "our",
+      "count": 182,
+      "frequency": 0.004714,
+      "percentage": 0.4714
+    },
+    {
+      "rank": 15,
+      "ngram": "not",
+      "count": 181,
+      "frequency": 0.004688,
+      "percentage": 0.4688
+    },
+    {
+      "rank": 16,
+      "ngram": "ith",
+      "count": 177,
+      "frequency": 0.004584,
+      "percentage": 0.4584
+    },
+    {
+      "rank": 17,
+      "ngram": "ill",
+      "count": 170,
+      "frequency": 0.004403,
+      "percentage": 0.4403
+    },
+    {
+      "rank": 18,
+      "ngram": "ent",
+      "count": 168,
+      "frequency": 0.004351,
+      "percentage": 0.4351
+    },
+    {
+      "rank": 19,
+      "ngram": "she",
+      "count": 168,
+      "frequency": 0.004351,
+      "percentage": 0.4351
+    },
+    {
+      "rank": 20,
+      "ngram": "wit",
+      "count": 164,
+      "frequency": 0.004247,
+      "percentage": 0.4247
+    },
+    {
+      "rank": 21,
+      "ngram": "him",
+      "count": 149,
+      "frequency": 0.003859,
+      "percentage": 0.3859
+    },
+    {
+      "rank": 22,
+      "ngram": "thi",
+      "count": 147,
+      "frequency": 0.003807,
+      "percentage": 0.3807
+    },
+    {
+      "rank": 23,
+      "ngram": "was",
+      "count": 145,
+      "frequency": 0.003755,
+      "percentage": 0.3755
+    },
+    {
+      "rank": 24,
+      "ngram": "ter",
+      "count": 144,
+      "frequency": 0.00373,
+      "percentage": 0.373
+    },
+    {
+      "rank": 25,
+      "ngram": "ght",
+      "count": 144,
+      "frequency": 0.00373,
+      "percentage": 0.373
+    },
+    {
+      "rank": 26,
+      "ngram": "ave",
+      "count": 141,
+      "frequency": 0.003652,
+      "percentage": 0.3652
+    },
+    {
+      "rank": 27,
+      "ngram": "one",
+      "count": 139,
+      "frequency": 0.0036,
+      "percentage": 0.36
+    },
+    {
+      "rank": 28,
+      "ngram": "whe",
+      "count": 139,
+      "frequency": 0.0036,
+      "percentage": 0.36
+    },
+    {
+      "rank": 29,
+      "ngram": "nce",
+      "count": 137,
+      "frequency": 0.003548,
+      "percentage": 0.3548
+    },
+    {
+      "rank": 30,
+      "ngram": "aid",
+      "count": 134,
+      "frequency": 0.003471,
+      "percentage": 0.3471
+    },
+    {
+      "rank": 31,
+      "ngram": "ear",
+      "count": 132,
+      "frequency": 0.003419,
+      "percentage": 0.3419
+    },
+    {
+      "rank": 32,
+      "ngram": "eve",
+      "count": 127,
+      "frequency": 0.003289,
+      "percentage": 0.3289
+    },
+    {
+      "rank": 33,
+      "ngram": "ion",
+      "count": 127,
+      "frequency": 0.003289,
+      "percentage": 0.3289
+    },
+    {
+      "rank": 34,
+      "ngram": "igh",
+      "count": 126,
+      "frequency": 0.003263,
+      "percentage": 0.3263
+    },
+    {
+      "rank": 35,
+      "ngram": "out",
+      "count": 126,
+      "frequency": 0.003263,
+      "percentage": 0.3263
+    },
+    {
+      "rank": 36,
+      "ngram": "oul",
+      "count": 125,
+      "frequency": 0.003237,
+      "percentage": 0.3237
+    },
+    {
+      "rank": 37,
+      "ngram": "uld",
+      "count": 124,
+      "frequency": 0.003212,
+      "percentage": 0.3212
+    },
+    {
+      "rank": 38,
+      "ngram": "but",
+      "count": 124,
+      "frequency": 0.003212,
+      "percentage": 0.3212
+    },
+    {
+      "rank": 39,
+      "ngram": "wil",
+      "count": 124,
+      "frequency": 0.003212,
+      "percentage": 0.3212
+    },
+    {
+      "rank": 40,
+      "ngram": "are",
+      "count": 121,
+      "frequency": 0.003134,
+      "percentage": 0.3134
+    },
+    {
+      "rank": 41,
+      "ngram": "oun",
+      "count": 120,
+      "frequency": 0.003108,
+      "percentage": 0.3108
+    },
+    {
+      "rank": 42,
+      "ngram": "sai",
+      "count": 116,
+      "frequency": 0.003004,
+      "percentage": 0.3004
+    },
+    {
+      "rank": 43,
+      "ngram": "rea",
+      "count": 115,
+      "frequency": 0.002978,
+      "percentage": 0.2978
+    },
+    {
+      "rank": 44,
+      "ngram": "hav",
+      "count": 111,
+      "frequency": 0.002875,
+      "percentage": 0.2875
+    },
+    {
+      "rank": 45,
+      "ngram": "hou",
+      "count": 111,
+      "frequency": 0.002875,
+      "percentage": 0.2875
+    },
+    {
+      "rank": 46,
+      "ngram": "ome",
+      "count": 108,
+      "frequency": 0.002797,
+      "percentage": 0.2797
+    },
+    {
+      "rank": 47,
+      "ngram": "ain",
+      "count": 104,
+      "frequency": 0.002694,
+      "percentage": 0.2694
+    },
+    {
+      "rank": 48,
+      "ngram": "man",
+      "count": 102,
+      "frequency": 0.002642,
+      "percentage": 0.2642
+    },
+    {
+      "rank": 49,
+      "ngram": "int",
+      "count": 101,
+      "frequency": 0.002616,
+      "percentage": 0.2616
+    },
+    {
+      "rank": 50,
+      "ngram": "hin",
+      "count": 100,
+      "frequency": 0.00259,
+      "percentage": 0.259
+    },
+    {
+      "rank": 51,
+      "ngram": "und",
+      "count": 100,
+      "frequency": 0.00259,
+      "percentage": 0.259
+    },
+    {
+      "rank": 52,
+      "ngram": "had",
+      "count": 99,
+      "frequency": 0.002564,
+      "percentage": 0.2564
+    },
+    {
+      "rank": 53,
+      "ngram": "han",
+      "count": 96,
+      "frequency": 0.002486,
+      "percentage": 0.2486
+    },
+    {
+      "rank": 54,
+      "ngram": "eat",
+      "count": 96,
+      "frequency": 0.002486,
+      "percentage": 0.2486
+    },
+    {
+      "rank": 55,
+      "ngram": "ate",
+      "count": 94,
+      "frequency": 0.002435,
+      "percentage": 0.2435
+    },
+    {
+      "rank": 56,
+      "ngram": "whi",
+      "count": 94,
+      "frequency": 0.002435,
+      "percentage": 0.2435
+    },
+    {
+      "rank": 57,
+      "ngram": "fro",
+      "count": 93,
+      "frequency": 0.002409,
+      "percentage": 0.2409
+    },
+    {
+      "rank": 58,
+      "ngram": "rin",
+      "count": 92,
+      "frequency": 0.002383,
+      "percentage": 0.2383
+    },
+    {
+      "rank": 59,
+      "ngram": "ers",
+      "count": 91,
+      "frequency": 0.002357,
+      "percentage": 0.2357
+    },
+    {
+      "rank": 60,
+      "ngram": "ess",
+      "count": 91,
+      "frequency": 0.002357,
+      "percentage": 0.2357
+    },
+    {
+      "rank": 61,
+      "ngram": "red",
+      "count": 91,
+      "frequency": 0.002357,
+      "percentage": 0.2357
+    },
+    {
+      "rank": 62,
+      "ngram": "hey",
+      "count": 89,
+      "frequency": 0.002305,
+      "percentage": 0.2305
+    },
+    {
+      "rank": 63,
+      "ngram": "ake",
+      "count": 89,
+      "frequency": 0.002305,
+      "percentage": 0.2305
+    },
+    {
+      "rank": 64,
+      "ngram": "ore",
+      "count": 89,
+      "frequency": 0.002305,
+      "percentage": 0.2305
+    },
+    {
+      "rank": 65,
+      "ngram": "ene",
+      "count": 88,
+      "frequency": 0.002279,
+      "percentage": 0.2279
+    },
+    {
+      "rank": 66,
+      "ngram": "sel",
+      "count": 88,
+      "frequency": 0.002279,
+      "percentage": 0.2279
+    },
+    {
+      "rank": 67,
+      "ngram": "now",
+      "count": 87,
+      "frequency": 0.002253,
+      "percentage": 0.2253
+    },
+    {
+      "rank": 68,
+      "ngram": "tio",
+      "count": 87,
+      "frequency": 0.002253,
+      "percentage": 0.2253
+    },
+    {
+      "rank": 69,
+      "ngram": "hea",
+      "count": 86,
+      "frequency": 0.002227,
+      "percentage": 0.2227
+    },
+    {
+      "rank": 70,
+      "ngram": "com",
+      "count": 86,
+      "frequency": 0.002227,
+      "percentage": 0.2227
+    },
+    {
+      "rank": 71,
+      "ngram": "ugh",
+      "count": 86,
+      "frequency": 0.002227,
+      "percentage": 0.2227
+    },
+    {
+      "rank": 72,
+      "ngram": "oth",
+      "count": 86,
+      "frequency": 0.002227,
+      "percentage": 0.2227
+    },
+    {
+      "rank": 73,
+      "ngram": "ell",
+      "count": 84,
+      "frequency": 0.002176,
+      "percentage": 0.2176
+    },
+    {
+      "rank": 74,
+      "ngram": "rom",
+      "count": 83,
+      "frequency": 0.00215,
+      "percentage": 0.215
+    },
+    {
+      "rank": 75,
+      "ngram": "tin",
+      "count": 82,
+      "frequency": 0.002124,
+      "percentage": 0.2124
+    },
+    {
+      "rank": 76,
+      "ngram": "res",
+      "count": 82,
+      "frequency": 0.002124,
+      "percentage": 0.2124
+    },
+    {
+      "rank": 77,
+      "ngram": "own",
+      "count": 82,
+      "frequency": 0.002124,
+      "percentage": 0.2124
+    },
+    {
+      "rank": 78,
+      "ngram": "ind",
+      "count": 82,
+      "frequency": 0.002124,
+      "percentage": 0.2124
+    },
+    {
+      "rank": 79,
+      "ngram": "ble",
+      "count": 81,
+      "frequency": 0.002098,
+      "percentage": 0.2098
+    },
+    {
+      "rank": 80,
+      "ngram": "ted",
+      "count": 80,
+      "frequency": 0.002072,
+      "percentage": 0.2072
+    },
+    {
+      "rank": 81,
+      "ngram": "ame",
+      "count": 80,
+      "frequency": 0.002072,
+      "percentage": 0.2072
+    },
+    {
+      "rank": 82,
+      "ngram": "ood",
+      "count": 80,
+      "frequency": 0.002072,
+      "percentage": 0.2072
+    },
+    {
+      "rank": 83,
+      "ngram": "ive",
+      "count": 79,
+      "frequency": 0.002046,
+      "percentage": 0.2046
+    },
+    {
+      "rank": 84,
+      "ngram": "ead",
+      "count": 78,
+      "frequency": 0.00202,
+      "percentage": 0.202
+    },
+    {
+      "rank": 85,
+      "ngram": "way",
+      "count": 78,
+      "frequency": 0.00202,
+      "percentage": 0.202
+    },
+    {
+      "rank": 86,
+      "ngram": "kin",
+      "count": 77,
+      "frequency": 0.001994,
+      "percentage": 0.1994
+    },
+    {
+      "rank": 87,
+      "ngram": "ich",
+      "count": 77,
+      "frequency": 0.001994,
+      "percentage": 0.1994
+    },
+    {
+      "rank": 88,
+      "ngram": "con",
+      "count": 76,
+      "frequency": 0.001968,
+      "percentage": 0.1968
+    },
+    {
+      "rank": 89,
+      "ngram": "ust",
+      "count": 76,
+      "frequency": 0.001968,
+      "percentage": 0.1968
+    },
+    {
+      "rank": 90,
+      "ngram": "old",
+      "count": 76,
+      "frequency": 0.001968,
+      "percentage": 0.1968
+    },
+    {
+      "rank": 91,
+      "ngram": "tle",
+      "count": 76,
+      "frequency": 0.001968,
+      "percentage": 0.1968
+    },
+    {
+      "rank": 92,
+      "ngram": "sta",
+      "count": 75,
+      "frequency": 0.001942,
+      "percentage": 0.1942
+    },
+    {
+      "rank": 93,
+      "ngram": "ery",
+      "count": 75,
+      "frequency": 0.001942,
+      "percentage": 0.1942
+    },
+    {
+      "rank": 94,
+      "ngram": "who",
+      "count": 75,
+      "frequency": 0.001942,
+      "percentage": 0.1942
+    },
+    {
+      "rank": 95,
+      "ngram": "est",
+      "count": 74,
+      "frequency": 0.001917,
+      "percentage": 0.1917
+    },
+    {
+      "rank": 96,
+      "ngram": "ast",
+      "count": 74,
+      "frequency": 0.001917,
+      "percentage": 0.1917
+    },
+    {
+      "rank": 97,
+      "ngram": "cou",
+      "count": 74,
+      "frequency": 0.001917,
+      "percentage": 0.1917
+    },
+    {
+      "rank": 98,
+      "ngram": "hem",
+      "count": 73,
+      "frequency": 0.001891,
+      "percentage": 0.1891
+    },
+    {
+      "rank": 99,
+      "ngram": "rou",
+      "count": 73,
+      "frequency": 0.001891,
+      "percentage": 0.1891
+    },
+    {
+      "rank": 100,
+      "ngram": "sho",
+      "count": 72,
+      "frequency": 0.001865,
+      "percentage": 0.1865
+    },
+    {
+      "rank": 101,
+      "ngram": "hic",
+      "count": 72,
+      "frequency": 0.001865,
+      "percentage": 0.1865
+    },
+    {
+      "rank": 102,
+      "ngram": "use",
+      "count": 71,
+      "frequency": 0.001839,
+      "percentage": 0.1839
+    },
+    {
+      "rank": 103,
+      "ngram": "wer",
+      "count": 69,
+      "frequency": 0.001787,
+      "percentage": 0.1787
+    },
+    {
+      "rank": 104,
+      "ngram": "elf",
+      "count": 68,
+      "frequency": 0.001761,
+      "percentage": 0.1761
+    },
+    {
+      "rank": 105,
+      "ngram": "ked",
+      "count": 68,
+      "frequency": 0.001761,
+      "percentage": 0.1761
+    },
+    {
+      "rank": 106,
+      "ngram": "der",
+      "count": 66,
+      "frequency": 0.001709,
+      "percentage": 0.1709
+    },
+    {
+      "rank": 107,
+      "ngram": "ned",
+      "count": 66,
+      "frequency": 0.001709,
+      "percentage": 0.1709
+    },
+    {
+      "rank": 108,
+      "ngram": "anc",
+      "count": 66,
+      "frequency": 0.001709,
+      "percentage": 0.1709
+    },
+    {
+      "rank": 109,
+      "ngram": "ove",
+      "count": 65,
+      "frequency": 0.001683,
+      "percentage": 0.1683
+    },
+    {
+      "rank": 110,
+      "ngram": "oug",
+      "count": 65,
+      "frequency": 0.001683,
+      "percentage": 0.1683
+    },
+    {
+      "rank": 111,
+      "ngram": "men",
+      "count": 63,
+      "frequency": 0.001632,
+      "percentage": 0.1632
+    },
+    {
+      "rank": 112,
+      "ngram": "ant",
+      "count": 63,
+      "frequency": 0.001632,
+      "percentage": 0.1632
+    },
+    {
+      "rank": 113,
+      "ngram": "ine",
+      "count": 63,
+      "frequency": 0.001632,
+      "percentage": 0.1632
+    },
+    {
+      "rank": 114,
+      "ngram": "att",
+      "count": 63,
+      "frequency": 0.001632,
+      "percentage": 0.1632
+    },
+    {
+      "rank": 115,
+      "ngram": "str",
+      "count": 62,
+      "frequency": 0.001606,
+      "percentage": 0.1606
+    },
+    {
+      "rank": 116,
+      "ngram": "art",
+      "count": 61,
+      "frequency": 0.00158,
+      "percentage": 0.158
+    },
+    {
+      "rank": 117,
+      "ngram": "ati",
+      "count": 61,
+      "frequency": 0.00158,
+      "percentage": 0.158
+    },
+    {
+      "rank": 118,
+      "ngram": "een",
+      "count": 61,
+      "frequency": 0.00158,
+      "percentage": 0.158
+    },
+    {
+      "rank": 119,
+      "ngram": "led",
+      "count": 60,
+      "frequency": 0.001554,
+      "percentage": 0.1554
+    },
+    {
+      "rank": 120,
+      "ngram": "nto",
+      "count": 60,
+      "frequency": 0.001554,
+      "percentage": 0.1554
+    },
+    {
+      "rank": 121,
+      "ngram": "ous",
+      "count": 59,
+      "frequency": 0.001528,
+      "percentage": 0.1528
+    },
+    {
+      "rank": 122,
+      "ngram": "ied",
+      "count": 59,
+      "frequency": 0.001528,
+      "percentage": 0.1528
+    },
+    {
+      "rank": 123,
+      "ngram": "mor",
+      "count": 59,
+      "frequency": 0.001528,
+      "percentage": 0.1528
+    },
+    {
+      "rank": 124,
+      "ngram": "nde",
+      "count": 58,
+      "frequency": 0.001502,
+      "percentage": 0.1502
+    },
+    {
+      "rank": 125,
+      "ngram": "ard",
+      "count": 57,
+      "frequency": 0.001476,
+      "percentage": 0.1476
+    },
+    {
+      "rank": 126,
+      "ngram": "cam",
+      "count": 57,
+      "frequency": 0.001476,
+      "percentage": 0.1476
+    },
+    {
+      "rank": 127,
+      "ngram": "tho",
+      "count": 57,
+      "frequency": 0.001476,
+      "percentage": 0.1476
+    },
+    {
+      "rank": 128,
+      "ngram": "wha",
+      "count": 56,
+      "frequency": 0.00145,
+      "percentage": 0.145
+    },
+    {
+      "rank": 129,
+      "ngram": "pon",
+      "count": 56,
+      "frequency": 0.00145,
+      "percentage": 0.145
+    },
+    {
+      "rank": 130,
+      "ngram": "ste",
+      "count": 56,
+      "frequency": 0.00145,
+      "percentage": 0.145
+    },
+    {
+      "rank": 131,
+      "ngram": "ure",
+      "count": 56,
+      "frequency": 0.00145,
+      "percentage": 0.145
+    },
+    {
+      "rank": 132,
+      "ngram": "eas",
+      "count": 56,
+      "frequency": 0.00145,
+      "percentage": 0.145
+    },
+    {
+      "rank": 133,
+      "ngram": "wou",
+      "count": 55,
+      "frequency": 0.001424,
+      "percentage": 0.1424
+    },
+    {
+      "rank": 134,
+      "ngram": "rie",
+      "count": 55,
+      "frequency": 0.001424,
+      "percentage": 0.1424
+    },
+    {
+      "rank": 135,
+      "ngram": "see",
+      "count": 55,
+      "frequency": 0.001424,
+      "percentage": 0.1424
+    },
+    {
+      "rank": 136,
+      "ngram": "nte",
+      "count": 54,
+      "frequency": 0.001399,
+      "percentage": 0.1399
+    },
+    {
+      "rank": 137,
+      "ngram": "sti",
+      "count": 54,
+      "frequency": 0.001399,
+      "percentage": 0.1399
+    },
+    {
+      "rank": 138,
+      "ngram": "kno",
+      "count": 53,
+      "frequency": 0.001373,
+      "percentage": 0.1373
+    },
+    {
+      "rank": 139,
+      "ngram": "unt",
+      "count": 53,
+      "frequency": 0.001373,
+      "percentage": 0.1373
+    },
+    {
+      "rank": 140,
+      "ngram": "tur",
+      "count": 53,
+      "frequency": 0.001373,
+      "percentage": 0.1373
+    },
+    {
+      "rank": 141,
+      "ngram": "hol",
+      "count": 53,
+      "frequency": 0.001373,
+      "percentage": 0.1373
+    },
+    {
+      "rank": 142,
+      "ngram": "abl",
+      "count": 52,
+      "frequency": 0.001347,
+      "percentage": 0.1347
+    },
+    {
+      "rank": 143,
+      "ngram": "its",
+      "count": 52,
+      "frequency": 0.001347,
+      "percentage": 0.1347
+    },
+    {
+      "rank": 144,
+      "ngram": "ime",
+      "count": 52,
+      "frequency": 0.001347,
+      "percentage": 0.1347
+    },
+    {
+      "rank": 145,
+      "ngram": "tan",
+      "count": 52,
+      "frequency": 0.001347,
+      "percentage": 0.1347
+    },
+    {
+      "rank": 146,
+      "ngram": "hed",
+      "count": 52,
+      "frequency": 0.001347,
+      "percentage": 0.1347
+    },
+    {
+      "rank": 147,
+      "ngram": "how",
+      "count": 52,
+      "frequency": 0.001347,
+      "percentage": 0.1347
+    },
+    {
+      "rank": 148,
+      "ngram": "thr",
+      "count": 52,
+      "frequency": 0.001347,
+      "percentage": 0.1347
+    },
+    {
+      "rank": 149,
+      "ngram": "uch",
+      "count": 51,
+      "frequency": 0.001321,
+      "percentage": 0.1321
+    },
+    {
+      "rank": 150,
+      "ngram": "ful",
+      "count": 51,
+      "frequency": 0.001321,
+      "percentage": 0.1321
+    },
+    {
+      "rank": 151,
+      "ngram": "tre",
+      "count": 51,
+      "frequency": 0.001321,
+      "percentage": 0.1321
+    },
+    {
+      "rank": 152,
+      "ngram": "ack",
+      "count": 51,
+      "frequency": 0.001321,
+      "percentage": 0.1321
+    },
+    {
+      "rank": 153,
+      "ngram": "ttl",
+      "count": 51,
+      "frequency": 0.001321,
+      "percentage": 0.1321
+    },
+    {
+      "rank": 154,
+      "ngram": "enc",
+      "count": 49,
+      "frequency": 0.001269,
+      "percentage": 0.1269
+    },
+    {
+      "rank": 155,
+      "ngram": "low",
+      "count": 49,
+      "frequency": 0.001269,
+      "percentage": 0.1269
+    },
+    {
+      "rank": 156,
+      "ngram": "ect",
+      "count": 48,
+      "frequency": 0.001243,
+      "percentage": 0.1243
+    },
+    {
+      "rank": 157,
+      "ngram": "cha",
+      "count": 48,
+      "frequency": 0.001243,
+      "percentage": 0.1243
+    },
+    {
+      "rank": 158,
+      "ngram": "sto",
+      "count": 48,
+      "frequency": 0.001243,
+      "percentage": 0.1243
+    },
+    {
+      "rank": 159,
+      "ngram": "ten",
+      "count": 48,
+      "frequency": 0.001243,
+      "percentage": 0.1243
+    },
+    {
+      "rank": 160,
+      "ngram": "can",
+      "count": 48,
+      "frequency": 0.001243,
+      "percentage": 0.1243
+    },
+    {
+      "rank": 161,
+      "ngram": "ran",
+      "count": 48,
+      "frequency": 0.001243,
+      "percentage": 0.1243
+    },
+    {
+      "rank": 162,
+      "ngram": "itt",
+      "count": 48,
+      "frequency": 0.001243,
+      "percentage": 0.1243
+    },
+    {
+      "rank": 163,
+      "ngram": "ons",
+      "count": 48,
+      "frequency": 0.001243,
+      "percentage": 0.1243
+    },
+    {
+      "rank": 164,
+      "ngram": "any",
+      "count": 47,
+      "frequency": 0.001217,
+      "percentage": 0.1217
+    },
+    {
+      "rank": 165,
+      "ngram": "ath",
+      "count": 47,
+      "frequency": 0.001217,
+      "percentage": 0.1217
+    },
+    {
+      "rank": 166,
+      "ngram": "end",
+      "count": 47,
+      "frequency": 0.001217,
+      "percentage": 0.1217
+    },
+    {
+      "rank": 167,
+      "ngram": "ple",
+      "count": 47,
+      "frequency": 0.001217,
+      "percentage": 0.1217
+    },
+    {
+      "rank": 168,
+      "ngram": "mes",
+      "count": 47,
+      "frequency": 0.001217,
+      "percentage": 0.1217
+    },
+    {
+      "rank": 169,
+      "ngram": "per",
+      "count": 46,
+      "frequency": 0.001191,
+      "percentage": 0.1191
+    },
+    {
+      "rank": 170,
+      "ngram": "ces",
+      "count": 46,
+      "frequency": 0.001191,
+      "percentage": 0.1191
+    },
+    {
+      "rank": 171,
+      "ngram": "son",
+      "count": 46,
+      "frequency": 0.001191,
+      "percentage": 0.1191
+    },
+    {
+      "rank": 172,
+      "ngram": "ish",
+      "count": 46,
+      "frequency": 0.001191,
+      "percentage": 0.1191
+    },
+    {
+      "rank": 173,
+      "ngram": "ong",
+      "count": 46,
+      "frequency": 0.001191,
+      "percentage": 0.1191
+    },
+    {
+      "rank": 174,
+      "ngram": "age",
+      "count": 45,
+      "frequency": 0.001165,
+      "percentage": 0.1165
+    },
+    {
+      "rank": 175,
+      "ngram": "sha",
+      "count": 45,
+      "frequency": 0.001165,
+      "percentage": 0.1165
+    },
+    {
+      "rank": 176,
+      "ngram": "lea",
+      "count": 45,
+      "frequency": 0.001165,
+      "percentage": 0.1165
+    },
+    {
+      "rank": 177,
+      "ngram": "ise",
+      "count": 45,
+      "frequency": 0.001165,
+      "percentage": 0.1165
+    },
+    {
+      "rank": 178,
+      "ngram": "tte",
+      "count": 45,
+      "frequency": 0.001165,
+      "percentage": 0.1165
+    },
+    {
+      "rank": 179,
+      "ngram": "din",
+      "count": 45,
+      "frequency": 0.001165,
+      "percentage": 0.1165
+    },
+    {
+      "rank": 180,
+      "ngram": "til",
+      "count": 45,
+      "frequency": 0.001165,
+      "percentage": 0.1165
+    },
+    {
+      "rank": 181,
+      "ngram": "ass",
+      "count": 44,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 182,
+      "ngram": "upo",
+      "count": 44,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 183,
+      "ngram": "ach",
+      "count": 44,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 184,
+      "ngram": "che",
+      "count": 44,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 185,
+      "ngram": "dow",
+      "count": 44,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 186,
+      "ngram": "lle",
+      "count": 44,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 187,
+      "ngram": "ook",
+      "count": 44,
+      "frequency": 0.00114,
+      "percentage": 0.114
+    },
+    {
+      "rank": 188,
+      "ngram": "ort",
+      "count": 43,
+      "frequency": 0.001114,
+      "percentage": 0.1114
+    },
+    {
+      "rank": 189,
+      "ngram": "too",
+      "count": 43,
+      "frequency": 0.001114,
+      "percentage": 0.1114
+    },
+    {
+      "rank": 190,
+      "ngram": "lit",
+      "count": 43,
+      "frequency": 0.001114,
+      "percentage": 0.1114
+    },
+    {
+      "rank": 191,
+      "ngram": "awa",
+      "count": 43,
+      "frequency": 0.001114,
+      "percentage": 0.1114
+    },
+    {
+      "rank": 192,
+      "ngram": "nem",
+      "count": 43,
+      "frequency": 0.001114,
+      "percentage": 0.1114
+    },
+    {
+      "rank": 193,
+      "ngram": "emy",
+      "count": 43,
+      "frequency": 0.001114,
+      "percentage": 0.1114
+    },
+    {
+      "rank": 194,
+      "ngram": "ide",
+      "count": 42,
+      "frequency": 0.001088,
+      "percentage": 0.1088
+    },
+    {
+      "rank": 195,
+      "ngram": "som",
+      "count": 42,
+      "frequency": 0.001088,
+      "percentage": 0.1088
+    },
+    {
+      "rank": 196,
+      "ngram": "tim",
+      "count": 42,
+      "frequency": 0.001088,
+      "percentage": 0.1088
+    },
+    {
+      "rank": 197,
+      "ngram": "pre",
+      "count": 42,
+      "frequency": 0.001088,
+      "percentage": 0.1088
+    },
+    {
+      "rank": 198,
+      "ngram": "gai",
+      "count": 42,
+      "frequency": 0.001088,
+      "percentage": 0.1088
+    },
+    {
+      "rank": 199,
+      "ngram": "ist",
+      "count": 42,
+      "frequency": 0.001088,
+      "percentage": 0.1088
+    },
+    {
+      "rank": 200,
+      "ngram": "tor",
+      "count": 42,
+      "frequency": 0.001088,
+      "percentage": 0.1088
+    }
+  ]
+}

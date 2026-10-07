@@ -1,0 +1,26 @@
+{
+  "name": "typefighter",
+  "version": "1.0.0",
+  "description": "TypeFighter - Stickman Typing Beat 'Em Up Desktop Game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "serve": "node server.js",
+    "build:app": "node scripts/package.js",
+    "test": "node test/verify_game.js"
+  },
+  "keywords": [
+    "typing",
+    "beat-em-up",
+    "stickman",
+    "game",
+    "electron",
+    "canvas2d"
+  ],
+  "author": "Next Toppers",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^44.6.0"
+  }
+}

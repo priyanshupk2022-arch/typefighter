@@ -1,0 +1,1765 @@
+{
+  "version": "1.0.0",
+  "course_name": "TypeFighter 30-Day Typing Mastery",
+  "total_stages": 7,
+  "total_days": 30,
+  "global_minimum_accuracy_threshold": 98.0,
+  "stages": [
+    {
+      "stage_id": "stage_1",
+      "stage_number": 1,
+      "name": "Home Row Base",
+      "subtitle": "Anchor your fingers on the foundation keys",
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "target_keys": [
+        "f",
+        "j",
+        "d",
+        "k",
+        "s",
+        "l",
+        "a",
+        ";"
+      ],
+      "finger_assignments": {
+        "f": {
+          "hand": "left",
+          "finger": "index",
+          "row": "home",
+          "home_key": "f",
+          "tactile_bump": true
+        },
+        "j": {
+          "hand": "right",
+          "finger": "index",
+          "row": "home",
+          "home_key": "j",
+          "tactile_bump": true
+        },
+        "d": {
+          "hand": "left",
+          "finger": "middle",
+          "row": "home",
+          "home_key": "d"
+        },
+        "k": {
+          "hand": "right",
+          "finger": "middle",
+          "row": "home",
+          "home_key": "k"
+        },
+        "s": {
+          "hand": "left",
+          "finger": "ring",
+          "row": "home",
+          "home_key": "s"
+        },
+        "l": {
+          "hand": "right",
+          "finger": "ring",
+          "row": "home",
+          "home_key": "l"
+        },
+        "a": {
+          "hand": "left",
+          "finger": "pinky",
+          "row": "home",
+          "home_key": "a"
+        },
+        ";": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "home",
+          "home_key": ";"
+        }
+      },
+      "unlock_accuracy_threshold": 98.0,
+      "target_wpm": 25,
+      "drill_words": [
+        "as",
+        "ask",
+        "all",
+        "fall",
+        "sad",
+        "lad",
+        "lass",
+        "flask",
+        "falls",
+        "salad",
+        "alfalfa",
+        "fad",
+        "fads",
+        "add",
+        "adds",
+        "dad",
+        "dads",
+        "kafka",
+        "alas",
+        "flask",
+        "salsa",
+        "dallas",
+        "kaka",
+        "slad",
+        "faff"
+      ],
+      "practice_phrases": [
+        "all lads fall as a lad asks",
+        "a sad lad asks all as a flask falls",
+        "dad adds a salad as a lad falls",
+        "ask a lass as all lads add salads",
+        "a fall flask adds a sad salad",
+        "all lads ask dad as dad adds salads",
+        "alas a sad lass falls as dad asks"
+      ],
+      "boss_battle": {
+        "boss_id": "boss_1",
+        "name": "The Stone Sentry",
+        "title": "Guardian of the Home Row",
+        "health": 350,
+        "time_limit_seconds": 60,
+        "mechanic": "Must maintain 98%+ accuracy. Missed keystrokes cause a 2-second time penalty.",
+        "battle_texts": [
+          "a sad lad asks dad as a flask falls; all lads add salads; dad falls as a flask adds a sad lad.",
+          "all lads ask a sad lass; a flask falls as dad adds salads; alas all lads fall as a lad asks dad."
+        ]
+      },
+      "daily_lessons": [
+        {
+          "day": 1,
+          "title": "Index Finger Anchors (F & J)",
+          "focus_keys": [
+            "f",
+            "j",
+            "space"
+          ],
+          "warmup_drills": [
+            "fjfj jfjf f j f j ff jj",
+            "f j f j j f j f ff jj ff jj",
+            "fjf jfj jfj jfj fff jjj"
+          ],
+          "drills": [
+            "f j f j ff jj fj jf",
+            "fff jjj fj fj jf jf ff jj",
+            "f j f j fj jf ff jj fj jf"
+          ],
+          "phrases": [
+            "f j f j fj jf",
+            "ff jj ff jj fj jf",
+            "j f j f jj ff jf fj"
+          ],
+          "daily_goal": "Feel the raised tactile bumps on F and J without looking at the keyboard. Achieve 98%+ accuracy."
+        },
+        {
+          "day": 2,
+          "title": "Middle Finger Reinforcement (D & K)",
+          "focus_keys": [
+            "d",
+            "k"
+          ],
+          "warmup_drills": [
+            "dkdk kdkd d k d k dd kk",
+            "df jk df jk dk fd kj kf",
+            "dd kk ff jj dk dk fd kj"
+          ],
+          "drills": [
+            "fad dak fkd jkd",
+            "ff dd jj kk fd jk",
+            "dak fad fkd jkf kdf"
+          ],
+          "phrases": [
+            "dad fad dak kad",
+            "f d j k dk fd kj",
+            "fad dak dad fad"
+          ],
+          "daily_goal": "Keep index fingers gently resting on F and J while moving middle fingers to D and K."
+        },
+        {
+          "day": 3,
+          "title": "Ring Finger Reach (S & L)",
+          "focus_keys": [
+            "s",
+            "l"
+          ],
+          "warmup_drills": [
+            "slsl lsls s l s l ss ll",
+            "sd kl sd kl as l; sa ;l",
+            "ss dd ff jj kk ll sl sl"
+          ],
+          "drills": [
+            "sad lad lass fall falls flask",
+            "salad salsa alfalfa ask adds",
+            "all sad lads ask all lasses"
+          ],
+          "phrases": [
+            "a sad lad asks all lads",
+            "all lasses fall as a lad asks",
+            "salad falls as a sad lad asks"
+          ],
+          "daily_goal": "Build independent ring finger control without twisting wrists."
+        },
+        {
+          "day": 4,
+          "title": "Pinky Keys and Full Home Row Mastery (A & ;)",
+          "focus_keys": [
+            "a",
+            ";"
+          ],
+          "warmup_drills": [
+            "a;a; ;a;a a ; a ; aa ;; ;;",
+            "asdf ;lkj asdf ;lkj a; a;",
+            "aa ss dd ff jj kk ll ;;"
+          ],
+          "drills": [
+            "ask all fall flask sad lad salsa salad",
+            "adds dads fads alas alfalfa kafka",
+            "all lads ask dad as a flask falls"
+          ],
+          "phrases": [
+            "all lads ask dad as dad adds salads;",
+            "a sad lad asks all as a flask falls;",
+            "dad adds a salad as a lad falls;"
+          ],
+          "daily_goal": "Clear the Stage 1 Home Row Boss with 98%+ accuracy."
+        }
+      ]
+    },
+    {
+      "stage_number": 2,
+      "stage_id": "stage_2",
+      "name": "Index Reach",
+      "subtitle": "Unleash rapid lateral and vertical index mobility",
+      "days": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "target_keys": [
+        "g",
+        "h",
+        "r",
+        "u",
+        "t",
+        "y"
+      ],
+      "finger_assignments": {
+        "g": {
+          "hand": "left",
+          "finger": "index",
+          "row": "home",
+          "reach": "inner_reach"
+        },
+        "h": {
+          "hand": "right",
+          "finger": "index",
+          "row": "home",
+          "reach": "inner_reach"
+        },
+        "r": {
+          "hand": "left",
+          "finger": "index",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "u": {
+          "hand": "right",
+          "finger": "index",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "t": {
+          "hand": "left",
+          "finger": "index",
+          "row": "top",
+          "reach": "top_inner_reach"
+        },
+        "y": {
+          "hand": "right",
+          "finger": "index",
+          "row": "top",
+          "reach": "top_inner_reach"
+        }
+      },
+      "unlock_accuracy_threshold": 98.0,
+      "target_wpm": 35,
+      "drill_words": [
+        "that",
+        "hart",
+        "rust",
+        "truth",
+        "start",
+        "guard",
+        "sugar",
+        "tray",
+        "gray",
+        "trust",
+        "yard",
+        "hurt",
+        "rush",
+        "laugh",
+        "staff",
+        "glass",
+        "hard",
+        "dark",
+        "fast",
+        "task",
+        "flash",
+        "great",
+        "hurry",
+        "right",
+        "tough",
+        "rough",
+        "straight",
+        "target",
+        "flight",
+        "fright"
+      ],
+      "practice_phrases": [
+        "trust the truth as the guard rushes through",
+        "a right turn at high speed starts the flight",
+        "laugh at the task as you start the great rush",
+        "the dark yard had tall grass that grew fast",
+        "straight truth guards the tough flight at dusk"
+      ],
+      "boss_battle": {
+        "boss_id": "boss_2",
+        "name": "The Swift Stryker",
+        "title": "Master of Lateral Reaches",
+        "health": 500,
+        "time_limit_seconds": 65,
+        "mechanic": "High-velocity bursts required. Accuracy threshold 98.5%.",
+        "battle_texts": [
+          "trust that the great guard rushes straight through the rough yard; truth starts right as the tough flight hurts.",
+          "a swift rush through the dark grass starts the fight; laugh at the hard task as you trust the right path."
+        ]
+      },
+      "daily_lessons": [
+        {
+          "day": 5,
+          "title": "Home Row Inward Reaches (G & H)",
+          "focus_keys": [
+            "g",
+            "h"
+          ],
+          "warmup_drills": [
+            "fgf jhj fgf jhj gg hh",
+            "fghj jhgf asdfg ;lkjh",
+            "glad half hall flag flash"
+          ],
+          "drills": [
+            "glad half gall shall flash dash",
+            "gash shag gala slash hash shaft",
+            "half glad hall flag shaft"
+          ],
+          "phrases": [
+            "a glad lad has a flag",
+            "half a glass had shallots",
+            "flash a flag as a lad has half"
+          ],
+          "daily_goal": "Snap index finger back to F and J immediately after striking G and H."
+        },
+        {
+          "day": 6,
+          "title": "Top Row Primary Reach (R & U)",
+          "focus_keys": [
+            "r",
+            "u"
+          ],
+          "warmup_drills": [
+            "frf juj frf juj rr uu",
+            "fur ruf jar jug run rug",
+            "far fur jar dark hard surf"
+          ],
+          "drills": [
+            "rush rust rug rub fur surf",
+            "dark hard yard guard sugar rural",
+            "full dull hurt turn turf curl"
+          ],
+          "phrases": [
+            "run through dark yards at dusk",
+            "a hard guard rushes up the hill",
+            "surf and rust turn dark under rush"
+          ],
+          "daily_goal": "Keep wrists flat while reaching up to R and U."
+        },
+        {
+          "day": 7,
+          "title": "Top Row Inner Reaches (T & Y)",
+          "focus_keys": [
+            "t",
+            "y"
+          ],
+          "warmup_drills": [
+            "ftf jyj ftf jyj tt yy",
+            "that tray they try stay duty",
+            "tart yard play gray tray trust"
+          ],
+          "drills": [
+            "that tray stay duty trait truth",
+            "tart yard party trust target try",
+            "type yard tiny duty tasty gritty"
+          ],
+          "phrases": [
+            "they trust that truth stays right",
+            "try to stay straight at that target",
+            "tiny traits trust the great duty"
+          ],
+          "daily_goal": "Stretch accurately to T and Y without lifting hands off keyboard base."
+        },
+        {
+          "day": 8,
+          "title": "Index Consolidation & Speed Drill",
+          "focus_keys": [
+            "g",
+            "h",
+            "r",
+            "u",
+            "t",
+            "y"
+          ],
+          "warmup_drills": [
+            "fgrt jhuy fgrt jhuy frgt jhyu",
+            "truth hurry flight guard start",
+            "rough tough straight right fright"
+          ],
+          "drills": [
+            "truth guard hurry right flight start",
+            "laugh rough tough straight fright",
+            "target great rush hurt dark trust"
+          ],
+          "phrases": [
+            "trust the truth as the great guard starts right",
+            "the flight had a tough start through the dark yard",
+            "laugh at the task as you rush right through"
+          ],
+          "daily_goal": "Maintain rhythm across all 6 index reach keys."
+        },
+        {
+          "day": 9,
+          "title": "Index Battle Gauntlet",
+          "focus_keys": [
+            "g",
+            "h",
+            "r",
+            "u",
+            "t",
+            "y",
+            "home_row"
+          ],
+          "warmup_drills": [
+            "the that they this there their through",
+            "truth starts right through high flight",
+            "great guards rush through dark yards"
+          ],
+          "drills": [
+            "that truth guards high flight straight",
+            "hurry right through tough rough yards",
+            "laugh at hard tasks and trust truth"
+          ],
+          "phrases": [
+            "a swift rush through the dark grass starts the fight",
+            "laugh at the hard task as you trust the right path"
+          ],
+          "daily_goal": "Defeat The Swift Stryker with >= 98.0% accuracy."
+        }
+      ]
+    },
+    {
+      "stage_number": 3,
+      "stage_id": "stage_3",
+      "name": "Middle & Ring Reaches",
+      "subtitle": "Dominate top-row vowels and core consonants",
+      "days": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "target_keys": [
+        "e",
+        "i",
+        "w",
+        "o"
+      ],
+      "finger_assignments": {
+        "e": {
+          "hand": "left",
+          "finger": "middle",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "i": {
+          "hand": "right",
+          "finger": "middle",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "w": {
+          "hand": "left",
+          "finger": "ring",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "o": {
+          "hand": "right",
+          "finger": "ring",
+          "row": "top",
+          "reach": "top_reach"
+        }
+      },
+      "unlock_accuracy_threshold": 98.0,
+      "target_wpm": 42,
+      "drill_words": [
+        "white",
+        "water",
+        "stone",
+        "write",
+        "their",
+        "there",
+        "other",
+        "where",
+        "world",
+        "house",
+        "sword",
+        "order",
+        "horse",
+        "power",
+        "first",
+        "point",
+        "voice",
+        "field",
+        "quiet",
+        "shield",
+        "spirit",
+        "strike",
+        "warrior",
+        "wisdom"
+      ],
+      "practice_phrases": [
+        "the white sword stood upon the high stone wall",
+        "their power grew where the old warrior wrote words of wisdom",
+        "water poured over the quiet field as horsemen rode west",
+        "strike the shield with power and hold the stone fortress",
+        "first point the arrow where the eagle flies over water"
+      ],
+      "boss_battle": {
+        "boss_id": "boss_3",
+        "name": "The Vowel Wyvern",
+        "title": "Ruler of Upper Row Harmony",
+        "health": 650,
+        "time_limit_seconds": 70,
+        "mechanic": "Continuous flow requirement. High frequency common word patterns.",
+        "battle_texts": [
+          "the warrior held a white sword while horses rode west over cold waters; their power grew where wisdom wrote words of truth.",
+          "strike with quiet wisdom as the stone shield protects the fortress; let power flow where the first warrior points."
+        ]
+      },
+      "daily_lessons": [
+        {
+          "day": 10,
+          "title": "The Dominant Vowels (E & I)",
+          "focus_keys": [
+            "e",
+            "i"
+          ],
+          "warmup_drills": [
+            "ded kik ded kik ee ii",
+            "die kid lie red tie hide",
+            "fire tire wire side wide ride"
+          ],
+          "drills": [
+            "their there where strike field fire",
+            "first time friend drive light river",
+            "quiet spirit silver shield desire"
+          ],
+          "phrases": [
+            "their fire lit the field in the night",
+            "the first friend is wise and kind",
+            "quiet spirits ride with silver light"
+          ],
+          "daily_goal": "E and I account for over 20% of all typed letters. Build effortless reflex."
+        },
+        {
+          "day": 11,
+          "title": "Ring Finger Upper Reaches (W & O)",
+          "focus_keys": [
+            "w",
+            "o"
+          ],
+          "warmup_drills": [
+            "sws lol sws lol ww oo",
+            "low sow row bow tow wow",
+            "wood wool roof tool slow show"
+          ],
+          "drills": [
+            "water world warrior woods sword tower",
+            "power stone order horse storm glory",
+            "shadow hollow fellow arrow willow"
+          ],
+          "phrases": [
+            "the warrior rode west towards the tower",
+            "cold water flowed past the stone wall",
+            "shadows fall slowly over the willow woods"
+          ],
+          "daily_goal": "Keep wrists calm while ring fingers reach upward."
+        },
+        {
+          "day": 12,
+          "title": "Vowel Flow Integration (A, E, I, O, U)",
+          "focus_keys": [
+            "a",
+            "e",
+            "i",
+            "o",
+            "u"
+          ],
+          "warmup_drills": [
+            "aeiou uoiea ea io ou au ei",
+            "about house mouse round sound",
+            "guide proud beauty action voice"
+          ],
+          "drills": [
+            "voice house proud round guard guide",
+            "action sound point course source youth",
+            "valiant quiet curious warrior wisdom"
+          ],
+          "phrases": [
+            "a quiet voice spoke wisdom around the house",
+            "proud warriors found water outside the fortress",
+            "sound advice guided their brave course"
+          ],
+          "daily_goal": "Smooth transitions across all 5 standard vowels."
+        },
+        {
+          "day": 13,
+          "title": "Upper Row Wordsmith Mastery",
+          "focus_keys": [
+            "q",
+            "w",
+            "e",
+            "r",
+            "t",
+            "y",
+            "u",
+            "i",
+            "o",
+            "p"
+          ],
+          "warmup_drills": [
+            "qwertyuiop poiuytrewq",
+            "write tower power water quiet sword",
+            "their other where world order first"
+          ],
+          "drills": [
+            "their power grew where the old warrior stood",
+            "write words of truth without fear or hesitation",
+            "the white sword stood upon the high stone wall"
+          ],
+          "phrases": [
+            "the white sword stood upon the high stone wall",
+            "their power grew where the old warrior wrote words of wisdom",
+            "water poured over the quiet field as horsemen rode west"
+          ],
+          "daily_goal": "Achieve 40+ WPM on upper row sentences."
+        },
+        {
+          "day": 14,
+          "title": "Wyvern Boss Combat Drill",
+          "focus_keys": [
+            "all_unlocked_so_far"
+          ],
+          "warmup_drills": [
+            "the of and to a in for is on that by this with i you",
+            "strike shield warrior wisdom power stone",
+            "water poured quietly where horses rode"
+          ],
+          "drills": [
+            "warrior holds white sword while horses ride west",
+            "power grew where wisdom wrote words of truth",
+            "strike with quiet wisdom as shield protects"
+          ],
+          "phrases": [
+            "the warrior held a white sword while horses rode west over cold waters",
+            "their power grew where wisdom wrote words of truth"
+          ],
+          "daily_goal": "Slay The Vowel Wyvern with >= 98.0% accuracy."
+        }
+      ]
+    },
+    {
+      "stage_number": 4,
+      "stage_id": "stage_4",
+      "name": "Pinky Reaches",
+      "subtitle": "Strengthen edge precision and diagonal pinky dexterity",
+      "days": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "target_keys": [
+        "q",
+        "p",
+        "z",
+        "/"
+      ],
+      "finger_assignments": {
+        "q": {
+          "hand": "left",
+          "finger": "pinky",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "p": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "z": {
+          "hand": "left",
+          "finger": "pinky",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "/": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        }
+      },
+      "unlock_accuracy_threshold": 98.0,
+      "target_wpm": 45,
+      "drill_words": [
+        "quick",
+        "queen",
+        "quiet",
+        "prize",
+        "phase",
+        "equal",
+        "party",
+        "plaza",
+        "quote",
+        "pizza",
+        "pixel",
+        "spark",
+        "sharp",
+        "puzzle",
+        "blaze",
+        "freeze",
+        "equip",
+        "unique",
+        "quest",
+        "expert",
+        "sphere",
+        "proper",
+        "prompt",
+        "plenty"
+      ],
+      "practice_phrases": [
+        "the quick queen claimed a prized prize in the quiet plaza",
+        "equip the brave party for an epic quest across frozen zones",
+        "prompt quotes and sharp wits puzzle the lazy opponent",
+        "a unique blaze froze upon the sharp slope of the peak",
+        "proper practice prepares proud players for pure power"
+      ],
+      "boss_battle": {
+        "boss_id": "boss_4",
+        "name": "The Phantom Pixie",
+        "title": "Specter of the Perimeter",
+        "health": 750,
+        "time_limit_seconds": 65,
+        "mechanic": "Edge key accuracy check. No drifting elbows or leaning hands allowed.",
+        "battle_texts": [
+          "the quick queen equipped her party for a perilous quest; sharp prizes awaited whoever solved the frozen puzzle in the quiet plaza.",
+          "prompt wits and pure precision puzzle opponents; equip your mind with unique quotes as the cold blaze freezes the steep zone."
+        ]
+      },
+      "daily_lessons": [
+        {
+          "day": 15,
+          "title": "Top Edge Pinky Reaches (Q & P)",
+          "focus_keys": [
+            "q",
+            "p"
+          ],
+          "warmup_drills": [
+            "aqa ;p; aqa ;p; qq pp",
+            "quick paper queen power prompt pure",
+            "equip party quote place proper pride"
+          ],
+          "drills": [
+            "quick queen quiet equip quote quest",
+            "paper proper prompt praise proud peak",
+            "plaza party puzzle speed power sharp"
+          ],
+          "phrases": [
+            "the quick queen praises proper pride",
+            "equip the party for a quick quest",
+            "a quiet poet wrote plenty of quotes"
+          ],
+          "daily_goal": "Strike Q and P cleanly without twisting elbow or shoulder."
+        },
+        {
+          "day": 16,
+          "title": "Bottom Edge Pinky Reaches (Z & /)",
+          "focus_keys": [
+            "z",
+            "/"
+          ],
+          "warmup_drills": [
+            "aza ;/; aza ;/; zz //",
+            "zone zero zeal prize blaze freeze",
+            "and/or yes/no true/false input/output"
+          ],
+          "drills": [
+            "zone blaze freeze prize puzzle size",
+            "graze citizen hazard horizon wizard craze",
+            "w/o km/h and/or on/off up/down"
+          ],
+          "phrases": [
+            "the wizard froze in the hazard zone",
+            "blazing fires puzzle lazy citizens",
+            "choose true/false or yes/no in the quiz"
+          ],
+          "daily_goal": "Curl pinkies downward cleanly to hit Z and /."
+        },
+        {
+          "day": 17,
+          "title": "Shift Key Mechanics & Pinky Synergy",
+          "focus_keys": [
+            "shift_left",
+            "shift_right",
+            "capitalization"
+          ],
+          "warmup_drills": [
+            "Aa Bb Cc Dd Ee Ff Gg Hh",
+            "Quick Queen Quiet Prize Phase Equal",
+            "Paris London Tokyo Rome Berlin Madrid"
+          ],
+          "drills": [
+            "Queen Philip Arthur Queen Victoria Zeus",
+            "Prompt Quest Prize Wizard Freeze Horizon",
+            "Sherlock Holmes Dr Watson Baker Street"
+          ],
+          "phrases": [
+            "Queen Philip and Prince Arthur rode to Paris",
+            "Sherlock Holmes smiled quietly at Watson in London",
+            "Zeus raised his blazing shield above the peak"
+          ],
+          "daily_goal": "Use opposite Shift key: Left Shift for right-hand keys, Right Shift for left-hand keys."
+        },
+        {
+          "day": 18,
+          "title": "Phantom Pixie Boss Confrontation",
+          "focus_keys": [
+            "q",
+            "p",
+            "z",
+            "/",
+            "shift"
+          ],
+          "warmup_drills": [
+            "the quick brown fox jumps over the lazy dog",
+            "quick quotes puzzle lazy wizards",
+            "prompt prizes equip proud parties"
+          ],
+          "drills": [
+            "the quick queen equipped her party for an epic quest",
+            "sharp prizes awaited whoever solved the frozen puzzle",
+            "proper practice prepares proud players for victory"
+          ],
+          "phrases": [
+            "the quick queen equipped her party for a perilous quest",
+            "prompt wits and pure precision puzzle opponents"
+          ],
+          "daily_goal": "Banish The Phantom Pixie with >= 98.0% accuracy."
+        }
+      ]
+    },
+    {
+      "stage_number": 5,
+      "stage_id": "stage_5",
+      "name": "Bottom Row Navigation",
+      "subtitle": "Conquer the lower keyboard and master full punctuation",
+      "days": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "target_keys": [
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "x",
+        ",",
+        "."
+      ],
+      "finger_assignments": {
+        "c": {
+          "hand": "left",
+          "finger": "middle",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "v": {
+          "hand": "left",
+          "finger": "index",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "b": {
+          "hand": "left",
+          "finger": "index",
+          "row": "bottom",
+          "reach": "bottom_inner_reach"
+        },
+        "n": {
+          "hand": "right",
+          "finger": "index",
+          "row": "bottom",
+          "reach": "bottom_inner_reach"
+        },
+        "m": {
+          "hand": "right",
+          "finger": "index",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "x": {
+          "hand": "left",
+          "finger": "ring",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        ",": {
+          "hand": "right",
+          "finger": "middle",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        ".": {
+          "hand": "right",
+          "finger": "ring",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        }
+      },
+      "unlock_accuracy_threshold": 98.0,
+      "target_wpm": 50,
+      "drill_words": [
+        "combat",
+        "victory",
+        "action",
+        "maximum",
+        "brave",
+        "complex",
+        "champion",
+        "balance",
+        "dynamic",
+        "movement",
+        "counter",
+        "strike",
+        "marvel",
+        "column",
+        "advance",
+        "command",
+        "breeze",
+        "beacon",
+        "climb",
+        "cabin",
+        "vivid",
+        "novel"
+      ],
+      "practice_phrases": [
+        "brave champions advance with dynamic balance and vivid movement.",
+        "a complex combat victory demands calm command under pressure.",
+        "climb the rocky column, advance forward, and claim maximum glory.",
+        "the dynamic movement of the column was visible from the cabin.",
+        "every brave champion balances swift action with calm patience."
+      ],
+      "boss_battle": {
+        "boss_id": "boss_5",
+        "name": "The Obsidian Colossus",
+        "title": "Titan of the Lower Depths",
+        "health": 900,
+        "time_limit_seconds": 75,
+        "mechanic": "Full alphabet prose gauntlet with comma and period punctuation discipline.",
+        "battle_texts": [
+          "brave champions advance with dynamic balance, vivid movement, and calm patience; a complex combat victory demands maximum focus and unwavering resolve.",
+          "climb the rocky column, advance beyond the dark cavern, and claim victory; every bold champion balances swift movement with decisive counter strikes."
+        ]
+      },
+      "daily_lessons": [
+        {
+          "day": 19,
+          "title": "Middle & Index Bottom Steps (C & V)",
+          "focus_keys": [
+            "c",
+            "v"
+          ],
+          "warmup_drills": [
+            "dcd fvf dcd fvf cc vv",
+            "cave civic clover voice cover civil",
+            "active cavern curve discover victory cave"
+          ],
+          "drills": [
+            "combat voice caverns dynamic active civil",
+            "victory discover achieve creative decisive",
+            "curved cover vehicle civic advice move"
+          ],
+          "phrases": [
+            "active voices echoed inside the cold cavern",
+            "creative combat tactics secure decisive victories",
+            "discover victory with calm, decisive action"
+          ],
+          "daily_goal": "Curl middle and index fingers down without moving palms forward."
+        },
+        {
+          "day": 20,
+          "title": "Right Hand Bottom Steps (M, N, Comma, Period)",
+          "focus_keys": [
+            "m",
+            "n",
+            ",",
+            "."
+          ],
+          "warmup_drills": [
+            "jmj jnj k,k l.l mm nn ,, ..",
+            "men man name mine main moon",
+            "one, two, three. four, five, six."
+          ],
+          "drills": [
+            "common mountain manner command nation mind",
+            "ancient kingdom banner maintain mention",
+            "calm, dynamic, brave, and resolute."
+          ],
+          "phrases": [
+            "many men marched upon the mountain, silently.",
+            "a calm mind commands respect and decisive victory.",
+            "men, women, and companions advanced forward."
+          ],
+          "daily_goal": "Hit comma and period with natural rhythm and zero finger hovering."
+        },
+        {
+          "day": 21,
+          "title": "Center Bottom Stretches (B & N)",
+          "focus_keys": [
+            "b",
+            "n"
+          ],
+          "warmup_drills": [
+            "fbf jnj fbf jnj bb nn",
+            "banner beacon cabin ribbon bundle banner",
+            "noble balance broken combine business born"
+          ],
+          "drills": [
+            "brave balance beacon cabin ribbon bundle",
+            "noble combine broken business banner born",
+            "symbol member balance number bronze branch"
+          ],
+          "phrases": [
+            "brave companions build beacons near the cabin.",
+            "a noble banner waved in the cool morning breeze.",
+            "combine balance and speed to break all barriers."
+          ],
+          "daily_goal": "Keep left hand index for B, right hand index for N."
+        },
+        {
+          "day": 22,
+          "title": "Ring Finger Bottom Reach (X) & Complete Alphabet",
+          "focus_keys": [
+            "x",
+            "complete_alphabet"
+          ],
+          "warmup_drills": [
+            "sxs sxs sxs xx xx",
+            "exact exam maximum complex extend next",
+            "the quick brown fox jumps over the lazy dog."
+          ],
+          "drills": [
+            "maximum complex syntax expert matrix explain",
+            "extend examine dynamic exact execute express",
+            "six boxes of mixed text require exact focus."
+          ],
+          "phrases": [
+            "six brave foxes jumped over the calm, lazy dog.",
+            "maximum syntax accuracy delivers complex victory.",
+            "examine each text box with exact, balanced focus."
+          ],
+          "daily_goal": "All 26 English alphabet keys unlocked! Flawless keyboard coverage."
+        },
+        {
+          "day": 23,
+          "title": "Obsidian Colossus Titan Battle",
+          "focus_keys": [
+            "all_letters",
+            "comma",
+            "period"
+          ],
+          "warmup_drills": [
+            "the quick brown fox jumps over the lazy dog.",
+            "brave champions advance with dynamic balance.",
+            "a complex combat victory demands maximum focus."
+          ],
+          "drills": [
+            "brave champions advance with dynamic balance and vivid movement.",
+            "climb the rocky column, advance forward, and claim maximum glory.",
+            "every brave champion balances swift action with calm patience."
+          ],
+          "phrases": [
+            "brave champions advance with dynamic balance, vivid movement, and calm patience.",
+            "climb the rocky column, advance beyond the dark cavern, and claim victory."
+          ],
+          "daily_goal": "Topple The Obsidian Colossus with >= 98.0% accuracy."
+        }
+      ]
+    },
+    {
+      "stage_number": 6,
+      "stage_id": "stage_6",
+      "name": "Numbers & Symbols",
+      "subtitle": "Unlock numeric row command and top-tier code typography",
+      "days": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "target_keys": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "!",
+        "@",
+        "#",
+        "$",
+        "%",
+        "^",
+        "&",
+        "*",
+        "(",
+        ")",
+        "-",
+        "="
+      ],
+      "finger_assignments": {
+        "1": {
+          "hand": "left",
+          "finger": "pinky",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "2": {
+          "hand": "left",
+          "finger": "ring",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "3": {
+          "hand": "left",
+          "finger": "middle",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "4": {
+          "hand": "left",
+          "finger": "index",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "5": {
+          "hand": "left",
+          "finger": "index",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "6": {
+          "hand": "right",
+          "finger": "index",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "7": {
+          "hand": "right",
+          "finger": "index",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "8": {
+          "hand": "right",
+          "finger": "middle",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "9": {
+          "hand": "right",
+          "finger": "ring",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "0": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "!": {
+          "hand": "left",
+          "finger": "pinky",
+          "row": "number",
+          "modifier": "shift_right"
+        },
+        "@": {
+          "hand": "left",
+          "finger": "ring",
+          "row": "number",
+          "modifier": "shift_right"
+        },
+        "#": {
+          "hand": "left",
+          "finger": "middle",
+          "row": "number",
+          "modifier": "shift_right"
+        },
+        "$": {
+          "hand": "left",
+          "finger": "index",
+          "row": "number",
+          "modifier": "shift_right"
+        },
+        "%": {
+          "hand": "left",
+          "finger": "index",
+          "row": "number",
+          "modifier": "shift_right"
+        },
+        "^": {
+          "hand": "right",
+          "finger": "index",
+          "row": "number",
+          "modifier": "shift_left"
+        },
+        "&": {
+          "hand": "right",
+          "finger": "index",
+          "row": "number",
+          "modifier": "shift_left"
+        },
+        "*": {
+          "hand": "right",
+          "finger": "middle",
+          "row": "number",
+          "modifier": "shift_left"
+        },
+        "(": {
+          "hand": "right",
+          "finger": "ring",
+          "row": "number",
+          "modifier": "shift_left"
+        },
+        ")": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "number",
+          "modifier": "shift_left"
+        },
+        "-": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "number",
+          "reach": "number_reach"
+        },
+        "=": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "number",
+          "reach": "number_reach"
+        }
+      },
+      "unlock_accuracy_threshold": 98.0,
+      "target_wpm": 40,
+      "drill_words": [
+        "level 10",
+        "chapter 3",
+        "room 204",
+        "100%",
+        "50/50",
+        "#1 contender",
+        "$250 prize",
+        "score: 9,850",
+        "hp: 1,200",
+        "speed = 75",
+        "item_id: 42",
+        "(alpha & beta)",
+        "level-99",
+        "12 + 8 = 20",
+        "user@domain.com",
+        "98.5% win-rate"
+      ],
+      "practice_phrases": [
+        "Player 1 earned 9,500 points in round 2 (100% accuracy!).",
+        "The boss deal: 450 damage, 85 defense, and 1,200 total HP.",
+        "Config item: max_speed = 98, buffer_size = 1,024, mode = 'combat'.",
+        "Rank #1 typists achieve 120+ WPM with > 98.5% precision!",
+        "Invoice #4829: Total cost was $1,250 with a 15% discount applied."
+      ],
+      "boss_battle": {
+        "boss_id": "boss_6",
+        "name": "The Cyber Golem",
+        "title": "Construct of Logic & Cipher",
+        "health": 1000,
+        "time_limit_seconds": 80,
+        "mechanic": "Code and numerical accuracy test. No looking down at the number row.",
+        "battle_texts": [
+          "System Report #402: Level 99 Fighter deployed with 1,500 HP, 98.5% accuracy, and 120 WPM; total score: $45,000 (Bonus: +25%!).",
+          "Security Alert [Zone-7]: Target #1 detected at 14:00 hours; speed = 88 km/h, range = 350 meters, code: ALPHA-9 & OMEGA-2!"
+        ]
+      },
+      "daily_lessons": [
+        {
+          "day": 24,
+          "title": "Left Hand Numbers (1, 2, 3, 4, 5)",
+          "focus_keys": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "warmup_drills": [
+            "a1a s2s d3d f4f f5f",
+            "1 2 3 4 5 12 34 51 25",
+            "10 20 30 40 50 15 25 35 45"
+          ],
+          "drills": [
+            "level 1 level 2 level 3 level 4 level 5",
+            "12 items 34 gold 55 silver 142 bronze",
+            "123 451 234 512 345 543 210"
+          ],
+          "phrases": [
+            "stage 1 had 25 challenges and 34 enemies.",
+            "room 12 has 45 gold coins and 3 keys.",
+            "level 5 requires 120 points and 4 stars."
+          ],
+          "daily_goal": "Reach up from home row to 1-5 without losing anchor fingers on F and J."
+        },
+        {
+          "day": 25,
+          "title": "Right Hand Numbers (6, 7, 8, 9, 0)",
+          "focus_keys": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+          ],
+          "warmup_drills": [
+            "j6j j7j k8k l9l ;0;",
+            "6 7 8 9 0 67 89 90 78",
+            "60 70 80 90 100 68 79 96 87"
+          ],
+          "drills": [
+            "score: 780 score: 890 score: 990 score: 1000",
+            "room 607 page 89 line 10 chapter 8",
+            "1984 2001 2024 2026 1776 1066"
+          ],
+          "phrases": [
+            "the year 2026 recorded 9,870 top participants.",
+            "player 7 scored 890 points across 10 rounds.",
+            "page 89 showed 76 items for 90 minutes."
+          ],
+          "daily_goal": "Full numeric row mastery without looking down."
+        },
+        {
+          "day": 26,
+          "title": "Shift Symbols & Punctuation (!, @, #, $, %, ^, &, *, (, ))",
+          "focus_keys": [
+            "!",
+            "@",
+            "#",
+            "$",
+            "%",
+            "^",
+            "&",
+            "*",
+            "(",
+            ")"
+          ],
+          "warmup_drills": [
+            "! @ # $ % ^ & * ( )",
+            "#1 $50 100% (yes) & and *",
+            "!@ #$ %^ &* () !# $% &* ()"
+          ],
+          "drills": [
+            "#1 contender $250 reward 100% accuracy",
+            "(alpha & beta) 50% discount item #42",
+            "user@domain.org (port: 8080) $99.95"
+          ],
+          "phrases": [
+            "Rank #1 winner earned $5,000 (100% score)!",
+            "Save 25% on items #10 & #12 (Total: $450).",
+            "Contact support@typefighter.io for assistance!"
+          ],
+          "daily_goal": "Smooth synchronization of pinky shift with number row symbols."
+        },
+        {
+          "day": 27,
+          "title": "Code & Cyber Combat Drill",
+          "focus_keys": [
+            "numbers",
+            "symbols",
+            "-",
+            "=",
+            "_",
+            "+"
+          ],
+          "warmup_drills": [
+            "width = 1920; height = 1080;",
+            "count = count + 1; index -= 1;",
+            "for (int i = 0; i < 100; i++)"
+          ],
+          "drills": [
+            "hp = 1200; speed = 85; level = 42;",
+            "config['max_users'] = 5000; status = 'OK';",
+            "item_id = 99; price = 149.99; tax = 0.08;"
+          ],
+          "phrases": [
+            "System Report #402: Level 99 Fighter deployed with 1,500 HP.",
+            "Security Alert [Zone-7]: Target #1 detected at 14:00 hours."
+          ],
+          "daily_goal": "Neutralize The Cyber Golem with >= 98.0% accuracy."
+        }
+      ]
+    },
+    {
+      "stage_number": 7,
+      "stage_id": "stage_7",
+      "name": "Speed & Fluidity",
+      "subtitle": "Transcend keystrokes into fluid combat thought",
+      "days": [
+        28,
+        29,
+        30
+      ],
+      "target_keys": [
+        "full_keyboard",
+        "prose_speed",
+        "endurance",
+        "boss_battles"
+      ],
+      "finger_assignments": {
+        "a": {
+          "hand": "left",
+          "finger": "pinky",
+          "row": "home",
+          "home_key": "a"
+        },
+        "s": {
+          "hand": "left",
+          "finger": "ring",
+          "row": "home",
+          "home_key": "s"
+        },
+        "d": {
+          "hand": "left",
+          "finger": "middle",
+          "row": "home",
+          "home_key": "d"
+        },
+        "f": {
+          "hand": "left",
+          "finger": "index",
+          "row": "home",
+          "home_key": "f",
+          "tactile_bump": true
+        },
+        "j": {
+          "hand": "right",
+          "finger": "index",
+          "row": "home",
+          "home_key": "j",
+          "tactile_bump": true
+        },
+        "k": {
+          "hand": "right",
+          "finger": "middle",
+          "row": "home",
+          "home_key": "k"
+        },
+        "l": {
+          "hand": "right",
+          "finger": "ring",
+          "row": "home",
+          "home_key": "l"
+        },
+        ";": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "home",
+          "home_key": ";"
+        },
+        "g": {
+          "hand": "left",
+          "finger": "index",
+          "row": "home",
+          "reach": "inner_reach"
+        },
+        "h": {
+          "hand": "right",
+          "finger": "index",
+          "row": "home",
+          "reach": "inner_reach"
+        },
+        "r": {
+          "hand": "left",
+          "finger": "index",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "u": {
+          "hand": "right",
+          "finger": "index",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "t": {
+          "hand": "left",
+          "finger": "index",
+          "row": "top",
+          "reach": "top_inner_reach"
+        },
+        "y": {
+          "hand": "right",
+          "finger": "index",
+          "row": "top",
+          "reach": "top_inner_reach"
+        },
+        "e": {
+          "hand": "left",
+          "finger": "middle",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "i": {
+          "hand": "right",
+          "finger": "middle",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "w": {
+          "hand": "left",
+          "finger": "ring",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "o": {
+          "hand": "right",
+          "finger": "ring",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "q": {
+          "hand": "left",
+          "finger": "pinky",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "p": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "top",
+          "reach": "top_reach"
+        },
+        "z": {
+          "hand": "left",
+          "finger": "pinky",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "/": {
+          "hand": "right",
+          "finger": "pinky",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "c": {
+          "hand": "left",
+          "finger": "middle",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "v": {
+          "hand": "left",
+          "finger": "index",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "b": {
+          "hand": "left",
+          "finger": "index",
+          "row": "bottom",
+          "reach": "bottom_inner_reach"
+        },
+        "n": {
+          "hand": "right",
+          "finger": "index",
+          "row": "bottom",
+          "reach": "bottom_inner_reach"
+        },
+        "m": {
+          "hand": "right",
+          "finger": "index",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        "x": {
+          "hand": "left",
+          "finger": "ring",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        ",": {
+          "hand": "right",
+          "finger": "middle",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        },
+        ".": {
+          "hand": "right",
+          "finger": "ring",
+          "row": "bottom",
+          "reach": "bottom_reach"
+        }
+      },
+      "unlock_accuracy_threshold": 98.5,
+      "target_wpm": 70,
+      "drill_words": [
+        "championship",
+        "extraordinary",
+        "unquestionable",
+        "determination",
+        "transcendence",
+        "fluidity",
+        "perseverance",
+        "unstoppable",
+        "invincible",
+        "legendary",
+        "sublime",
+        "architect",
+        "sovereign",
+        "constellation",
+        "mastery"
+      ],
+      "practice_phrases": [
+        "The supreme art of war is to subdue the enemy without fighting.",
+        "True mastery is achieved when conscious effort dissolves into effortless action.",
+        "It has long been an axiom of mine that the little things are infinitely the most important.",
+        "Speed without accuracy is reckless panic; accuracy with speed is sublime power.",
+        "Stand firm like the mountain, flow relentless like the river, and strike like the lightning bolt."
+      ],
+      "boss_battle": {
+        "boss_id": "boss_7",
+        "name": "The Chrono Sovereign",
+        "title": "Master of Time & Keystrokes",
+        "health": 1500,
+        "time_limit_seconds": 90,
+        "mechanic": "The ultimate test: 70+ WPM sustained over multi-sentence literary prose at 98.5%+ accuracy.",
+        "battle_texts": [
+          "The supreme art of war is to subdue the enemy without fighting. Hence to fight and conquer in all your battles is not supreme excellence; supreme excellence consists in breaking the enemy's resistance without fighting. In the practical art of war, the best thing of all is to take the enemy's country whole and intact; to shatter and destroy it is not so good.",
+          "It has long been an axiom of mine that the little things are infinitely the most important. To a great mind, nothing is little. You see, Watson, my methods are based upon the observation of trifles. From a drop of water a logician could infer the possibility of an Atlantic or a Niagara without having seen or heard of one or the other."
+        ]
+      },
+      "daily_lessons": [
+        {
+          "day": 28,
+          "title": "High-Velocity Burst Drills (60-80 WPM)",
+          "focus_keys": [
+            "burst_speed",
+            "muscle_memory"
+          ],
+          "warmup_drills": [
+            "the and that have with this from they word were when what your said",
+            "quick quick fast fast swift swift speed speed flow flow",
+            "burst burst strike strike victory victory power power"
+          ],
+          "drills": [
+            "The game is afoot! Not a word! Into your clothes and come!",
+            "To a great mind, nothing is little. Let us run a race.",
+            "Speed is fluid thought made visible through fingertips."
+          ],
+          "phrases": [
+            "Speed without accuracy is reckless panic; accuracy with speed is sublime power.",
+            "Stand firm like the mountain, flow relentless like the river, and strike like lightning."
+          ],
+          "daily_goal": "Maintain smooth breathing and steady finger rhythm during 70+ WPM bursts."
+        },
+        {
+          "day": 29,
+          "title": "Sustained Prose Endurance (150-400 Chars)",
+          "focus_keys": [
+            "endurance",
+            "rhythm",
+            "error_recovery"
+          ],
+          "warmup_drills": [
+            "A famished Fox saw some clusters of ripe black grapes hanging from a trellised vine.",
+            "He resorted to all his tricks to get at them, but wearied himself in vain.",
+            "At last he turned away, saying: 'The Grapes are sour, and not ripe as I thought.'"
+          ],
+          "drills": [
+            "Sun Tzu said: The art of war is of vital importance to the State. It is a matter of life and death, a road either to safety or to ruin.",
+            "Hence it is a subject of inquiry which can on no account be neglected. The art of war is governed by constant factors.",
+            "When able to attack, we must seem unable; when using our forces, we must seem inactive; when near, make him believe we are far."
+          ],
+          "phrases": [
+            "The supreme art of war is to subdue the enemy without fighting.",
+            "True mastery is achieved when conscious effort dissolves into effortless action."
+          ],
+          "daily_goal": "Type full 300-character literary passages without pausing or glancing at the keyboard."
+        },
+        {
+          "day": 30,
+          "title": "The Final Ascension: Grandmaster Boss Duel",
+          "focus_keys": [
+            "complete_mastery",
+            "grandmaster_status"
+          ],
+          "warmup_drills": [
+            "the quick brown fox jumps over the lazy dog.",
+            "The supreme art of war is to subdue the enemy without fighting.",
+            "It has long been an axiom of mine that the little things are infinitely the most important."
+          ],
+          "drills": [
+            "Defeat the Chrono Sovereign by typing both master passages at >= 70 WPM and >= 98.5% accuracy.",
+            "Let your hands rest lightly on the home row bumps, breathing steady, entering pure flow state."
+          ],
+          "phrases": [
+            "Stand firm like the mountain, flow relentless like the river, and strike like the lightning bolt.",
+            "True mastery is achieved when conscious effort dissolves into effortless action."
+          ],
+          "daily_goal": "Conquer the 30-Day TypeFighter curriculum and claim Grandmaster typist certification!"
+        }
+      ]
+    }
+  ]
+}
