@@ -90,8 +90,13 @@ for (const item of appPayload) {
   }
 }
 
-// 4. Verification
-console.log('[4/4] Verifying packaged desktop application...');
+// 4. Windows AppContainer Permissions Fix & Verification
+console.log('[4/4] Setting Windows permissions & verifying packaged desktop application...');
+try {
+  const { execSync } = require('child_process');
+  execSync(`icacls "${OUTPUT_DIR}" /grant "*S-1-15-2-1:(OI)(CI)(RX)" /t /c`, { stdio: 'ignore' });
+} catch (e) {}
+
 const exePath = path.join(OUTPUT_DIR, 'TypeFighter.exe');
 if (fs.existsSync(exePath)) {
   const exeSizeMB = Math.round(fs.statSync(exePath).size / (1024 * 1024));

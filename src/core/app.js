@@ -12,7 +12,7 @@ import { InputManager } from './inputManager.js';
 export class App {
   constructor() {
     this.container = document.getElementById('game-container');
-    this.clock = new THREE.Clock();
+    this.lastTime = performance.now();
 
     // 1. Audio System
     this.audio = audioSystem;
@@ -73,7 +73,9 @@ export class App {
 
   animate() {
     requestAnimationFrame(this.animate);
-    const delta = Math.min(this.clock.getDelta(), 0.1); // Clamp to prevent delta spikes
+    const now = performance.now();
+    const delta = Math.min((now - this.lastTime) / 1000, 0.1);
+    this.lastTime = now;
 
     // Update input (continuous horizontal walk)
     this.input.update(delta);
@@ -108,7 +110,16 @@ export class App {
   }
 }
 
-// Auto-boot on DOM ready
-window.addEventListener('DOMContentLoaded', () => {
-  window.gameApp = new App();
-});
+// Auto-boot on DOM ready or immediately if already loaded
+function bootApp() {
+  if (!window.gameApp) {
+    window.gameApp = new App();
+  }
+}
+
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', bootApp);
+} else {
+  bootApp();
+}
+
