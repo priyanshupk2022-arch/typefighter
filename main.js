@@ -14,7 +14,7 @@ function createWindow() {
     height: 900,
     minWidth: 1024,
     minHeight: 640,
-    title: 'TypeFighter — Stickman Beat \'Em Up',
+    title: 'Keyboard Warrior Stickman: Typing Beat \'Em Up',
     icon: path.join(__dirname, 'build', 'icon.png'),
     backgroundColor: '#0a0c14',
     show: false,
